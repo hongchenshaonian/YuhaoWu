@@ -229,97 +229,79 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Conference 2026</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Publication Placeholder">
+    <div class='badge'>JCR Q1 · IF 9.2</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <a href="#" class="title">Sample Publication Title One</a>
-    <div class="authors">Author A, Author B, <strong>Your Name</strong>, Author D†</div>
-    <div class="venue"><em><strong>Conference / Journal Name</strong>, 2026</em></div>
-    <p class="desc"><strong>TL;DR:</strong> Add one sentence that explains the core idea, result, or contribution of the paper.</p>
-    <div class="links">
-      <a href="#">[Paper]</a>
-      <a href="#">[Code]</a>
-      <a href="#">[Project Page]</a>
-      <a href="#">[Dataset]</a>
-    </div>
+    <div class="title">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</div>
+    <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
+    <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
   </div>
 </div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Conference 2026</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Publication Placeholder">
+    <div class='badge'>Revised</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <a href="#" class="title">Sample Publication Title Two</a>
-    <div class="authors">Author A, Author B, <strong>Your Name</strong>, Author D†</div>
-    <div class="venue"><em><strong>Conference / Journal Name</strong>, 2026</em></div>
-    <p class="desc"><strong>TL;DR:</strong> Use this card for another representative paper or preprint you want to highlight.</p>
-    <div class="links">
-      <a href="#">[Paper]</a>
-      <a href="#">[Code]</a>
-      <a href="#">[Project Page]</a>
-    </div>
+    <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials</div>
+    <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
+    <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. Status: Revised.</p>
   </div>
 </div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Workshop / arXiv</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Publication Placeholder">
+    <div class='badge'>JCR Q1 · IF 8.4</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <a href="#" class="title">Sample Publication Title Three</a>
-    <div class="authors">Author A*, Author B*, <strong>Your Name</strong>, Author D†</div>
-    <div class="venue"><em><strong>Workshop / arXiv</strong>, 2025</em></div>
-    <p class="desc"><strong>TL;DR:</strong> Add a compact summary sentence that is easy to scan from the homepage.</p>
-    <div class="links">
-      <a href="#">[Paper]</a>
-      <a href="#">[Code]</a>
-      <a href="#">[Project Page]</a>
-      <a href="#">[Demo]</a>
-    </div>
+    <div class="title">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</div>
+    <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
+    <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.4.</p>
   </div>
 </div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Under Review</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Publication Placeholder">
+    <div class='badge'>Accepted</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials accepted publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <a href="#" class="title">Sample Publication Title Four</a>
-    <div class="authors">Author A, Author B, <strong>Your Name*</strong>, Author D†</div>
-    <div class="venue"><em><strong>Under Review</strong></em></div>
-    <p class="desc"><strong>TL;DR:</strong> This slot works well for a recent submission, preprint, or work-in-progress project.</p>
-    <div class="links">
-      <a href="#">[Paper]</a>
-      <a href="#">[Code]</a>
-      <a href="#">[Project Page]</a>
-    </div>
+    <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
+    <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
+    <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. Status: Accepted.</p>
   </div>
 </div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Conference 2025</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Publication Placeholder">
+    <div class='badge'>JCR Q3 · IF 3.0</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <a href="#" class="title">Sample Publication Title Five</a>
-    <div class="authors">Author A*, Author B*, <strong>Your Name*</strong>, Author D†</div>
-    <div class="venue">
-      <em><strong>Proceedings of Conference Name</strong>, 2025 (Poster)</em><br>
-      <strong style="color: #b31b1b;">🏆 Optional Highlighted Award or Distinction</strong>
-    </div>
-    <p class="desc"><strong>TL;DR:</strong> Keep the most visible publication cards concise and easy to edit after forking.</p>
-    <div class="links">
-      <a href="#">[Paper]</a>
-      <a href="#">[Code]</a>
-      <a href="#">[Project Page]</a>
-      <a href="#">[Demo]</a>
-    </div>
+    <div class="title">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</div>
+    <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, Jin Huang</div>
+    <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em></div>
+    <p class="desc"><strong>JCR Q3</strong>, Impact Factor = 3.0.</p>
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div class='badge'>Accepted</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</div>
+    <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
+    <div class="venue"><em><strong>Science Technology and Engineering</strong></em></div>
+    <p class="desc"><strong>EI Compendex</strong>. Status: Accepted.</p>
   </div>
 </div>
 
