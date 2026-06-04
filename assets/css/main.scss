@@ -107,3 +107,60 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* ================================================================
+   Ziyuan Zhao background layer
+   Matches the dotted blue background and floating orb layer used by
+   https://ziyuanzhao.org/.
+   ================================================================ */
+:root {
+  --bg-page: #f4f7fb;
+  --surface: #ffffff;
+}
+
+html,
+body {
+  background-color: var(--bg-page);
+}
+
+body {
+  background-image: radial-gradient(circle, #b8cce0 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.page {
+  background:
+    linear-gradient(168deg, rgba(219,234,254,0.6) 0%, rgba(255,255,255,0) 280px),
+    var(--surface);
+}
+
+#bg-orbs {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  animation: orbFloat var(--orb-dur, 22s) ease-in-out infinite;
+  animation-delay: var(--orb-delay, 0s);
+}
+
+@keyframes orbFloat {
+  0% { transform: translate(0, 0) scale(1); opacity: var(--orb-op, 0.22); }
+  25% { transform: translate(35px, -55px) scale(1.08); opacity: calc(var(--orb-op, 0.22) * 1.3); }
+  50% { transform: translate(-25px, 35px) scale(0.94); opacity: var(--orb-op, 0.22); }
+  75% { transform: translate(45px, 15px) scale(1.04); opacity: calc(var(--orb-op, 0.22) * 0.7); }
+  100% { transform: translate(0, 0) scale(1); opacity: var(--orb-op, 0.22); }
+}
+
+.page,
+.sidebar,
+.page__footer {
+  position: relative;
+  z-index: 1;
+}
