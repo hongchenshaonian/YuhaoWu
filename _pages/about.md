@@ -181,7 +181,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 # 🎓 Education
 
 <div class="exp-card">
-  <img src="{{ '/images/wuhan-polytechnic-university-logo.svg' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
+  <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
       <h3 class="exp-role">Bachelor of Engineering in Architecture</h3>
