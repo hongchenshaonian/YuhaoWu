@@ -33,6 +33,13 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Preserve PR previews
+        run: |
+          if [ -d pr-preview ]; then
+            mkdir -p _site/pr-preview
+            cp -a pr-preview/. _site/pr-preview/
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

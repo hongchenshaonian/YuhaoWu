@@ -5,7 +5,7 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    <img src="{{ author.avatar }}" class="author__avatar" alt="{{ author.name }}">
+    <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name }}">
   </div>
 
   <div class="author__content">
@@ -121,7 +121,7 @@
 {% endif %}
       {% if author.cv %}
         <li class="cv-link-item">
-          <a href="{{ author.cv }}" class="btn cv-sidebar-btn">
+          <a href="{{ author.cv | relative_url }}" class="btn cv-sidebar-btn">
             <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download CV
           </a>
         </li>
@@ -135,7 +135,7 @@
         <a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.cv %}
-        <a href="{{ author.cv }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
+        <a href="{{ author.cv | relative_url }}"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.keybase %}
         <a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i></a>

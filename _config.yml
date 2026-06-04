@@ -9,7 +9,7 @@
 title                    : "Your Name"
 description              : "A minimal academic homepage template built with Jekyll and GitHub Pages."
 repository               : "your-username/your-username.github.io"
-url                      : ""  # e.g. https://your-username.github.io
+url                      : "https://yuhaowu.com"  # e.g. https://your-username.github.io
 baseurl                  : ""  # "" for user site, "/repo-name" for project site
 
 # google analytics
@@ -70,6 +70,7 @@ include:
 exclude:
   - docs
   - google_scholar_crawler
+  - pr-preview
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
