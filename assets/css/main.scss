@@ -159,8 +159,11 @@ body {
 }
 
 .page,
-.sidebar,
 .page__footer {
   position: relative;
+  z-index: 1;
+}
+
+.sidebar {
   z-index: 1;
 }
