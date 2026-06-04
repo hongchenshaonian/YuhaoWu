@@ -70,7 +70,8 @@ include:
 exclude:
   - docs
   - google_scholar_crawler
-  - pr-preview
+  # Keep committed PR preview artifacts publishable when GitHub Pages
+  # builds from the main branch instead of the Actions artifact workflow.
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
