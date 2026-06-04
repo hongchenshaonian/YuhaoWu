@@ -34,8 +34,8 @@
 <meta property="og:title" content="{{ site.title }}">
 
 {% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
+  <link rel="canonical" href="{{ page.url | absolute_url | replace: "/index.html", "/" }}">
+  <meta property="og:url" content="{{ page.url | absolute_url | replace: "/index.html", "/" }}">
 {% endif %}
 
 {% if page.excerpt %}
