@@ -291,6 +291,35 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
   </div>
 </div>
 
+<span class="anchor" id="patents"></span>
+# 📰 Patents
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div class='badge'>Pending</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum cementitious material patent placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
+    <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
+    <div class="venue"><em><strong>CN120590137A</strong>, 2025</em></div>
+    <p class="desc">China Invention patent. Status: Pending.</p>
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div class='badge'>Utility Model</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Venetian blind patent placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">Venetian blind and adjusting mechanism</div>
+    <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
+    <div class="venue"><em><strong>CN223190347U</strong>, 2024</em></div>
+    <p class="desc">China Utility model patent.</p>
+  </div>
+</div>
+
 <span class="anchor" id="projects"></span>
 # 💻 Projects
 
