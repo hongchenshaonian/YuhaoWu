@@ -6,9 +6,6 @@ main:
   - title: "News"
     url: "/#news"
 
-  - title: "Internships"
-    url: "/#internships"
-
   - title: "Education"
     url: "/#education"
 
