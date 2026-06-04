@@ -41,4 +41,4 @@ jobs:
           preview-branch: main
           umbrella-dir: pr-preview
           comment: true
-          custom-url: https://yuhaowu.com
+          pages-base-url: yuhaowu.com
