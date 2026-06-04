@@ -44,9 +44,7 @@ jobs:
           --baseurl "/pr-preview/pr-${{ github.event.number }}"
 
       # This action commits/removes pr-preview/pr-<number> on main.
-      # The Deploy Pages workflow listens for this workflow to complete and
-      # publishes the committed preview files from main. GitHub Actions pushes
-      # made with GITHUB_TOKEN do not reliably trigger normal push workflows.
+      # The normal push-to-main Pages workflow then publishes those files.
       # Do not deploy to the protected github-pages environment from this PR job.
       - name: Deploy preview files and comment
         uses: rossjrw/pr-preview-action@v1
