@@ -254,6 +254,19 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
+    <div class='badge'>Revised</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">CO<sub>2</sub> Mineralization Pathways in Phosphogypsum-Based Cementitious Materials: Carbon Sequestration and Mechanical Enhancement</div>
+    <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
+    <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.2. Status: Revised.</p>
+  </div>
+</div>
+
+<div class='paper-box'>
+  <div class='paper-box-image'>
     <div class='badge'>JCR Q3 · IF 3.0</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
   </div>
