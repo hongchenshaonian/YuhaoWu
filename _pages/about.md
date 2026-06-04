@@ -177,46 +177,19 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 </style>
 
-<span class="anchor" id="internships"></span>
-# 💼 Internships
-
-<div class="exp-card">
-  <img src="{{ '/images/building-icon.svg' | relative_url }}" class="exp-logo" alt="Organization Placeholder">
-  <div class="exp-content">
-    <div class="exp-header">
-      <h3 class="exp-role">Research Intern / Visiting Student</h3>
-      <span class="exp-time">2025.01 - Present</span>
-    </div>
-    <div class="exp-org">Organization / Lab Name</div>
-    <p class="exp-desc">Describe your internship or research role here. Summarize the type of work you do, the domain you contribute to, and the scope of your responsibilities.</p>
-  </div>
-</div>
-
-
 <span class="anchor" id="education"></span>
 # 🎓 Education
 
 <div class="exp-card">
-  <img src="{{ '/images/building-icon.svg' | relative_url }}" class="exp-logo" alt="University Placeholder">
+  <img src="{{ '/images/wuhan-polytechnic-university-logo.svg' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
-      <h3 class="exp-role">Ph.D. / M.S. in Your Field</h3>
-      <span class="exp-time">2024.09 - Present</span>
+      <h3 class="exp-role">Bachelor of Engineering in Architecture</h3>
+      <span class="exp-time">2022.09 - Present</span>
     </div>
-    <div class="exp-org">University Name</div>
-    <p class="exp-desc">Add one sentence on your current program, advisor, lab, or primary research direction.</p>
-  </div>
-</div>
-
-<div class="exp-card">
-  <img src="{{ '/images/building-icon.svg' | relative_url }}" class="exp-logo" alt="University Placeholder">
-  <div class="exp-content">
-    <div class="exp-header">
-      <h3 class="exp-role">B.S. / B.Eng. in Your Field</h3>
-      <span class="exp-time">2020.09 - 2024.06</span>
-    </div>
-    <div class="exp-org">University Name</div>
-    <p class="exp-desc">Optionally include GPA, ranking, graduation honors, thesis title, or one short note that helps visitors understand your background.</p>
+    <div class="exp-org">Wuhan Polytechnic University</div>
+    <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
+    <p class="exp-desc"><strong>Relevant Coursework:</strong></p>
   </div>
 </div>
 
