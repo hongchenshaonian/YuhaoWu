@@ -44,6 +44,7 @@ jobs:
       - name: Preserve PR previews
         run: |
           if [ -d pr-preview ]; then
+            sudo chown -R "$USER:$USER" _site
             mkdir -p _site/pr-preview
             cp -a pr-preview/. _site/pr-preview/
           fi
