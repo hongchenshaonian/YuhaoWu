@@ -26,13 +26,14 @@ author:
   name_zh          :
   avatar           : "personal_image/photo.jpg"
   bio              : "An undergraduate student at Wuhan Polytechnic University"
-  location         : "City, Country"
+  location         : "Wuhan, China"
+  location_url     : "https://maps.app.goo.gl/jfM5Sk8JcB9G95jv7"
   employer         :
   pubmed           : 
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?hl=en&authuser=1&user=rgepSPAAAAAJ"
   cv               : "CV/CV.pdf"
-  email            : "you@example.com"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+  email            : "richard.yuhao.wu@gmail.com"
+  researchgate     : "https://www.researchgate.net/profile/Yuhao-Wu-45?ev=hdr_xprf"
   uri              :
   bitbucket        :
   codepen          :
@@ -40,7 +41,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "your-github-username"
+  github           :
   google_plus      :
   keybase          :
   instagram        :
@@ -48,7 +49,7 @@ author:
   lastfm           :
   linkedin         :
   dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
+  orcid            : "https://orcid.org/0009-0007-5618-8953"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
