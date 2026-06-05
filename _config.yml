@@ -24,7 +24,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuhao Wu"
   name_zh          :
-  avatar           : "images/avatar-placeholder.svg"
+  avatar           : "personal_image/photo.jpg"
   bio              : "Write a short professional bio here."
   location         : "City, Country"
   employer         :
