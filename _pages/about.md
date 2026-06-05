@@ -289,7 +289,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Not JCR</div>
+    <div class='badge'>EI Compendex</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -305,7 +305,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Pending</div>
+    <div class='badge'>Invention patent</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum cementitious material patent placeholder">
   </div>
   <div class='paper-box-text'>
@@ -318,7 +318,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Utility Model</div>
+    <div class='badge'>Utility model patent</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Venetian blind patent placeholder">
   </div>
   <div class='paper-box-text'>
