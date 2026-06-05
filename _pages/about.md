@@ -185,11 +185,22 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
   <div class="exp-content">
     <div class="exp-header">
       <h3 class="exp-role">Bachelor of Engineering in Architecture</h3>
-      <span class="exp-time">2022.09 - Present</span>
+      <span class="exp-time">Sep. 2022 - Present</span>
     </div>
     <div class="exp-org">Wuhan Polytechnic University</div>
     <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
-    <p class="exp-desc"><strong>Relevant Coursework:</strong></p>
+  </div>
+</div>
+
+<div class="exp-card">
+  <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
+  <div class="exp-content">
+    <div class="exp-header">
+      <h3 class="exp-role">Minor in Electronic Information Engineering</h3>
+      <span class="exp-time">May 2023 - May 2023</span>
+    </div>
+    <div class="exp-org">Wuhan Polytechnic University</div>
+    <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
   </div>
 </div>
 
