@@ -199,7 +199,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
     <div style="margin-top: 12px;">
       <div class="exp-header">
         <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Minor in Electronic Information Engineering</em></p>
-        <span class="exp-time">May 2023 - May 2023</span>
+        <span class="exp-time">May 2023 - May 2025</span>
       </div>
       <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
     </div>
@@ -209,13 +209,9 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
-<p style="font-size: 0.9em; color: #666; margin-top: -10px; margin-bottom: 20px;">
-  (* Equal Contribution, † Corresponding Author)
-</p>
-
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>JCR Q1 · IF 9.2</div>
+    <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -228,7 +224,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Revised</div>
+    <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -241,7 +237,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>JCR Q1 · IF 8.4</div>
+    <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -254,7 +250,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Accepted</div>
+    <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials accepted publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -267,7 +263,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Revised</div>
+    <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -280,7 +276,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>JCR Q3 · IF 3.0</div>
+    <div class='badge'>JCR Q3</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
   </div>
   <div class='paper-box-text'>
@@ -293,7 +289,7 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <div class='paper-box'>
   <div class='paper-box-image'>
-    <div class='badge'>Accepted</div>
+    <div class='badge'>Not JCR</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
   </div>
   <div class='paper-box-text'>
