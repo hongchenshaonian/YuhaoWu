@@ -1,0 +1,14 @@
+{
+  "name": "",
+  "short_name": "",
+  "icons": [
+    {
+      "src": "/personal_image/photo.jpg",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
