@@ -8,7 +8,9 @@ on:
       - synchronize
       - closed
 
-concurrency: pr-preview-${{ github.ref }}
+concurrency:
+  group: pr-preview-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -18,6 +20,7 @@ jobs:
   deploy-preview:
     name: Deploy PR preview
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout PR
         if: github.event.action != 'closed'
@@ -42,6 +45,7 @@ jobs:
           bundle exec jekyll build
           --destination _preview_site
           --baseurl "/pr-preview/pr-${{ github.event.number }}"
+          --exclude pr-preview
 
       # This action commits/removes pr-preview/pr-<number> on main.
       # The Deploy Pages workflow listens for this workflow to complete and
