@@ -114,7 +114,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   display: block;
 }
 .paper-box-text { flex: 1; }
-.paper-box.featured-paper .paper-box-text { padding-top: 28px; }
+.paper-box.featured-paper .paper-box-text { padding-top: 36px; }
 .paper-box-text .title {
   font-weight: 600;
   font-size: 1.06em;
@@ -142,7 +142,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 }
 .featured-work {
   position: absolute;
-  top: 6px;
+  top: 14px;
   right: 10px;
   display: inline-flex;
   align-items: center;
