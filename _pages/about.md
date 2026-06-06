@@ -85,6 +85,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 
 /* Global Paper Box Hover Effect */
 .paper-box {
+  position: relative;
   display: flex;
   margin-bottom: 24px;
   border-radius: 8px;
@@ -113,6 +114,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   display: block;
 }
 .paper-box-text { flex: 1; }
+.paper-box.featured-paper .paper-box-text { padding-top: 36px; }
 .paper-box-text .title {
   font-weight: 600;
   font-size: 1.06em;
@@ -137,6 +139,35 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   background: rgba(0, 0, 0, 0.72); color: #fff;
   padding: 2px 6px; border-radius: 4px; font-size: 0.75em;
   backdrop-filter: blur(4px);
+}
+.featured-work {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 6px;
+  border: 1px solid #f1b600;
+  border-radius: 8px;
+  background: #fffdf2;
+  color: #c98a00;
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+.featured-work-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #d89b00;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 1;
 }
 
 /* Education & Experience Cards */
@@ -209,7 +240,8 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
-<div class='paper-box'>
+<div class='paper-box featured-paper'>
+  <div class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></div>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
@@ -222,7 +254,8 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box featured-paper'>
+  <div class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></div>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
