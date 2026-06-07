@@ -284,13 +284,13 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials accepted publication placeholder">
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials publication placeholder">
   </div>
   <div class='paper-box-text'>
     <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. Status: Accepted.</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. 535 (2026) 146819.</p>
   </div>
 </div>
 
