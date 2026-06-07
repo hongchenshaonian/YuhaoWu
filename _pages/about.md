@@ -439,10 +439,10 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 <span class="anchor" id="honors-awards"></span>
 # 🏆 Awards
 
-- Second Prize, The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. (National Level)
-- Second Prize, The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. (Provincial Level)
-- Bronze Award, Hubei Final of the China International College Students' Innovation Competition, 2024. (Provincial Level)
-- Second Prize, The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. (National Level)
+- **Second Prize**, The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. **(National Level)**
+- **Second Prize**, The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. **(Provincial Level)**
+- **Bronze Award**, Hubei Final of the China International College Students' Innovation Competition, 2024. **(Provincial Level)**
+- **Second Prize**, The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. **(National Level)**
 
 <span class="anchor" id="services"></span>
 # 💬 Services
