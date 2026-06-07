@@ -437,16 +437,12 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 
 
 <span class="anchor" id="honors-awards"></span>
-# 🏆 Honors and Awards
+# 🏆 Awards
 
-- *2025.06*, <span class="highlight-honor">Outstanding Graduate</span> <span class="zh-translation">（replace with your honor）</span> & **Outstanding Thesis Award** <span class="zh-translation">（optional translation）</span>, University Name.
-- *2024.09*, Fellowship / Scholarship Name, University Name.
-- *2023.09*, <span class="highlight-award">Major National / Regional Award</span> <span class="zh-translation">（optional translation）</span>, Awarding Organization.
-- *2023.08*, Competition Prize or Engineering Award, Event Name.
-- *2023.11*, Creative / Exhibition / Demo Award, Event Name.
-- *2023.09*, Media / Video / Design Award, Institution Name.
-- *2023.06*, Mathematical Modeling / Hackathon / Research Competition Award.
-
+- Second Prize, The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. (National Level)
+- Second Prize, The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. (Provincial Level)
+- Bronze Award, Hubei Final of the China International College Students' Innovation Competition, 2024. (Provincial Level)
+- Second Prize, The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. (National Level)
 
 <span class="anchor" id="services"></span>
 # 💬 Services
