@@ -12,14 +12,14 @@ main:
   - title: "Patents"
     url: "/#patents"
 
+  - title: "Awards"
+    url: "/#honors-awards"
+
   - title: "Projects"
     url: "/#projects"
 
   - title: "Research experience"
     url: "/#research-experience"
-
-  - title: "Awards"
-    url: "/#honors-awards"
 
   - title: "Services"
     url: "/#services"
