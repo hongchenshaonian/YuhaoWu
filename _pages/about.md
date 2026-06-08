@@ -20,40 +20,8 @@ Previously, you may want to summarize your background, degree history, lab affil
 I am always open to discussions and collaborations. Feel free to drop me an email!
 
 
-<span class="anchor" id="news"></span>
-# 📰 News
-
-<div class="timeline-container">
-  <div class="timeline-item">
-    <div class="timeline-date">2026.03</div>
-    <div class="timeline-content">Released a public version of this academic homepage template with coding-agent-friendly onboarding.</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2026.02</div>
-    <div class="timeline-content">Refined the homepage structure to support publications, projects, honors, services, and CV maintenance.</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2026.01</div>
-    <div class="timeline-content">Added reusable publication cards, hover interactions, and a collapsible selected-projects section.</div>
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-date">2025.12</div>
-    <div class="timeline-content">Prepared placeholder content for interns, students, faculty, and research engineers to adapt quickly.</div>
-  </div>
-
-  <div class="timeline-item" style="margin-top: 16px;">
-    <div class="timeline-date">2025.11</div>
-    <div class="timeline-content">Set up GitHub Pages and an optional Google Scholar citation workflow for future customization.</div>
-  </div>
-  <!-- <details class="timeline-details">
-    <summary class="timeline-summary">
-      <span class="summary-text">Show more history ▾</span>
-    </summary>
-  </details> -->
-</div>
-
 <style>
-/* News Timeline Styling */
+/* Research Experience Timeline Styling */
 .timeline-container {
   position: relative;
   padding-left: 20px;
@@ -435,6 +403,38 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
   </div>
 </details>
 
+
+<span class="anchor" id="research-experience"></span>
+# 🔬 Research experience
+
+<div class="timeline-container">
+  <div class="timeline-item">
+    <div class="timeline-date">2026.03</div>
+    <div class="timeline-content">Released a public version of this academic homepage template with coding-agent-friendly onboarding.</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-date">2026.02</div>
+    <div class="timeline-content">Refined the homepage structure to support publications, projects, honors, services, and CV maintenance.</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-date">2026.01</div>
+    <div class="timeline-content">Added reusable publication cards, hover interactions, and a collapsible selected-projects section.</div>
+  </div>
+  <div class="timeline-item">
+    <div class="timeline-date">2025.12</div>
+    <div class="timeline-content">Prepared placeholder content for interns, students, faculty, and research engineers to adapt quickly.</div>
+  </div>
+
+  <div class="timeline-item" style="margin-top: 16px;">
+    <div class="timeline-date">2025.11</div>
+    <div class="timeline-content">Set up GitHub Pages and an optional Google Scholar citation workflow for future customization.</div>
+  </div>
+  <!-- <details class="timeline-details">
+    <summary class="timeline-summary">
+      <span class="summary-text">Show more history ▾</span>
+    </summary>
+  </details> -->
+</div>
 
 <span class="anchor" id="honors-awards"></span>
 # 🏆 Awards
