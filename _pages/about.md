@@ -332,8 +332,8 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 <span class="anchor" id="projects"></span>
 # 💻 Projects
 
-- Hubei Provincial Technological Innovation Program, Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, No. 2025BCB081.
-- Hubei Provincial Department of Education Science and Technology Plan Project, Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, Pending.
+- **Hubei Provincial Technological Innovation Program**, Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, **No. 2025BCB081**.
+- **Hubei Provincial Department of Education Science and Technology Plan Project**, Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, **Pending**.
 
 
 <span class="anchor" id="research-experience"></span>
