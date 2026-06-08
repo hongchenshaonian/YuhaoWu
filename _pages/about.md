@@ -161,18 +161,9 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 .exp-org { font-weight: 500; color: #0366d6; font-size: 0.95em; margin-bottom: 6px; }
 .exp-desc { font-size: 0.9em; color: #444; margin: 0; line-height: 1.5; }
 
-/* Highlights & Collapsible */
+/* Highlights */
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
 .highlight-honor { font-weight: 600; color: #005cc5; background: #f0f8ff; padding: 2px 6px; border-radius: 4px; }
-
-details.projects-section summary {
-  cursor: pointer; font-weight: 600; font-size: 1.1em;
-  color: #24292e; background: #f6f8fa; padding: 12px 16px;
-  border-radius: 8px; border: 1px solid #eaeaea; outline: none;
-  transition: background 0.2s; user-select: none;
-}
-details.projects-section summary:hover { background: #e1e4e8; }
-details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 </style>
 
@@ -341,75 +332,8 @@ details.projects-section[open] summary { margin-bottom: 20px; border-bottom-left
 <span class="anchor" id="projects"></span>
 # 💻 Projects
 
-<details class="projects-section">
-  <summary>📂 Click to expand selected projects</summary>
-
-  <div class='paper-box' style="margin-top: 10px;">
-    <div class='paper-box-image'>
-      <div class='badge'>Systems</div>
-      <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Project Placeholder">
-    </div>
-    <div class='paper-box-text'>
-      <a href="#" class="title">Selected Project One</a>
-      <div class="authors"><strong>Your Name (Lead / Owner)</strong>, Collaborator A, Collaborator B</div>
-      <div class="venue"><em>Tags: Systems, Infrastructure, Engineering</em></div>
-      <p class="desc">Use this expandable area for selected projects that deserve more space than the main publication list. Keep title, teammates, tags, and one compact summary.</p>
-      <div class="links">
-        <a href="#">[Code]</a>
-      </div>
-    </div>
-  </div>
-
-  <div class='paper-box'>
-    <div class='paper-box-image'>
-      <div class='badge'>ML</div>
-      <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Project Placeholder">
-    </div>
-    <div class='paper-box-text'>
-      <a href="#" class="title">Selected Project Two</a>
-      <div class="authors"><strong>Your Name</strong>, Collaborator A, Collaborator B, Collaborator C</div>
-      <div class="venue"><em>Tags: Machine Learning, Vision, Data</em></div>
-      <p class="desc">This slot works well for project pages, systems prototypes, open-source work, demos, or large course projects.</p>
-      <div class="links">
-        <a href="#">[Code]</a>
-        <a href="#">[Project Page]</a>
-      </div>
-    </div>
-  </div>
-
-  <div class='paper-box'>
-    <div class='paper-box-image'>
-      <div class='badge'>Creative</div>
-      <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Project Placeholder">
-    </div>
-    <div class='paper-box-text'>
-      <a href="#" class="title">Selected Project Three</a>
-      <div class="authors"><strong>Your Name</strong>, Collaborator A, et al.</div>
-      <div class="venue"><em>Tags: Visualization, Design, Interactive Media</em></div>
-      <p class="desc">You can also use this pattern for interdisciplinary, creative, or community-facing projects with richer descriptions.</p>
-      <div class="links">
-        <a href="#">[Project Page]</a>
-        <a href="#">[News]</a>
-      </div>
-    </div>
-  </div>
-
-  <div class='paper-box'>
-    <div class='paper-box-image'>
-      <div class='badge'>Game / Demo</div>
-      <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Project Placeholder">
-    </div>
-    <div class='paper-box-text'>
-      <a href="#" class="title">Selected Project Four</a>
-      <div class="authors"><strong>Your Name</strong>, Collaborator A, Collaborator B</div>
-      <div class="venue"><em>Tags: Python, Demo, Product Prototype</em></div>
-      <p class="desc">This final slot can hold a side project, interactive demo, engineering showcase, or anything that benefits from the collapsible project gallery.</p>
-      <div class="links">
-        <a href="#">[Code]</a>
-      </div>
-    </div>
-  </div>
-</details>
+- **Hubei Provincial Technological Innovation Program**, Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, **No. 2025BCB081**.
+- **Hubei Provincial Department of Education Science and Technology Plan Project**, Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, **Pending**.
 
 
 <span class="anchor" id="research-experience"></span>
