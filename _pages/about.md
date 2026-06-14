@@ -117,19 +117,6 @@ redirect_from:
   z-index: 3;
   background: rgba(255, 255, 255, 0.01);
 }
-.protected-image-stage::after {
-  content: "";
-  position: absolute;
-  inset: -30%;
-  z-index: 4;
-  pointer-events: none;
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='760' height='260' viewBox='0 0 760 260'%3E%3Ctext x='86' y='152' transform='rotate(-26 380 130)' fill='%236b7280' fill-opacity='0.17' font-family='Arial, sans-serif' font-size='42' font-weight='700'%3EYuhaowu.com Preview Only%3C/text%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='220' viewBox='0 0 640 220'%3E%3Ctext x='72' y='128' transform='rotate(-26 320 110)' fill='%236b7280' fill-opacity='0.13' font-family='Arial, sans-serif' font-size='34' font-weight='700'%3EYuhaowu.com Preview Only%3C/text%3E%3C/svg%3E");
-  background-position: center center, center center;
-  background-repeat: no-repeat, repeat;
-  background-size: 760px 260px, 640px 220px;
-}
 .paper-box-image.protected-figure .badge {
   z-index: 5;
 }
@@ -140,7 +127,7 @@ redirect_from:
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 34px;
+  padding: 18px;
   background: rgba(15, 23, 42, 0.88);
   user-select: none;
   -webkit-user-select: none;
@@ -151,8 +138,8 @@ redirect_from:
 }
 .protected-image-dialog {
   position: relative;
-  width: min(94vw, 1280px);
-  max-height: 92vh;
+  width: min(99vw, 1760px);
+  max-height: 96vh;
 }
 .protected-image-stage {
   position: relative;
@@ -165,14 +152,42 @@ redirect_from:
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
   cursor: zoom-out;
 }
-.protected-image-stage::after { opacity: 0.95; }
 .protected-image-stage img {
   display: block;
   width: auto;
   max-width: 100%;
-  max-height: 88vh;
+  max-height: 94vh;
   pointer-events: none;
   -webkit-user-drag: none;
+}
+.protected-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  overflow: hidden;
+}
+.protected-watermark span {
+  position: absolute;
+  left: var(--wm-x);
+  top: var(--wm-y);
+  display: block;
+  color: rgba(107, 114, 128, 0.16);
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 2.35vw, 40px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-26deg);
+}
+.protected-watermark-warning {
+  display: none;
+}
+.protected-watermark-warning.is-visible { display: block; }
+.protected-watermark-warning span {
+  color: rgba(107, 114, 128, 0.18);
 }
 .protected-image-close {
   position: absolute;
@@ -192,16 +207,6 @@ redirect_from:
 }
 body.protected-image-open {
   overflow: hidden;
-}
-body.protected-screenshot-warning::after {
-  content: "";
-  position: fixed;
-  inset: -20%;
-  z-index: 10000;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='700' height='240' viewBox='0 0 700 240'%3E%3Ctext x='78' y='140' transform='rotate(-26 350 120)' fill='%236b7280' fill-opacity='0.16' font-family='Arial, sans-serif' font-size='38' font-weight='700'%3EYuhaowu.com Preview Only%3C/text%3E%3C/svg%3E");
-  background-position: center center;
-  background-size: 700px 240px;
 }
 @media print {
   .paper-box-image.protected-figure,
@@ -333,7 +338,7 @@ body.protected-screenshot-warning::after {
 <div class='paper-box featured-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-thumb.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
+    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
