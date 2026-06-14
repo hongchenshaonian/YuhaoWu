@@ -174,7 +174,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
-      <h3 class="exp-role">Wuhan Polytechnic University</h3>
+      <h3 class="exp-role"><a href="https://www.whpu.edu.cn/" target="_blank" rel="noopener noreferrer">Wuhan Polytechnic University</a></h3>
       <span class="exp-time">Wuhan, China</span>
     </div>
 
