@@ -260,7 +260,8 @@
 
   .scopus-icon {
     width: 1.28571429em;
-    height: 1em;
+    height: 1.28571429em;
+    object-fit: contain;
     top: -0.05em;
   }
 }
@@ -278,7 +279,8 @@
   }
   .scopus-icon {
     width: 1.28571429em;
-    height: 1em;
+    height: 1.28571429em;
+    object-fit: contain;
     top: -0.05em;
   }
   @include breakpoint($large) {
