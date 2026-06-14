@@ -56,13 +56,21 @@ $(document).ready(function() {
       });
     }
 
+    var fullSource = $(image).attr("data-full-src") || image.currentSrc || image.src;
     protectedViewer.image
-      .attr("src", image.currentSrc || image.src)
+      .attr("src", fullSource)
       .attr("alt", image.alt || "Protected research image");
     protectedViewer.modal.addClass("is-open").attr("aria-hidden", "false");
     protectedViewer.active = true;
     $("body").addClass("protected-image-open");
     protectedViewer.modal.find(".protected-image-close").focus();
+  };
+
+  var openFigureImage = function(figure) {
+    var image = $(figure).find("img").get(0);
+    if (image) {
+      openProtectedViewer(image);
+    }
   };
 
   $(".paper-box-image img").each(function() {
@@ -87,27 +95,26 @@ $(document).ready(function() {
       protectedViewer.insideProtectedArea = false;
     })
     .on("click", function() {
-      var image = $(this).find("img").get(0);
-      if (image) {
-        openProtectedViewer(image);
-      }
+      openFigureImage(this);
     })
     .on("keydown", function(event) {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        var image = $(this).find("img").get(0);
-        if (image) {
-          openProtectedViewer(image);
-        }
+        openFigureImage(this);
       }
     })
-    .on("contextmenu dragstart selectstart copy cut", function(event) {
+    .on("contextmenu", function(event) {
       event.preventDefault();
-      showScreenshotWatermark();
+      event.stopPropagation();
+      openFigureImage(this);
+    })
+    .on("dragstart selectstart copy cut", function(event) {
+      event.preventDefault();
+      event.stopPropagation();
     });
 
   $(document).on("contextmenu dragstart selectstart copy cut", function(event) {
-    if (isProtectedTarget(event.target)) {
+    if (protectedViewer.active && isProtectedTarget(event.target)) {
       event.preventDefault();
       showScreenshotWatermark();
     }
@@ -125,13 +132,16 @@ $(document).ready(function() {
       return;
     }
 
-    if (
+    var protectedShortcut =
       key === "printscreen" ||
       (event.ctrlKey && ["s", "p", "c", "u"].indexOf(key) !== -1) ||
-      (event.metaKey && ["s", "p", "c"].indexOf(key) !== -1)
-    ) {
+      (event.metaKey && ["s", "p", "c"].indexOf(key) !== -1);
+
+    if (protectedShortcut) {
       event.preventDefault();
-      showScreenshotWatermark();
+      if (protectedViewer.active) {
+        showScreenshotWatermark();
+      }
     }
   });
 });
