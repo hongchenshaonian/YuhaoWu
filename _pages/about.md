@@ -63,6 +63,7 @@ redirect_from:
 .paper-box {
   position: relative;
   display: flex;
+  align-items: flex-start;
   margin-bottom: 24px;
   border-radius: 8px;
   padding: 14px;
@@ -83,14 +84,17 @@ redirect_from:
   position: relative;
   transform: translateZ(0);
 }
+.paper-box.featured-paper .paper-box-image {
+  flex-basis: 34%;
+  max-width: 520px;
+}
 .paper-box-image video, .paper-box-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 .paper-box-text { flex: 1; }
-.paper-box.featured-paper .paper-box-text { padding-top: 36px; }
 .paper-box-text .title {
   font-weight: 600;
   font-size: 1.06em;
@@ -119,12 +123,11 @@ redirect_from:
   backdrop-filter: blur(4px);
 }
 .featured-work {
-  position: absolute;
-  top: 14px;
-  right: 10px;
   display: inline-flex;
   align-items: center;
+  vertical-align: middle;
   gap: 6px;
+  margin-left: 8px;
   padding: 4px 10px 4px 6px;
   border: 1px solid #f1b600;
   border-radius: 8px;
@@ -213,13 +216,12 @@ redirect_from:
 <span class="anchor" id="publications"></span>
 # 📝 Publications
 <div class='paper-box featured-paper'>
-  <div class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></div>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
+    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a></div>
+    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
@@ -227,13 +229,12 @@ redirect_from:
 </div>
 
 <div class='paper-box featured-paper'>
-  <div class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></div>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials</div>
+    <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. Status: Revised.</p>
