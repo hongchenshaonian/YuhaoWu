@@ -138,15 +138,17 @@ redirect_from:
 }
 .protected-image-dialog {
   position: relative;
-  width: min(99vw, 1760px);
-  max-height: 96vh;
+  width: fit-content;
+  max-width: calc(100vw - 36px);
+  max-height: calc(100vh - 36px);
 }
 .protected-image-stage {
   position: relative;
   overflow: hidden;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
@@ -155,8 +157,8 @@ redirect_from:
 .protected-image-stage img {
   display: block;
   width: auto;
-  max-width: 100%;
-  max-height: 94vh;
+  max-width: calc(100vw - 36px);
+  max-height: calc(100vh - 36px);
   pointer-events: none;
   -webkit-user-drag: none;
 }
