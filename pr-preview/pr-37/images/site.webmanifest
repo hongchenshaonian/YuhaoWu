@@ -1,0 +1,14 @@
+{
+  "name": "Yuhao Wu",
+  "short_name": "Yuhao Wu",
+  "icons": [
+    {
+      "src": "/personal_image/photo.jpg?v=20260605",
+      "sizes": "any",
+      "type": "image/jpeg"
+    }
+  ],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
