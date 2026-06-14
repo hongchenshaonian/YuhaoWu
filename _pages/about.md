@@ -157,6 +157,9 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 .exp-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; min-height: 72px; }
 .exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
 .exp-role { font-weight: 600; font-size: 1.05em; color: #24292e; margin: 0; }
+.exp-role a { color: inherit; text-decoration: none; }
+.exp-role a:hover,
+.exp-role a:focus { color: #005cc5; text-decoration: none; }
 .exp-time { font-size: 0.9em; color: #586069; white-space: nowrap; }
 .exp-org { font-weight: 500; color: #0366d6; font-size: 0.95em; margin-bottom: 6px; }
 .exp-desc { font-size: 0.9em; color: #444; margin: 0; line-height: 1.5; }
@@ -174,7 +177,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
-      <h3 class="exp-role">Wuhan Polytechnic University</h3>
+      <h3 class="exp-role"><a href="https://www.whpu.edu.cn/" target="_blank" rel="noopener noreferrer">Wuhan Polytechnic University</a></h3>
       <span class="exp-time">Wuhan, China</span>
     </div>
 
