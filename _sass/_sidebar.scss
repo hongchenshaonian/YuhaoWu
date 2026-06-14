@@ -257,6 +257,12 @@
       text-decoration: underline;
     }
   }
+
+  .scopus-icon {
+    width: 1.28571429em;
+    height: 1em;
+    top: -0.05em;
+  }
 }
 
 .author__urls_sm{
@@ -269,6 +275,11 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  .scopus-icon {
+    width: 1.28571429em;
+    height: 1em;
+    top: -0.05em;
   }
   @include breakpoint($large) {
     display: none;
