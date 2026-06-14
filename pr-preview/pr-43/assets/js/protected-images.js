@@ -11,10 +11,10 @@ $(document).ready(function() {
   var watermarkText = "Yuhaowu.com Preview Only";
 
   var watermarkPositions = [
-    [34, 18], [66, 18],
-    [25, 34], [50, 34], [75, 34],
-    [34, 50], [66, 50],
-    [25, 66], [50, 66], [75, 66]
+    [30, 16], [70, 16],
+    [24, 38], [76, 38],
+    [30, 60], [70, 60],
+    [24, 82], [76, 82]
   ];
   var warningWatermarkPositions = [
     [38, 26], [62, 26],
