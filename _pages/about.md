@@ -157,6 +157,9 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
 .exp-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; min-height: 72px; }
 .exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
 .exp-role { font-weight: 600; font-size: 1.05em; color: #24292e; margin: 0; }
+.exp-role a { color: inherit; text-decoration: none; }
+.exp-role a:hover,
+.exp-role a:focus { color: #005cc5; text-decoration: underline; }
 .exp-time { font-size: 0.9em; color: #586069; white-space: nowrap; }
 .exp-org { font-weight: 500; color: #0366d6; font-size: 0.95em; margin-bottom: 6px; }
 .exp-desc { font-size: 0.9em; color: #444; margin: 0; line-height: 1.5; }
