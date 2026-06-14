@@ -259,10 +259,12 @@
   }
 
   .scopus-icon {
-    width: 1.28571429em;
-    height: 1.28571429em;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.28571429em;
+    filter: grayscale(1);
     object-fit: contain;
-    top: -0.05em;
+    top: -0.1em;
   }
 }
 
@@ -278,10 +280,11 @@
     }
   }
   .scopus-icon {
-    width: 1.28571429em;
-    height: 1.28571429em;
+    width: 1em;
+    height: 1em;
+    filter: grayscale(1);
     object-fit: contain;
-    top: -0.05em;
+    top: -0.1em;
   }
   @include breakpoint($large) {
     display: none;
