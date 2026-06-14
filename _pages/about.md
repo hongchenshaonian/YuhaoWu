@@ -216,7 +216,7 @@ redirect_from:
   <div class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></div>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
+    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a></div>
