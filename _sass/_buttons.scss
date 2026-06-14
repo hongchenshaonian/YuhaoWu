@@ -151,3 +151,13 @@
     font-size: $type-size-7;
   }
 }
+
+.cv-sidebar-btn {
+  color: #ffd700 !important;
+  background-color: #0969da;
+
+  &:hover {
+    color: #ffd700 !important;
+    background-color: #0757b8;
+  }
+}
