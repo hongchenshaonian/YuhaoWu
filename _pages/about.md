@@ -11,13 +11,11 @@ redirect_from:
 <span class="anchor" id="about-me"></span>
 # 👋 Welcome to my homepage!
 
-I am a **researcher / student / engineer** building a **coding agent friendly academic homepage**. Use this section for a concise introduction: who you are, what you work on, and what kinds of collaboration, positions, or research directions you are open to.
+I am an **undergraduate student** and **research assistant** at **Wuhan Polytechnic University** under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group. Within the field of civil engineering, my work centers on engineering materials at the interface of materials engineering and chemical engineering.
 
-My interests lie in **your research topics here** — for example, machine learning, systems, vision, graphics, HCI, robotics, security, or computational science. Replace this paragraph with your real focus areas, and add your own Google Scholar, project, or lab links when available.
+My previous research has centered on key topics in <strong>low-carbon cementitious composites, hydration chemistry, CO<sub>2</sub> mineralization, waste valorisation, microstructure–property relationships</strong>.
 
-Previously, you may want to summarize your background, degree history, lab affiliations, notable experience, or a short story about how your current work evolved. Keep this paragraph personal enough to feel real, but concise enough that visitors can scan it quickly.
-
-I am always open to discussions and collaborations. Feel free to drop me an email!
+In the future, I hope to pursue research across science and engineering to develop new approaches that address real-world challenges and contribute to a more sustainable future.
 
 
 <style>
