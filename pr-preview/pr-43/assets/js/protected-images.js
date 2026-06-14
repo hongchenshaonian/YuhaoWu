@@ -4,14 +4,46 @@ $(document).ready(function() {
     image: null,
     active: false,
     insideProtectedArea: false,
+    warningLayer: null,
     warningTimer: null
   };
 
+  var watermarkText = "Yuhaowu.com Preview Only";
+
+  var watermarkPositions = [
+    [26, 18], [50, 18], [74, 18],
+    [26, 34], [50, 34], [74, 34],
+    [26, 50], [50, 50], [74, 50],
+    [26, 66], [50, 66], [74, 66],
+    [26, 82], [50, 82], [74, 82]
+  ];
+  var warningWatermarkPositions = [
+    [38, 26], [62, 26],
+    [38, 42], [62, 42],
+    [38, 58], [62, 58],
+    [38, 74], [62, 74]
+  ];
+
+  var createWatermarkLayer = function(extraClass, positions) {
+    var layer = $('<div class="protected-watermark ' + extraClass + '" aria-hidden="true"></div>');
+    for (var i = 0; i < positions.length; i += 1) {
+      layer.append(
+        $("<span></span>")
+          .text(watermarkText)
+          .attr("style", "--wm-x: " + positions[i][0] + "%; --wm-y: " + positions[i][1] + "%;")
+      );
+    }
+    return layer;
+  };
+
   var showScreenshotWatermark = function() {
-    $("body").addClass("protected-screenshot-warning");
+    if (!protectedViewer.warningLayer) {
+      return;
+    }
+    protectedViewer.warningLayer.addClass("is-visible");
     window.clearTimeout(protectedViewer.warningTimer);
     protectedViewer.warningTimer = window.setTimeout(function() {
-      $("body").removeClass("protected-screenshot-warning");
+      protectedViewer.warningLayer.removeClass("is-visible");
     }, 2200);
   };
 
@@ -26,6 +58,9 @@ $(document).ready(function() {
     protectedViewer.modal.removeClass("is-open").attr("aria-hidden", "true");
     protectedViewer.image.attr("src", "").attr("alt", "");
     protectedViewer.active = false;
+    if (protectedViewer.warningLayer) {
+      protectedViewer.warningLayer.removeClass("is-visible");
+    }
     $("body").removeClass("protected-image-open");
   };
 
@@ -42,6 +77,10 @@ $(document).ready(function() {
         '</div>'
       );
       protectedViewer.image = protectedViewer.modal.find("img");
+      protectedViewer.modal.find(".protected-image-stage")
+        .append(createWatermarkLayer("protected-watermark-main", watermarkPositions))
+        .append(createWatermarkLayer("protected-watermark-warning", warningWatermarkPositions));
+      protectedViewer.warningLayer = protectedViewer.modal.find(".protected-watermark-warning");
       $("body").append(protectedViewer.modal);
 
       protectedViewer.modal.on("click", function(event) {
@@ -72,6 +111,19 @@ $(document).ready(function() {
       openProtectedViewer(image);
     }
   };
+
+  document.addEventListener("contextmenu", function(event) {
+    var figure = $(event.target).closest(".protected-figure").get(0);
+    if (!figure || $(event.target).closest(".protected-image-modal").length) {
+      return;
+    }
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.stopImmediatePropagation) {
+      event.stopImmediatePropagation();
+    }
+    openFigureImage(figure);
+  }, true);
 
   $(".paper-box-image img").each(function() {
     var image = this;
