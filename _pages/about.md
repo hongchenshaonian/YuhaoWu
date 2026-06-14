@@ -91,6 +91,8 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
   transition: color 0.2s ease;
 }
 .paper-box-text .title:hover { color: #0366d6; }
+.paper-box-text .title a { color: inherit; text-decoration: none; }
+.paper-box-text .title a:hover { color: #0366d6; }
 .paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 0.95em; }
 .paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 0.95em; }
 .paper-box-text .desc { font-size: 0.9em; margin: 6px 0 8px 0; color: #444; }
@@ -209,7 +211,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Sustainable Materials and Technologies publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</div>
+    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
@@ -236,7 +238,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</div>
+    <div class="title"><a href="https://doi.org/10.1016/j.jenvman.2026.129753">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</a></div>
     <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
     <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.4.</p>
@@ -249,7 +251,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
+    <div class="title"><a href="https://doi.org/10.1016/j.conbuildmat.2026.146819">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</a></div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. 535 (2026) 146819.</p>
@@ -275,7 +277,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</div>
+    <div class="title"><a href="https://doi.org/10.1007/s10163-025-02425-y">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</a></div>
     <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, Jin Huang</div>
     <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em></div>
     <p class="desc"><strong>JCR Q3</strong>, Impact Factor = 3.0.</p>
@@ -288,7 +290,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</div>
+    <div class="title"><a href="http://www.stae.com.cn/jsygc/article/abstract/2507214">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</a></div>
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
     <div class="venue"><em><strong>Science Technology and Engineering</strong></em></div>
     <p class="desc"><strong>EI Compendex</strong>. Status: Accepted.</p>
@@ -304,7 +306,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum cementitious material patent placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
+    <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
     <div class="venue"><em><strong>CN120590137A</strong>, 2025</em></div>
     <p class="desc">China Invention patent. Status: Pending.</p>
@@ -317,7 +319,7 @@ I am always open to discussions and collaborations. Feel free to drop me an emai
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Venetian blind patent placeholder">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Venetian blind and adjusting mechanism</div>
+    <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
     <div class="venue"><em><strong>CN223190347U</strong>, 2024</em></div>
     <p class="desc">China Utility model patent.</p>
