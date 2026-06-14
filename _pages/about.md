@@ -64,6 +64,7 @@ redirect_from:
   position: relative;
   display: flex;
   align-items: flex-start;
+  gap: 18px;
   margin-bottom: 24px;
   border-radius: 8px;
   padding: 14px;
@@ -77,16 +78,15 @@ redirect_from:
   border-color: #e2e8f0;
 }
 .paper-box-image {
-  flex: 0 0 32%;
-  margin-right: 18px;
+  flex: 0 0 30%;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
   transform: translateZ(0);
 }
 .paper-box.featured-paper .paper-box-image {
-  flex-basis: 34%;
-  max-width: 520px;
+  flex-basis: 31.5%;
+  max-width: 480px;
 }
 .paper-box-image video, .paper-box-image img {
   width: 100%;
@@ -216,7 +216,10 @@ body.protected-image-open {
     display: none !important;
   }
 }
-.paper-box-text { flex: 1; }
+.paper-box-text {
+  flex: 1 1 0;
+  min-width: 0;
+}
 .paper-box-text .title {
   font-weight: 600;
   font-size: 1.06em;
@@ -303,6 +306,26 @@ body.protected-image-open {
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
 .highlight-honor { font-weight: 600; color: #005cc5; background: #f0f8ff; padding: 2px 6px; border-radius: 4px; }
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
+
+@media (min-width: 900px) {
+  #honors-awards + h1 + ul,
+  #projects + h1 + ul {
+    max-width: calc(100% - 7rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .paper-box {
+    flex-direction: column;
+  }
+
+  .paper-box-image,
+  .paper-box.featured-paper .paper-box-image {
+    flex-basis: auto;
+    width: 100%;
+    max-width: none;
+  }
+}
 </style>
 
 <span class="anchor" id="education"></span>
