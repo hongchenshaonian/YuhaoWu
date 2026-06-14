@@ -259,12 +259,16 @@
   }
 
   .scopus-icon {
-    width: 1em;
+    width: 1.28571429em;
     height: 1em;
-    margin-right: 0.28571429em;
-    filter: grayscale(1) brightness(0.55);
-    object-fit: contain;
-    top: -0.1em;
+    margin-right: 0;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.82em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    top: -0.06em;
   }
 }
 
@@ -280,11 +284,15 @@
     }
   }
   .scopus-icon {
-    width: 1em;
+    width: 1.28571429em;
     height: 1em;
-    filter: grayscale(1) brightness(0.55);
-    object-fit: contain;
-    top: -0.1em;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.62em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    top: -0.12em;
   }
   @include breakpoint($large) {
     display: none;
