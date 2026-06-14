@@ -94,6 +94,128 @@ redirect_from:
   object-fit: contain;
   display: block;
 }
+.paper-box-image.protected-figure {
+  cursor: zoom-in;
+  background: #f8fafc;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.paper-box-image.protected-figure:focus-visible {
+  outline: 3px solid rgba(3, 102, 214, 0.45);
+  outline-offset: 3px;
+}
+.paper-box-image.protected-figure img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.paper-box-image.protected-figure::before,
+.protected-image-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.01);
+}
+.paper-box-image.protected-figure .badge {
+  z-index: 5;
+}
+.protected-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(15, 23, 42, 0.88);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.protected-image-modal.is-open {
+  display: flex;
+}
+.protected-image-dialog {
+  position: relative;
+  width: fit-content;
+  max-width: calc(100vw - 36px);
+  max-height: calc(100vh - 36px);
+}
+.protected-image-stage {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  cursor: zoom-out;
+}
+.protected-image-stage img {
+  display: block;
+  width: auto;
+  max-width: calc(100vw - 36px);
+  max-height: calc(100vh - 36px);
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.protected-watermark {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: block;
+  pointer-events: none;
+  overflow: hidden;
+}
+.protected-watermark span {
+  position: absolute;
+  left: var(--wm-x);
+  top: var(--wm-y);
+  display: block;
+  color: rgba(107, 114, 128, 0.16);
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 2.35vw, 40px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-26deg);
+}
+.protected-watermark-warning {
+  display: none;
+}
+.protected-watermark-warning.is-visible { display: block; }
+.protected-watermark-warning span {
+  color: rgba(107, 114, 128, 0.18);
+}
+.protected-image-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: 6;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #111827;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+body.protected-image-open {
+  overflow: hidden;
+}
+@media print {
+  .paper-box-image.protected-figure,
+  .protected-image-modal {
+    display: none !important;
+  }
+}
 .paper-box-text { flex: 1; }
 .paper-box-text .title {
   font-weight: 600;
@@ -218,7 +340,7 @@ redirect_from:
 <div class='paper-box featured-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
+    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
