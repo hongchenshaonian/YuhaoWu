@@ -94,6 +94,121 @@ redirect_from:
   object-fit: contain;
   display: block;
 }
+.paper-box-image.protected-figure {
+  cursor: zoom-in;
+  background: #f8fafc;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.paper-box-image.protected-figure:focus-visible {
+  outline: 3px solid rgba(3, 102, 214, 0.45);
+  outline-offset: 3px;
+}
+.paper-box-image.protected-figure img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.paper-box-image.protected-figure::before,
+.protected-image-stage::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: rgba(255, 255, 255, 0.01);
+}
+.paper-box-image.protected-figure::after,
+.protected-image-stage::after {
+  content: "";
+  position: absolute;
+  inset: -18%;
+  z-index: 4;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='180' viewBox='0 0 360 180'%3E%3Ctext x='-26' y='104' transform='rotate(-28 180 90)' fill='%236b7280' fill-opacity='0.18' font-family='Arial, sans-serif' font-size='27' font-weight='700'%3EY. Wu Preview Only%3C/text%3E%3C/svg%3E");
+  background-size: 360px 180px;
+}
+.paper-box-image.protected-figure .badge {
+  z-index: 5;
+}
+.protected-image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 34px;
+  background: rgba(15, 23, 42, 0.88);
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.protected-image-modal.is-open {
+  display: flex;
+}
+.protected-image-dialog {
+  position: relative;
+  width: min(94vw, 1280px);
+  max-height: 92vh;
+}
+.protected-image-stage {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  cursor: zoom-out;
+}
+.protected-image-stage::after {
+  inset: -30%;
+  background-size: 430px 215px;
+  opacity: 0.95;
+}
+.protected-image-stage img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 88vh;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.protected-image-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  z-index: 6;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #111827;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+body.protected-image-open {
+  overflow: hidden;
+}
+body.protected-screenshot-warning::after {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: 10000;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='520' height='260' viewBox='0 0 520 260'%3E%3Ctext x='-20' y='150' transform='rotate(-28 260 130)' fill='%236b7280' fill-opacity='0.16' font-family='Arial, sans-serif' font-size='38' font-weight='700'%3EY. Wu Preview Only%3C/text%3E%3C/svg%3E");
+  background-size: 520px 260px;
+}
+@media print {
+  .paper-box-image.protected-figure,
+  .protected-image-modal {
+    display: none !important;
+  }
+}
 .paper-box-text { flex: 1; }
 .paper-box-text .title {
   font-weight: 600;
