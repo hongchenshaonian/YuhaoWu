@@ -43,7 +43,7 @@
         <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.scopus %}
-        <li><a href="{{ author.scopus }}"><i class="fas fa-fw fa-database" aria-hidden="true"></i> Scopus</a></li>
+        <li><a href="{{ author.scopus }}">{% include scopus-icon.html %} Scopus</a></li>
       {% endif %}
       {% if author.researchgate %}
         <li><a href="{{ author.researchgate }}"><i class="ai ai-researchgate ai-fw" aria-hidden="true"></i> ResearchGate</a></li>
@@ -154,7 +154,7 @@
         <a href="{{ author.googlescholar }}" aria-label="Google Scholar"><i class="ai ai-google-scholar ai-fw" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.scopus %}
-        <a href="{{ author.scopus }}" aria-label="Scopus"><i class="fas fa-fw fa-database" aria-hidden="true"></i></a>
+        <a href="{{ author.scopus }}" aria-label="Scopus">{% include scopus-icon.html %}</a>
       {% endif %}
       {% if author.researchgate %}
         <a href="{{ author.researchgate }}" aria-label="ResearchGate"><i class="ai ai-researchgate ai-fw" aria-hidden="true"></i></a>
