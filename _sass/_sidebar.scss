@@ -257,19 +257,6 @@
       text-decoration: underline;
     }
   }
-
-  .scopus-icon {
-    width: 1.28571429em;
-    height: 1em;
-    margin-right: 0;
-    color: inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.82em;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    top: -0.06em;
-  }
 }
 
 .author__urls_sm{
@@ -282,17 +269,6 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-  .scopus-icon {
-    width: 1.28571429em;
-    height: 1em;
-    color: inherit;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.62em;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    top: -0.12em;
   }
   @include breakpoint($large) {
     display: none;
