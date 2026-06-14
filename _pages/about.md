@@ -11,16 +11,24 @@ redirect_from:
 <span class="anchor" id="about-me"></span>
 # 👋 Welcome to my homepage!
 
-I am a **researcher / student / engineer** building a **coding agent friendly academic homepage**. Use this section for a concise introduction: who you are, what you work on, and what kinds of collaboration, positions, or research directions you are open to.
+<div class="intro-text">
 
-My interests lie in **your research topics here** — for example, machine learning, systems, vision, graphics, HCI, robotics, security, or computational science. Replace this paragraph with your real focus areas, and add your own Google Scholar, project, or lab links when available.
+<p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group. Within the field of <strong>civil engineering</strong>, my work centers on engineering materials at the interface of <strong>materials engineering</strong> and <strong>chemical engineering</strong>.</p>
 
-Previously, you may want to summarize your background, degree history, lab affiliations, notable experience, or a short story about how your current work evolved. Keep this paragraph personal enough to feel real, but concise enough that visitors can scan it quickly.
+<p>My previous research has centered on key topics in <strong>low-carbon cementitious composites, hydration chemistry, CO<sub>2</sub> mineralization, waste valorisation, microstructure–property relationships</strong>.</p>
 
-I am always open to discussions and collaborations. Feel free to drop me an email!
+<p>In the future, I hope to pursue research across science and engineering to develop new approaches that address real-world challenges and contribute to a more sustainable future.</p>
+
+<p>Please feel free to contact me at <strong>richard.yuhao.wu@gmail.com</strong> or by phone at <strong>+86 130 1800 3983</strong>.</p>
+
+</div>
 
 
 <style>
+/* Intro copy spacing */
+.intro-text p { margin: 0 0 1.05em 0; }
+.intro-text p:last-child { margin-bottom: 0; }
+
 /* Research Experience Timeline Styling */
 .timeline-container {
   position: relative;
