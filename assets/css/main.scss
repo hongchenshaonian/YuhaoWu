@@ -41,39 +41,45 @@
 @import "print";
 
 .paper-box {
-    display: grid;
-    grid-template-columns: minmax(240px, 32%) minmax(0, 1fr);
-    column-gap: 24px;
-    align-items: start;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
     
 
     .paper-box-image{
+        justify-content: center;
         display: flex;
         width: 100%;
+        order: 2;
         img {
-            width: 100%;
+            max-width: 400px;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
         }
     }
     
     .paper-box-text{
-        min-width: 0;
         max-width: 100%;
+        order: 1;
     }
     
-    @include breakpoint(max-width 1100px) {
-        grid-template-columns: 1fr;
-        row-gap: 14px;
-
+    @include breakpoint($medium) {
         .paper-box-image{
-            max-width: 520px;
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
         }
         
         .paper-box-text{
-            max-width: 100%;
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
         }
 
     }
@@ -162,12 +168,97 @@ body {
   z-index: 1;
 }
 
-@media (min-width: 925px) {
-  #main {
-    max-width: 1500px;
+/* Keep the desktop presentation intact on narrow desktop windows.
+   When the viewport is narrower than the designed canvas, crop the
+   right side and let the browser provide horizontal scrolling. */
+@media (max-width: 1439px) {
+  html,
+  body {
+    min-width: 1440px;
+    overflow-x: auto;
   }
 
-  .page__inner-wrap {
-    max-width: 1180px;
+  .masthead,
+  #main {
+    min-width: 1440px;
+  }
+
+  .masthead__inner-wrap,
+  #main {
+    max-width: 1280px;
+  }
+
+  .sidebar {
+    @include span(2 of 12);
+    opacity: 1;
+  }
+
+  .page {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(0 of 12);
+  }
+
+  .profile_box {
+    display: block;
+  }
+
+  .author__avatar {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+
+  .author__avatar img {
+    width: 175px;
+    height: 175px;
+    padding: 5px;
+    border: 1px solid $border-color;
+  }
+
+  .author__content {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .author__name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .author__bio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    margin-left: 0;
+  }
+
+  .author__urls-wrapper button {
+    display: none;
+  }
+
+  .author__urls {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .author__urls:before,
+  .author__urls:after {
+    display: none;
+  }
+
+  .author__urls_sm {
+    display: none;
   }
 }
