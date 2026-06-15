@@ -88,6 +88,10 @@ redirect_from:
   flex-basis: 34%;
   max-width: 520px;
 }
+.publication-paper .paper-box-image {
+  flex-basis: 34%;
+  max-width: 520px;
+}
 .paper-box-image video, .paper-box-image img {
   width: 100%;
   height: auto;
@@ -317,9 +321,9 @@ body.protected-image-open {
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 
 @media (min-width: 900px) {
-  #honors-awards + h1 + ul,
-  #projects + h1 + ul {
-    max-width: calc(100% - 12rem);
+  h1[id="-awards"] + ul,
+  h1[id="-projects"] + ul {
+    max-width: calc(100% - 18rem);
   }
 }
 </style>
