@@ -171,7 +171,7 @@ body {
 /* Keep the desktop presentation intact on narrow desktop windows.
    When the viewport is narrower than the designed canvas, crop the
    right side and let the browser provide horizontal scrolling. */
-@media (max-width: 1439px) {
+@media (max-width: 1199px) {
   html,
   body {
     min-width: 1440px;
@@ -246,6 +246,7 @@ body {
   .author__urls {
     display: block;
     position: relative;
+    z-index: auto;
     margin: 0;
     padding: 0;
     border: 0;
@@ -260,5 +261,44 @@ body {
 
   .author__urls_sm {
     display: none;
+  }
+
+  .paper-box {
+    display: flex !important;
+    justify-content: left !important;
+    align-items: flex-start !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .paper-box-image {
+    justify-content: left !important;
+    display: flex !important;
+    flex: 0 0 34% !important;
+    min-width: 200px !important;
+    max-width: 520px !important;
+    width: auto !important;
+    order: 1 !important;
+    margin-right: 18px !important;
+  }
+
+  .paper-box-image img,
+  .paper-box-image video {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .paper-box-text {
+    flex: 0 0 650px !important;
+    width: 650px !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    order: 2 !important;
+    padding-left: 2em !important;
+    box-sizing: border-box !important;
+  }
+
+  .aligned-paper .paper-box-text {
+    margin-left: -2.5rem !important;
   }
 }
