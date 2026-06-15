@@ -270,27 +270,31 @@ body {
 }
 
 /* Keep the desktop presentation intact on narrow desktop windows.
-   When the viewport is narrower than the designed canvas, crop the
-   right side and let the browser provide horizontal scrolling. */
-@media (max-width: 1439px) {
+   The fixed desktop canvas uses the content width, so the left and
+   right gutters collapse together before horizontal scrolling begins. */
+@media (max-width: 1279px) {
   html,
   body {
-    min-width: 1440px;
+    min-width: 1280px;
     overflow-x: auto;
   }
 
   .masthead {
-    min-width: 100%;
+    min-width: 1280px;
   }
 
   #main {
     width: 1280px;
     max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .masthead__inner-wrap {
     width: 1280px;
     max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .masthead__menu-home-item {
@@ -316,6 +320,8 @@ body {
   .sidebar {
     @include span(2 of 12);
     opacity: 1;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   .page {
