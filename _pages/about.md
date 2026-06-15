@@ -222,7 +222,7 @@ body.protected-image-open {
 .publication-paper .paper-box-text {
   min-width: 0;
   margin-left: -2.5rem;
-  margin-right: -1.25rem;
+  margin-right: -6rem;
   padding-right: 0;
   box-sizing: border-box;
 }
@@ -359,7 +359,7 @@ body.protected-image-open {
     <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS&#8209;steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
+    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
