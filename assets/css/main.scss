@@ -166,12 +166,22 @@ body {
 
 .sidebar {
   z-index: 1;
+  overflow: visible !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .profile_box {
   display: block !important;
   align-items: initial !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  margin-top: 2em !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   overflow: visible !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .author__avatar {
@@ -211,6 +221,19 @@ body {
 .author__bio {
   margin-top: 10px !important;
   margin-bottom: 20px !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  font-size: $type-size-6 !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
 }
 
 .author__urls-wrapper {
@@ -320,8 +343,6 @@ body {
   .sidebar {
     @include span(2 of 12);
     opacity: 1;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
   }
 
   .page {
