@@ -363,7 +363,7 @@ body.protected-image-open {
 <div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
+    <img src="{{ '/personal_image/SMT-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/SMT-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
@@ -376,7 +376,7 @@ body.protected-image-open {
 <div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
+    <img src="{{ '/personal_image/CBM-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CBM-Wu.jpg' | relative_url }}" alt="Construction and Building Materials revised publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
@@ -389,7 +389,7 @@ body.protected-image-open {
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
+    <img src="{{ '/personal_image/JEM-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/JEM-Wang.jpg' | relative_url }}" alt="Journal of Environmental Management publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.jenvman.2026.129753">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</a></div>
@@ -402,7 +402,7 @@ body.protected-image-open {
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials publication placeholder">
+    <img src="{{ '/personal_image/CBM-Peng-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CBM-Peng.jpg' | relative_url }}" alt="Construction and Building Materials publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.conbuildmat.2026.146819">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</a></div>
@@ -415,7 +415,7 @@ body.protected-image-open {
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication placeholder">
+    <img src="{{ '/personal_image/ACS-Zhang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/ACS-Zhang.jpg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title">CO<sub>2</sub> Mineralization Pathways in Phosphogypsum-Based Cementitious Materials: Carbon Sequestration and Mechanical Enhancement</div>
@@ -428,7 +428,7 @@ body.protected-image-open {
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q3</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
+    <img src="{{ '/personal_image/JMCWM-Peng-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/JMCWM-Peng.jpg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1007/s10163-025-02425-y">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</a></div>
@@ -441,7 +441,7 @@ body.protected-image-open {
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>EI Compendex</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
+    <img src="{{ '/personal_image/EI-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/EI-Wang.jpg' | relative_url }}" alt="Science Technology and Engineering publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="http://www.stae.com.cn/jsygc/article/abstract/2507214">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</a></div>
