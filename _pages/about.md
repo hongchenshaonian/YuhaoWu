@@ -220,9 +220,12 @@ body.protected-image-open {
   flex: 1;
 }
 .publication-paper .paper-box-text {
+  flex: 0 0 650px;
+  width: 650px;
+  max-width: none;
   min-width: 0;
   margin-left: -2.5rem;
-  margin-right: -6rem;
+  margin-right: 0;
   padding-right: 0;
   box-sizing: border-box;
 }
