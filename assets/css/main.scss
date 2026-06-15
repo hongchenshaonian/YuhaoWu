@@ -168,6 +168,107 @@ body {
   z-index: 1;
 }
 
+.profile_box {
+  display: block !important;
+  align-items: initial !important;
+  overflow: visible !important;
+}
+
+.author__avatar {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.author__avatar img {
+  width: 175px !important;
+  height: 175px !important;
+  max-width: 175px !important;
+  min-width: 175px !important;
+  padding: 5px;
+  border: 1px solid $border-color;
+}
+
+.author__content {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center !important;
+}
+
+.sidebar .author__name {
+  font-size: $type-size-3 !important;
+  line-height: 1.2 !important;
+}
+
+.author__name {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.author__bio {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+}
+
+.author__urls-wrapper {
+  display: block !important;
+  position: static !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  overflow: visible !important;
+  cursor: default !important;
+}
+
+.author__urls-wrapper button {
+  display: none !important;
+}
+
+.author__urls {
+  display: block !important;
+  position: static !important;
+  right: auto !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls:before,
+.author__urls:after {
+  display: none !important;
+}
+
+.author__urls li {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls a {
+  display: block !important;
+}
+
+.cv-link-item,
+.cv-link-item a {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls_sm {
+  display: none !important;
+}
+
 /* Keep the desktop presentation intact on narrow desktop windows.
    When the viewport is narrower than the designed canvas, crop the
    right side and let the browser provide horizontal scrolling. */
@@ -221,70 +322,6 @@ body {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
     @include suffix(0 of 12);
-  }
-
-  .profile_box {
-    display: block;
-  }
-
-  .author__avatar {
-    display: block;
-    width: auto;
-    height: auto;
-  }
-
-  .author__avatar img {
-    width: 175px;
-    height: 175px;
-    padding: 5px;
-    border: 1px solid $border-color;
-  }
-
-  .author__content {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .author__name {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .author__bio {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .author__urls-wrapper {
-    display: block;
-    margin-left: 0;
-  }
-
-  .author__urls-wrapper button {
-    display: none;
-  }
-
-  .author__urls {
-    display: block;
-    position: relative;
-    z-index: auto;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .author__urls:before,
-  .author__urls:after {
-    display: none;
-  }
-
-  .author__urls_sm {
-    display: none;
   }
 
   .paper-box {
