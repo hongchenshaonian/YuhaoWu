@@ -41,45 +41,39 @@
 @import "print";
 
 .paper-box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(240px, 32%) minmax(0, 1fr);
+    column-gap: 24px;
+    align-items: start;
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
     
 
     .paper-box-image{
-        justify-content: center;
         display: flex;
         width: 100%;
-        order: 2;
         img {
-            max-width: 400px;
+            width: 100%;
             box-shadow: 3px 3px 6px #888;
             object-fit: cover;
         }
     }
     
     .paper-box-text{
+        min-width: 0;
         max-width: 100%;
-        order: 1;
     }
     
-    @include breakpoint($medium) {
+    @include breakpoint(max-width 1100px) {
+        grid-template-columns: 1fr;
+        row-gap: 14px;
+
         .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
+            max-width: 520px;
         }
         
         .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
+            max-width: 100%;
         }
 
     }
@@ -166,4 +160,14 @@ body {
 
 .sidebar {
   z-index: 1;
+}
+
+@media (min-width: 925px) {
+  #main {
+    max-width: 1500px;
+  }
+
+  .page__inner-wrap {
+    max-width: 1180px;
+  }
 }
