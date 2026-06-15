@@ -218,9 +218,12 @@ body.protected-image-open {
 }
 .paper-box-text {
   flex: 1;
+}
+.publication-paper .paper-box-text {
   min-width: 0;
-  margin-left: -1rem;
-  padding-right: 1rem;
+  margin-left: -2.5rem;
+  margin-right: -1.25rem;
+  padding-right: 0;
   box-sizing: border-box;
 }
 .paper-box-text .title {
@@ -350,7 +353,7 @@ body.protected-image-open {
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
-<div class='paper-box featured-paper'>
+<div class='paper-box featured-paper publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
@@ -363,7 +366,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box featured-paper'>
+<div class='paper-box featured-paper publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
@@ -376,7 +379,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
@@ -389,7 +392,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials publication placeholder">
@@ -402,7 +405,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication placeholder">
@@ -415,7 +418,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q3</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
@@ -428,7 +431,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper'>
   <div class='paper-box-image'>
     <div class='badge'>EI Compendex</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
