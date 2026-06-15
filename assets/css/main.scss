@@ -167,8 +167,16 @@ body {
 .sidebar {
   z-index: 1;
   overflow: visible !important;
+  -webkit-transform: none !important;
+  transform: none !important;
   -webkit-transition: none !important;
   transition: none !important;
+}
+
+.sidebar.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 6em !important;
 }
 
 .profile_box {
@@ -296,10 +304,14 @@ body {
    The fixed desktop canvas uses the content width, so the left and
    right gutters collapse together before horizontal scrolling begins. */
 @media (max-width: 1279px) {
-  html,
-  body {
+  html {
     min-width: 1280px;
     overflow-x: auto;
+  }
+
+  body {
+    min-width: 1280px;
+    overflow-x: visible;
   }
 
   .masthead {
@@ -343,6 +355,12 @@ body {
   .sidebar {
     @include span(2 of 12);
     opacity: 1;
+  }
+
+  .sidebar.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 6em !important;
   }
 
   .page {
