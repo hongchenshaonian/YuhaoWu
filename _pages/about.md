@@ -88,6 +88,10 @@ redirect_from:
   flex-basis: 34%;
   max-width: 520px;
 }
+.aligned-paper .paper-box-image {
+  flex-basis: 34%;
+  max-width: 520px;
+}
 .paper-box-image video, .paper-box-image img {
   width: 100%;
   height: auto;
@@ -216,7 +220,19 @@ body.protected-image-open {
     display: none !important;
   }
 }
-.paper-box-text { flex: 1; }
+.paper-box-text {
+  flex: 1;
+}
+.aligned-paper .paper-box-text {
+  flex: 0 0 650px;
+  width: 650px;
+  max-width: none;
+  min-width: 0;
+  margin-left: -2.5rem;
+  margin-right: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
 .paper-box-text .title {
   font-weight: 600;
   font-size: 1.06em;
@@ -303,6 +319,13 @@ body.protected-image-open {
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
 .highlight-honor { font-weight: 600; color: #005cc5; background: #f0f8ff; padding: 2px 6px; border-radius: 4px; }
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
+
+@media (min-width: 900px) {
+  h1[id="-awards"] + ul,
+  h1[id="-projects"] + ul {
+    max-width: calc(100% - 18rem);
+  }
+}
 </style>
 
 <span class="anchor" id="education"></span>
@@ -337,7 +360,7 @@ body.protected-image-open {
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
-<div class='paper-box featured-paper'>
+<div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/personal_image/Sustainable Materials and Technologies-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/Sustainable Materials and Technologies-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
@@ -350,7 +373,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box featured-paper'>
+<div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials revised publication placeholder">
@@ -363,7 +386,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Environmental Management publication placeholder">
@@ -376,7 +399,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Construction and Building Materials publication placeholder">
@@ -389,7 +412,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication placeholder">
@@ -402,7 +425,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q3</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication placeholder">
@@ -415,7 +438,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>EI Compendex</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Science Technology and Engineering publication placeholder">
@@ -431,7 +454,7 @@ body.protected-image-open {
 <span class="anchor" id="patents"></span>
 # 📰 Patents
 
-<div class='paper-box'>
+<div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Invention patent</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum cementitious material patent placeholder">
@@ -444,7 +467,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box'>
+<div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Utility model patent</div>
     <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Venetian blind patent placeholder">
