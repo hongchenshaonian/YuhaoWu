@@ -182,14 +182,15 @@ body {
 .profile_box {
   display: block !important;
   align-items: initial !important;
-  width: 190px !important;
-  max-width: 190px !important;
+  width: 210px !important;
+  max-width: 210px !important;
   margin-top: 2em !important;
   margin-left: auto !important;
   margin-right: auto !important;
   overflow: visible !important;
   -webkit-transition: none !important;
   transition: none !important;
+  contain: layout paint !important;
 }
 
 .author__avatar {
@@ -229,12 +230,12 @@ body {
 .author__bio {
   margin-top: 10px !important;
   margin-bottom: 20px !important;
-  width: 190px !important;
-  max-width: 190px !important;
+  width: 210px !important;
+  max-width: 210px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
-  font-size: $type-size-6 !important;
+  font-size: 0.9em !important;
   line-height: 1.45 !important;
   white-space: normal !important;
   overflow-wrap: normal !important;
@@ -242,6 +243,12 @@ body {
   hyphens: none !important;
   -webkit-transition: none !important;
   transition: none !important;
+}
+
+.author__bio-line {
+  display: block !important;
+  width: 210px !important;
+  white-space: nowrap !important;
 }
 
 .author__urls-wrapper {
