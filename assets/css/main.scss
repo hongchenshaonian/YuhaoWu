@@ -45,7 +45,7 @@
     justify-content: left;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border-bottom: 1px #efefef solid;
     padding: 2em 0 2em 0;
     
@@ -165,5 +165,266 @@ body {
 }
 
 .sidebar {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
+  overflow: visible !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.sidebar.sticky {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 6em !important;
+  z-index: 2 !important;
+}
+
+.profile_box {
+  position: relative;
+  z-index: 3;
+  display: block !important;
+  align-items: initial !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  margin-top: 2em !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.author__avatar {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.author__avatar img {
+  display: block !important;
+  width: 175px !important;
+  height: 175px !important;
+  max-width: 175px !important;
+  min-width: 175px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 5px;
+  border: 1px solid $border-color;
+}
+
+img.author__avatar {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.author__content {
+  display: block !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center !important;
+}
+
+.sidebar .author__name {
+  font-size: $type-size-3 !important;
+  line-height: 1.2 !important;
+}
+
+.author__name {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.author__bio {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+  width: 190px !important;
+  max-width: 190px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
+  font-size: $type-size-6 !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  hyphens: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.author__bio-line {
+  display: block !important;
+  width: 190px !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+.author__urls-wrapper {
+  display: block !important;
+  position: static !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  overflow: visible !important;
+  cursor: default !important;
+}
+
+.author__urls-wrapper button {
+  display: none !important;
+}
+
+.author__urls {
+  display: block !important;
+  position: static !important;
+  right: auto !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls:before,
+.author__urls:after {
+  display: none !important;
+}
+
+.author__urls li {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls a {
+  display: block !important;
+}
+
+.cv-link-item,
+.cv-link-item a {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.author__urls_sm {
+  display: none !important;
+}
+
+/* Keep the desktop presentation intact on narrow desktop windows.
+   The fixed desktop canvas uses the content width, so the left and
+   right gutters collapse together before horizontal scrolling begins. */
+@media (max-width: 1279px) {
+  html {
+    min-width: 1280px;
+    overflow-x: auto;
+  }
+
+  body {
+    min-width: 1280px;
+    overflow-x: visible;
+  }
+
+  .masthead {
+    min-width: 1280px;
+  }
+
+  #main {
+    width: 1280px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .masthead__inner-wrap {
+    width: 1280px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .masthead__menu-home-item {
+    display: block !important;
+  }
+
+  .greedy-nav .visible-links {
+    display: table !important;
+  }
+
+  .greedy-nav .visible-links li {
+    display: table-cell !important;
+  }
+
+  .greedy-nav .hidden-links {
+    display: none !important;
+  }
+
+  .greedy-nav button {
+    display: none !important;
+  }
+
+  .sidebar {
+    @include span(2 of 12);
+    opacity: 1;
+  }
+
+  .sidebar.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 6em !important;
+  }
+
+  .page {
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(0 of 12);
+  }
+
+  .paper-box {
+    display: flex !important;
+    justify-content: left !important;
+    align-items: flex-start !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .paper-box-image {
+    justify-content: left !important;
+    display: flex !important;
+    flex: 0 0 34% !important;
+    min-width: 200px !important;
+    max-width: 520px !important;
+    width: auto !important;
+    order: 1 !important;
+    margin-right: 18px !important;
+  }
+
+  .paper-box-image img,
+  .paper-box-image video {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .paper-box-text {
+    flex: 0 0 650px !important;
+    width: 650px !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    order: 2 !important;
+    padding-left: 2em !important;
+    box-sizing: border-box !important;
+  }
+
+  .aligned-paper .paper-box-text {
+    margin-left: -2.5rem !important;
+  }
 }
