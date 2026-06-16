@@ -165,7 +165,8 @@ body {
 }
 
 .sidebar {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   overflow: visible !important;
   -webkit-transform: none !important;
   transform: none !important;
@@ -177,9 +178,12 @@ body {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 6em !important;
+  z-index: 2 !important;
 }
 
 .profile_box {
+  position: relative;
+  z-index: 3;
   display: block !important;
   align-items: initial !important;
   width: 190px !important;
@@ -190,7 +194,6 @@ body {
   overflow: visible !important;
   -webkit-transition: none !important;
   transition: none !important;
-  contain: layout paint !important;
 }
 
 .author__avatar {
