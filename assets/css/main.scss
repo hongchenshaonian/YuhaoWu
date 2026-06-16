@@ -182,8 +182,8 @@ body {
 .profile_box {
   display: block !important;
   align-items: initial !important;
-  width: 210px !important;
-  max-width: 210px !important;
+  width: 190px !important;
+  max-width: 190px !important;
   margin-top: 2em !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -200,12 +200,21 @@ body {
 }
 
 .author__avatar img {
+  display: block !important;
   width: 175px !important;
   height: 175px !important;
   max-width: 175px !important;
   min-width: 175px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   padding: 5px;
   border: 1px solid $border-color;
+}
+
+img.author__avatar {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .author__content {
@@ -230,12 +239,12 @@ body {
 .author__bio {
   margin-top: 10px !important;
   margin-bottom: 20px !important;
-  width: 210px !important;
-  max-width: 210px !important;
+  width: 190px !important;
+  max-width: 190px !important;
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
-  font-size: 0.9em !important;
+  font-size: $type-size-6 !important;
   line-height: 1.45 !important;
   white-space: normal !important;
   overflow-wrap: normal !important;
@@ -247,7 +256,8 @@ body {
 
 .author__bio-line {
   display: block !important;
-  width: 210px !important;
+  width: 190px !important;
+  text-align: center !important;
   white-space: nowrap !important;
 }
 
