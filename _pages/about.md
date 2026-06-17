@@ -101,7 +101,7 @@ redirect_from:
 .paper-box-image img.patent-image {
   width: auto !important;
   max-width: 100% !important;
-  max-height: 170px !important;
+  max-height: 204px !important;
   margin: 0 !important;
   border: 1px solid rgba(148, 163, 184, 0.34);
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
@@ -212,17 +212,18 @@ redirect_from:
   pointer-events: none;
   -webkit-user-drag: none;
 }
-.protected-image-modal.native-size-viewer {
+.protected-image-modal.document-viewer {
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   overflow: auto;
 }
-.protected-image-modal.native-size-viewer .protected-image-dialog,
-.protected-image-modal.native-size-viewer .protected-image-stage {
+.protected-image-modal.document-viewer .protected-image-dialog,
+.protected-image-modal.document-viewer .protected-image-stage {
   max-width: none;
   max-height: none;
 }
-.protected-image-modal.native-size-viewer .protected-image-stage img {
+.protected-image-modal.document-viewer .protected-image-stage img {
+  width: min(1200px, calc(100vw - 72px));
   max-width: none;
   max-height: none;
 }
@@ -516,10 +517,10 @@ body.protected-image-open {
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
-    <div class='badge'>Invention patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-viewer-mode="native" alt="Full-solid waste phosphogypsum cementitious material patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-viewer-mode="document" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
+    <span class="patent-inline-badge">Invention patent</span>
     <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
     <div class="venue"><em><strong>CN120590137A</strong>, 2025</em></div>
@@ -529,10 +530,10 @@ body.protected-image-open {
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
-    <div class='badge'>Utility model patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-viewer-mode="native" alt="Venetian blind and adjusting mechanism patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-viewer-mode="document" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
+    <span class="patent-inline-badge">Utility model patent</span>
     <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
     <div class="venue"><em><strong>CN223190347U</strong>, 2024</em></div>

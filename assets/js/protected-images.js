@@ -53,7 +53,7 @@ $(document).ready(function() {
     if (!protectedViewer.modal) {
       return;
     }
-    protectedViewer.modal.removeClass("is-open native-size-viewer").attr("aria-hidden", "true");
+    protectedViewer.modal.removeClass("is-open native-size-viewer document-viewer").attr("aria-hidden", "true");
     protectedViewer.image.attr("src", "").attr("alt", "");
     protectedViewer.active = false;
     if (protectedViewer.warningLayer) {
@@ -63,6 +63,9 @@ $(document).ready(function() {
   };
 
   var openProtectedViewer = function(image) {
+    var fullSource = $(image).attr("data-full-src") || image.currentSrc || image.src;
+    var viewerMode = $(image).attr("data-viewer-mode");
+
     if (!protectedViewer.modal) {
       protectedViewer.modal = $(
         '<div class="protected-image-modal" role="dialog" aria-modal="true" aria-hidden="true">' +
@@ -93,13 +96,12 @@ $(document).ready(function() {
       });
     }
 
-    var fullSource = $(image).attr("data-full-src") || image.currentSrc || image.src;
-    var viewerMode = $(image).attr("data-viewer-mode");
     protectedViewer.image
       .attr("src", fullSource)
       .attr("alt", image.alt || "Protected research image");
     protectedViewer.modal
       .toggleClass("native-size-viewer", viewerMode === "native")
+      .toggleClass("document-viewer", viewerMode === "document")
       .addClass("is-open")
       .attr("aria-hidden", "false");
     protectedViewer.active = true;
