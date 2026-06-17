@@ -98,6 +98,12 @@ redirect_from:
   object-fit: contain;
   display: block;
 }
+.paper-box-image img.patent-image {
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: 220px !important;
+  margin: 0 auto !important;
+}
 .paper-box-image.protected-figure {
   cursor: zoom-in;
   background: #f8fafc;
@@ -457,7 +463,7 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Invention patent</div>
-    <img src="{{ '/personal_image/CN120590137A.png' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN120590137A.png' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.png' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
@@ -470,7 +476,7 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Utility model patent</div>
-    <img src="{{ '/personal_image/CN223190347U.png' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN223190347U.png' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.png' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
