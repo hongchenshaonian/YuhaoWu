@@ -53,7 +53,7 @@ $(document).ready(function() {
     if (!protectedViewer.modal) {
       return;
     }
-    protectedViewer.modal.removeClass("is-open").attr("aria-hidden", "true");
+    protectedViewer.modal.removeClass("is-open native-size-viewer").attr("aria-hidden", "true");
     protectedViewer.image.attr("src", "").attr("alt", "");
     protectedViewer.active = false;
     if (protectedViewer.warningLayer) {
@@ -94,10 +94,14 @@ $(document).ready(function() {
     }
 
     var fullSource = $(image).attr("data-full-src") || image.currentSrc || image.src;
+    var viewerMode = $(image).attr("data-viewer-mode");
     protectedViewer.image
       .attr("src", fullSource)
       .attr("alt", image.alt || "Protected research image");
-    protectedViewer.modal.addClass("is-open").attr("aria-hidden", "false");
+    protectedViewer.modal
+      .toggleClass("native-size-viewer", viewerMode === "native")
+      .addClass("is-open")
+      .attr("aria-hidden", "false");
     protectedViewer.active = true;
     $("body").addClass("protected-image-open");
     protectedViewer.modal.find(".protected-image-close").focus();
