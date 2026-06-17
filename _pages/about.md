@@ -107,13 +107,17 @@ redirect_from:
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
 }
 .paper-box-image.patent-figure {
-  display: flex;
+  display: flex !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: none !important;
   align-items: center;
   justify-content: flex-start;
-  min-height: 210px;
-  padding: 18px 0 18px 18px;
-  background: transparent;
-  box-shadow: none;
+  min-height: 0;
+  padding: 0;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 .paper-box.patent-text-card {
   display: block !important;
