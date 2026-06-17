@@ -212,21 +212,6 @@ redirect_from:
   pointer-events: none;
   -webkit-user-drag: none;
 }
-.protected-image-modal.document-viewer {
-  align-items: flex-start;
-  justify-content: center;
-  overflow: auto;
-}
-.protected-image-modal.document-viewer .protected-image-dialog,
-.protected-image-modal.document-viewer .protected-image-stage {
-  max-width: none;
-  max-height: none;
-}
-.protected-image-modal.document-viewer .protected-image-stage img {
-  width: min(1200px, calc(100vw - 72px));
-  max-width: none;
-  max-height: none;
-}
 .protected-watermark {
   position: absolute;
   inset: 0;
@@ -517,7 +502,7 @@ body.protected-image-open {
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
-    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-viewer-mode="document" alt="Full-solid waste phosphogypsum cementitious material patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
     <span class="patent-inline-badge">Invention patent</span>
@@ -530,7 +515,7 @@ body.protected-image-open {
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
-    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-viewer-mode="document" alt="Venetian blind and adjusting mechanism patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
     <span class="patent-inline-badge">Utility model patent</span>

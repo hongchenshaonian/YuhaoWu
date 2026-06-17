@@ -53,7 +53,7 @@ $(document).ready(function() {
     if (!protectedViewer.modal) {
       return;
     }
-    protectedViewer.modal.removeClass("is-open native-size-viewer document-viewer").attr("aria-hidden", "true");
+    protectedViewer.modal.removeClass("is-open native-size-viewer").attr("aria-hidden", "true");
     protectedViewer.image.attr("src", "").attr("alt", "");
     protectedViewer.active = false;
     if (protectedViewer.warningLayer) {
@@ -101,7 +101,6 @@ $(document).ready(function() {
       .attr("alt", image.alt || "Protected research image");
     protectedViewer.modal
       .toggleClass("native-size-viewer", viewerMode === "native")
-      .toggleClass("document-viewer", viewerMode === "document")
       .addClass("is-open")
       .attr("aria-hidden", "false");
     protectedViewer.active = true;
