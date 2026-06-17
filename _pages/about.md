@@ -102,18 +102,18 @@ redirect_from:
   width: auto !important;
   max-width: 100% !important;
   max-height: 170px !important;
-  margin: 0 auto !important;
+  margin: 0 !important;
   border: 1px solid rgba(148, 163, 184, 0.34);
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
 }
 .paper-box-image.patent-figure {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 210px;
-  padding: 18px 28px;
-  background: linear-gradient(135deg, #f4f7fb 0%, #eef4f8 100%);
-  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.12);
+  padding: 18px 0 18px 18px;
+  background: transparent;
+  box-shadow: none;
 }
 .paper-box.patent-text-card {
   display: block !important;
