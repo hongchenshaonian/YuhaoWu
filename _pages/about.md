@@ -101,8 +101,41 @@ redirect_from:
 .paper-box-image img.patent-image {
   width: auto !important;
   max-width: 100% !important;
-  max-height: 220px !important;
+  max-height: 170px !important;
   margin: 0 auto !important;
+  border: 1px solid rgba(148, 163, 184, 0.34);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
+}
+.paper-box-image.patent-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 210px;
+  padding: 18px 28px;
+  background: linear-gradient(135deg, #f4f7fb 0%, #eef4f8 100%);
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.12);
+}
+.paper-box.patent-text-card {
+  display: block !important;
+  padding: 18px 22px;
+}
+.paper-box.patent-text-card .paper-box-text {
+  flex: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.patent-inline-badge {
+  display: inline-flex;
+  margin-bottom: 8px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #eef4f8;
+  color: #374151;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1.2;
 }
 .paper-box-image.protected-figure {
   cursor: zoom-in;
@@ -461,9 +494,9 @@ body.protected-image-open {
 # 📰 Patents
 
 <div class='paper-box aligned-paper'>
-  <div class='paper-box-image'>
+  <div class='paper-box-image patent-figure'>
     <div class='badge'>Invention patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN120590137A.png' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.png' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
@@ -474,9 +507,9 @@ body.protected-image-open {
 </div>
 
 <div class='paper-box aligned-paper'>
-  <div class='paper-box-image'>
+  <div class='paper-box-image patent-figure'>
     <div class='badge'>Utility model patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN223190347U.png' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.png' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
@@ -486,12 +519,9 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box aligned-paper'>
-  <div class='paper-box-image'>
-    <div class='badge'>Invention patent</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Carbonated steel slag phosphogypsum slag cementitious material patent placeholder">
-  </div>
+<div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
+    <span class="patent-inline-badge">Invention patent</span>
     <div class="title">Carbonated Steel Slag-Phosphogypsum-Slag Cementitious Material and Preparation Method Thereof</div>
     <div class="authors"><strong>Y. Wu</strong>, X. Qin, Z. Liu, R. Luo, S. Zhu, J. Liu, H. Liu, B. Hu, H. Xia, Z. Chen, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094419</strong>, 2026</em></div>
@@ -499,12 +529,9 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box aligned-paper'>
-  <div class='paper-box-image'>
-    <div class='badge'>Invention patent</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum-based composite roadbed and pavement patent placeholder">
-  </div>
+<div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
+    <span class="patent-inline-badge">Invention patent</span>
     <div class="title">Full-Depth Phosphogypsum-Based Multi-Source Solid Waste Composite Roadbed and Pavement Structure</div>
     <div class="authors">X. Qin, R. Luo, Z. Liu, S. Zhu, Z. Zhang, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094387</strong>, 2026</em></div>
@@ -512,12 +539,9 @@ body.protected-image-open {
   </div>
 </div>
 
-<div class='paper-box aligned-paper'>
-  <div class='paper-box-image'>
-    <div class='badge'>Invention patent</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="CO2 mineralization-enhanced cementitious material patent placeholder">
-  </div>
+<div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
+    <span class="patent-inline-badge">Invention patent</span>
     <div class="title">CO2 Mineralization-Enhanced Phosphogypsum-Slag-Steel Slag Cementitious Material and Preparation Method Thereof</div>
     <div class="authors">X. Qin, Z. Liu, J. Zhang, S. Zhu, J. Liu, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094423</strong>, 2026</em></div>
