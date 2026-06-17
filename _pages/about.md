@@ -457,7 +457,7 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Invention patent</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum cementitious material patent placeholder">
+    <img src="{{ '/personal_image/CN120590137A.png' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
@@ -470,13 +470,52 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>Utility model patent</div>
-    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Venetian blind patent placeholder">
+    <img src="{{ '/personal_image/CN223190347U.png' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
     <div class="venue"><em><strong>CN223190347U</strong>, 2024</em></div>
     <p class="desc">China Utility model patent.</p>
+  </div>
+</div>
+
+<div class='paper-box aligned-paper'>
+  <div class='paper-box-image'>
+    <div class='badge'>Invention patent</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Carbonated steel slag phosphogypsum slag cementitious material patent placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">Carbonated Steel Slag-Phosphogypsum-Slag Cementitious Material and Preparation Method Thereof</div>
+    <div class="authors"><strong>Y. Wu</strong>, X. Qin, Z. Liu, R. Luo, S. Zhu, J. Liu, H. Liu, B. Hu, H. Xia, Z. Chen, F. Cao</div>
+    <div class="venue"><em><strong>Application No. 2026108094419</strong>, 2026</em></div>
+    <p class="desc">China Invention patent.</p>
+  </div>
+</div>
+
+<div class='paper-box aligned-paper'>
+  <div class='paper-box-image'>
+    <div class='badge'>Invention patent</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="Phosphogypsum-based composite roadbed and pavement patent placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">Full-Depth Phosphogypsum-Based Multi-Source Solid Waste Composite Roadbed and Pavement Structure</div>
+    <div class="authors">X. Qin, R. Luo, Z. Liu, S. Zhu, Z. Zhang, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
+    <div class="venue"><em><strong>Application No. 2026108094387</strong>, 2026</em></div>
+    <p class="desc">China Invention patent.</p>
+  </div>
+</div>
+
+<div class='paper-box aligned-paper'>
+  <div class='paper-box-image'>
+    <div class='badge'>Invention patent</div>
+    <img src="{{ '/images/project-placeholder.svg' | relative_url }}" alt="CO2 mineralization-enhanced cementitious material patent placeholder">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">CO2 Mineralization-Enhanced Phosphogypsum-Slag-Steel Slag Cementitious Material and Preparation Method Thereof</div>
+    <div class="authors">X. Qin, Z. Liu, J. Zhang, S. Zhu, J. Liu, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
+    <div class="venue"><em><strong>Application No. 2026108094423</strong>, 2026</em></div>
+    <p class="desc">China Invention patent.</p>
   </div>
 </div>
 
