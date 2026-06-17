@@ -119,6 +119,9 @@ redirect_from:
   background: transparent !important;
   box-shadow: none !important;
 }
+.paper-box-image.patent-figure.protected-figure {
+  background: transparent !important;
+}
 .paper-box.patent-text-card {
   display: block !important;
   padding: 18px 22px;
@@ -208,6 +211,20 @@ redirect_from:
   max-height: calc(100vh - 36px);
   pointer-events: none;
   -webkit-user-drag: none;
+}
+.protected-image-modal.native-size-viewer {
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: auto;
+}
+.protected-image-modal.native-size-viewer .protected-image-dialog,
+.protected-image-modal.native-size-viewer .protected-image-stage {
+  max-width: none;
+  max-height: none;
+}
+.protected-image-modal.native-size-viewer .protected-image-stage img {
+  max-width: none;
+  max-height: none;
 }
 .protected-watermark {
   position: absolute;
@@ -500,7 +517,7 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
     <div class='badge'>Invention patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-viewer-mode="native" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
@@ -513,7 +530,7 @@ body.protected-image-open {
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
     <div class='badge'>Utility model patent</div>
-    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
+    <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-viewer-mode="native" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
