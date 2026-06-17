@@ -254,8 +254,12 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
+  }
+
+  .author__link-label {
+    text-decoration: underline;
   }
 
   .scopus-icon {
