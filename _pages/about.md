@@ -390,15 +390,7 @@ body.protected-image-open {
         <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
         <span class="exp-time">Sep. 2022 - Present</span>
       </div>
-      <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
-    </div>
-
-    <div style="margin-top: 12px;">
-      <div class="exp-header">
-        <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Minor in Electronic Information Engineering</em></p>
-        <span class="exp-time">May 2023 - May 2025</span>
-      </div>
-      <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
+      <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
     </div>
   </div>
 </div>
