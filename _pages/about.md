@@ -367,6 +367,10 @@ body.protected-image-open {
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 
 @media (min-width: 900px) {
+  .education-card .exp-time {
+    margin-right: 32px;
+  }
+
   h1[id="-awards"] + ul,
   h1[id="-projects"] + ul {
     max-width: calc(100% - 18rem);
@@ -377,7 +381,7 @@ body.protected-image-open {
 <span class="anchor" id="education"></span>
 # 🎓 Education
 
-<div class="exp-card">
+<div class="exp-card education-card">
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
@@ -390,15 +394,7 @@ body.protected-image-open {
         <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
         <span class="exp-time">Sep. 2022 - Present</span>
       </div>
-      <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
-    </div>
-
-    <div style="margin-top: 12px;">
-      <div class="exp-header">
-        <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Minor in Electronic Information Engineering</em></p>
-        <span class="exp-time">May 2023 - May 2025</span>
-      </div>
-      <p class="exp-desc"><strong>GPA:</strong> 3.6/4</p>
+      <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
     </div>
   </div>
 </div>
