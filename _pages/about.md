@@ -415,7 +415,7 @@ body.protected-image-open {
     <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.7.</p>
   </div>
 </div>
 
@@ -428,7 +428,7 @@ body.protected-image-open {
     <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. Status: Revised.</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9. Status: Revised.</p>
   </div>
 </div>
 
@@ -441,7 +441,7 @@ body.protected-image-open {
     <div class="title"><a href="https://doi.org/10.1016/j.jenvman.2026.129753">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</a></div>
     <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
     <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.4.</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2.</p>
   </div>
 </div>
 
@@ -453,8 +453,8 @@ body.protected-image-open {
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1016/j.conbuildmat.2026.146819">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</a></div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
-    <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.0. 535 (2026) 146819.</p>
+    <div class="venue"><em><strong>Construction and Building Materials</strong>, 535 (2026) 146819</em></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9.</p>
   </div>
 </div>
 
@@ -467,20 +467,20 @@ body.protected-image-open {
     <div class="title">CO<sub>2</sub> Mineralization Pathways in Phosphogypsum-Based Cementitious Materials: Carbon Sequestration and Mechanical Enhancement</div>
     <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
     <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.2. Status: Revised.</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 7.8. Status: Revised.</p>
   </div>
 </div>
 
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
-    <div class='badge'>JCR Q3</div>
+    <div class='badge'>JCR Q2</div>
     <img src="{{ '/personal_image/JMCWM-Peng-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/JMCWM-Peng.jpg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication image">
   </div>
   <div class='paper-box-text'>
     <div class="title"><a href="https://doi.org/10.1007/s10163-025-02425-y">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</a></div>
     <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, Jin Huang</div>
     <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em></div>
-    <p class="desc"><strong>JCR Q3</strong>, Impact Factor = 3.0.</p>
+    <p class="desc"><strong>JCR Q2</strong>, Impact Factor = 3.8.</p>
   </div>
 </div>
 
