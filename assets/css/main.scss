@@ -212,6 +212,8 @@ body {
   margin-right: auto !important;
   padding: 5px;
   border: 1px solid $border-color;
+  border-radius: 14px;
+  box-shadow: 0 12px 28px rgba(25, 42, 70, 0.18);
 }
 
 img.author__avatar {

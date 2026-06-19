@@ -24,7 +24,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Yuhao Wu"
   name_zh          :
-  avatar           : "personal_image/photo.jpg"
+  avatar           : "personal_image/ceshengzhao.jpeg"
   bio              : '<span class="author__bio-line">Undergraduate Student and</span><span class="author__bio-line">Research Assistant at Wuhan</span><span class="author__bio-line">Polytechnic University</span>'
   location         : "Wuhan, China"
   location_url     : "https://maps.app.goo.gl/jfM5Sk8JcB9G95jv7"

@@ -98,6 +98,7 @@
     min-width: 75px;
     object-fit: cover;
     border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(25, 42, 70, 0.18);
 
     @include breakpoint($large) {
       width: 175px;
