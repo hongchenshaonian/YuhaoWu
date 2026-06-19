@@ -424,7 +424,7 @@ body.protected-image-open {
     <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9, Status: accept</p>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9, Status: Accepted</p>
   </div>
 </div>
 
