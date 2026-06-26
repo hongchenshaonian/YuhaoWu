@@ -291,6 +291,17 @@ body.protected-image-open {
 .paper-box-text .title a:hover { color: #0366d6; }
 .paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 0.95em; }
 .paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 0.95em; }
+.article-link {
+  margin-left: 0.75em;
+  color: #0366d6;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.article-link:hover,
+.article-link:focus {
+  color: #005cc5;
+}
 .paper-box-text .desc { font-size: 0.9em; margin: 6px 0 8px 0; color: #444; }
 .paper-box-text .links a {
   margin-right: 10px;
@@ -408,9 +419,9 @@ body.protected-image-open {
     <img src="{{ '/personal_image/SMT-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/SMT-Wu.jpg' | relative_url }}" alt="Sustainable Materials and Technologies publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1016/j.susmat.2026.e02016">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships</a><span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
+    <div class="title">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
-    <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em></div>
+    <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em> <a class="article-link" href="https://doi.org/10.1016/j.susmat.2026.e02016" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.7</p>
   </div>
 </div>
@@ -423,8 +434,8 @@ body.protected-image-open {
   <div class='paper-box-text'>
     <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
-    <div class="venue"><em><strong>Construction and Building Materials</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9, Status: Accepted</p>
+    <div class="venue"><em><strong>Construction and Building Materials</strong>, 537 (2026) 147169</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.147169" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
+    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9</p>
   </div>
 </div>
 
@@ -434,9 +445,9 @@ body.protected-image-open {
     <img src="{{ '/personal_image/JEM-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/JEM-Wang.jpg' | relative_url }}" alt="Journal of Environmental Management publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1016/j.jenvman.2026.129753">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</a></div>
+    <div class="title">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</div>
     <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
-    <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em></div>
+    <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em> <a class="article-link" href="https://doi.org/10.1016/j.jenvman.2026.129753" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2</p>
   </div>
 </div>
@@ -447,9 +458,9 @@ body.protected-image-open {
     <img src="{{ '/personal_image/CBM-Peng-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CBM-Peng.jpg' | relative_url }}" alt="Construction and Building Materials publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1016/j.conbuildmat.2026.146819">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</a></div>
+    <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
-    <div class="venue"><em><strong>Construction and Building Materials</strong>, 535 (2026) 146819</em></div>
+    <div class="venue"><em><strong>Construction and Building Materials</strong>, 535 (2026) 146819</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.146819" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9</p>
   </div>
 </div>
@@ -473,9 +484,9 @@ body.protected-image-open {
     <img src="{{ '/personal_image/JMCWM-Peng-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/JMCWM-Peng.jpg' | relative_url }}" alt="Journal of Material Cycles and Waste Management publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="https://doi.org/10.1007/s10163-025-02425-y">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</a></div>
+    <div class="title">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</div>
     <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, Jin Huang</div>
-    <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em></div>
+    <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em> <a class="article-link" href="https://doi.org/10.1007/s10163-025-02425-y" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>JCR Q2</strong>, Impact Factor = 3.8</p>
   </div>
 </div>
@@ -486,9 +497,9 @@ body.protected-image-open {
     <img src="{{ '/personal_image/EI-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/EI-Wang.jpg' | relative_url }}" alt="Science Technology and Engineering publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title"><a href="http://www.stae.com.cn/jsygc/article/abstract/2507214">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</a></div>
+    <div class="title">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</div>
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
-    <div class="venue"><em><strong>Science Technology and Engineering</strong></em></div>
+    <div class="venue"><em><strong>Science Technology and Engineering</strong></em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>EI Compendex</strong>. Status: Accepted.</p>
   </div>
 </div>
@@ -502,9 +513,9 @@ body.protected-image-open {
   </div>
   <div class='paper-box-text'>
     <span class="patent-inline-badge">Invention patent</span>
-    <div class="title"><a href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</a></div>
+    <div class="title">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
-    <div class="venue"><em><strong>CN120590137A</strong>, 2025</em></div>
+    <div class="venue"><em><strong>CN120590137A</strong>, 2025</em> <a class="article-link" href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
     <p class="desc">China Invention patent. Status: Pending.</p>
   </div>
 </div>
@@ -515,9 +526,9 @@ body.protected-image-open {
   </div>
   <div class='paper-box-text'>
     <span class="patent-inline-badge">Utility model patent</span>
-    <div class="title"><a href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U">Venetian blind and adjusting mechanism</a></div>
+    <div class="title">Venetian blind and adjusting mechanism</div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
-    <div class="venue"><em><strong>CN223190347U</strong>, 2024</em></div>
+    <div class="venue"><em><strong>CN223190347U</strong>, 2024</em> <a class="article-link" href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
     <p class="desc">China Utility model patent.</p>
   </div>
 </div>
