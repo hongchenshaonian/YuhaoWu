@@ -292,6 +292,7 @@ body.protected-image-open {
 .paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 0.95em; }
 .paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 0.95em; }
 .article-link {
+  margin-left: 0.75em;
   color: #0366d6;
   font-weight: 700;
   text-decoration: underline;
@@ -514,7 +515,7 @@ body.protected-image-open {
     <span class="patent-inline-badge">Invention patent</span>
     <div class="title">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
-    <div class="venue"><em><strong>CN120590137A</strong>, 2025</em> <a class="article-link" href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
+    <div class="venue"><em><strong>CN120590137A</strong>, 2025</em> <a class="article-link" href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
     <p class="desc">China Invention patent. Status: Pending.</p>
   </div>
 </div>
@@ -527,7 +528,7 @@ body.protected-image-open {
     <span class="patent-inline-badge">Utility model patent</span>
     <div class="title">Venetian blind and adjusting mechanism</div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
-    <div class="venue"><em><strong>CN223190347U</strong>, 2024</em> <a class="article-link" href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
+    <div class="venue"><em><strong>CN223190347U</strong>, 2024</em> <a class="article-link" href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
     <p class="desc">China Utility model patent.</p>
   </div>
 </div>
