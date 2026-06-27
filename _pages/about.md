@@ -133,6 +133,33 @@ redirect_from:
   margin: 0 !important;
   padding: 0 !important;
 }
+.paper-box.compact-info-card {
+  display: block !important;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+}
+.paper-box.compact-info-card .paper-box-text {
+  flex: none !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.paper-box.compact-info-card .title {
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+.paper-box.compact-info-card .desc {
+  margin: 0;
+  line-height: 1.45;
+}
+.page__content .section-image-note {
+  margin: -0.65em 0 6px !important;
+  padding-left: 35px !important;
+  color: #6a737d;
+  font-size: 1em !important;
+  line-height: 1.2 !important;
+}
 .patent-inline-badge {
   display: inline-flex;
   margin-bottom: 8px;
@@ -413,6 +440,8 @@ body.protected-image-open {
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
+<p class="section-image-note">(Please click on any image to view a larger version.)</p>
+
 <div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
@@ -506,6 +535,7 @@ body.protected-image-open {
 
 <span class="anchor" id="patents"></span>
 # 📰 Patents
+<p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
@@ -566,16 +596,50 @@ body.protected-image-open {
 <span class="anchor" id="honors-awards"></span>
 # 🏆 Awards
 
-- **Second Prize**, The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. **(National Level)**
-- **Second Prize**, The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. **(Provincial Level)**
-- **Bronze Award**, Hubei Final of the China International College Students' Innovation Competition, 2024. **(Provincial Level)**
-- **Second Prize**, The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. **(National Level)**
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Second Prize</div>
+    <p class="desc">The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. <strong>(National Level)</strong></p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Second Prize</div>
+    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. <strong>(Provincial Level)</strong></p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Bronze Award</div>
+    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024. <strong>(Provincial Level)</strong></p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Second Prize</div>
+    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
+  </div>
+</div>
 
 <span class="anchor" id="projects"></span>
 # 💻 Projects
 
-- **Hubei Provincial Technological Innovation Program**, Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, **No. 2025BCB081**.
-- **Hubei Provincial Department of Education Science and Technology Plan Project**, Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, **Pending**.
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Technological Innovation Program</div>
+    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>No. 2025BCB081</strong>.</p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
+    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, <strong>Pending</strong>.</p>
+  </div>
+</div>
 
 
 <span class="anchor" id="research-experience"></span>
