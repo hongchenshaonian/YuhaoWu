@@ -153,6 +153,12 @@ redirect_from:
   margin: 0;
   line-height: 1.45;
 }
+.section-image-note {
+  margin: -8px 0 12px;
+  color: #6a737d;
+  font-size: 0.88em;
+  line-height: 1.4;
+}
 .patent-inline-badge {
   display: inline-flex;
   margin-bottom: 8px;
@@ -433,6 +439,8 @@ body.protected-image-open {
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
+<p class="section-image-note">(Click images to enlarge.)</p>
+
 <div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
     <div class='badge'>JCR Q1</div>
@@ -526,6 +534,7 @@ body.protected-image-open {
 
 <span class="anchor" id="patents"></span>
 # 📰 Patents
+<p class="section-image-note">(Click images to enlarge.)</p>
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
