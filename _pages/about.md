@@ -155,7 +155,7 @@ redirect_from:
 }
 .page__content .section-image-note {
   margin: -0.65em 0 6px !important;
-  padding-left: 52px !important;
+  padding-left: 35px !important;
   color: #6a737d;
   font-size: 0.74em !important;
   line-height: 1.2 !important;
