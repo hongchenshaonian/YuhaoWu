@@ -153,11 +153,12 @@ redirect_from:
   margin: 0;
   line-height: 1.45;
 }
-.section-image-note {
-  margin: -8px 0 12px 52px;
+.page__content .section-image-note {
+  margin: -0.65em 0 6px !important;
+  padding-left: 52px !important;
   color: #6a737d;
-  font-size: 0.88em;
-  line-height: 1.4;
+  font-size: 0.74em !important;
+  line-height: 1.2 !important;
 }
 .patent-inline-badge {
   display: inline-flex;
@@ -439,7 +440,7 @@ body.protected-image-open {
 
 <span class="anchor" id="publications"></span>
 # 📝 Publications
-<p class="section-image-note">Please click on any image to view a larger version.</p>
+<p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box featured-paper publication-paper aligned-paper'>
   <div class='paper-box-image'>
@@ -534,7 +535,7 @@ body.protected-image-open {
 
 <span class="anchor" id="patents"></span>
 # 📰 Patents
-<p class="section-image-note">Please click on any image to view a larger version.</p>
+<p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
   <div class='paper-box-image patent-figure'>
