@@ -451,7 +451,7 @@ body.protected-image-open {
     <div class="title">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em> <a class="article-link" href="https://doi.org/10.1016/j.susmat.2026.e02016" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.7</p>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 9.7)</strong></p>
   </div>
 </div>
 
@@ -461,10 +461,10 @@ body.protected-image-open {
     <img src="{{ '/personal_image/CBM-Wu-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CBM-Wu.jpg' | relative_url }}" alt="Construction and Building Materials revised publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title">In-situ Generation of Nanoscale Calcite and Monohydrocalcite via Low-L/S-Ratio Aqueous Carbonation of Alkali-Activated Steel Slag under Mild Conditions for Enhanced PG-GGBS Cementitious Materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
+    <div class="title">In-situ generation of nanoscale calcite and monohydrocalcite via low-L/S-ratio aqueous carbonation of alkali-activated steel slag under mild conditions for enhanced PG-GGBS cementitious materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong>, 537 (2026) 147169</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.147169" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9</p>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 8.9)</strong></p>
   </div>
 </div>
 
@@ -477,7 +477,7 @@ body.protected-image-open {
     <div class="title">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</div>
     <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
     <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em> <a class="article-link" href="https://doi.org/10.1016/j.jenvman.2026.129753" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 9.2</p>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 9.2)</strong></p>
   </div>
 </div>
 
@@ -490,20 +490,7 @@ body.protected-image-open {
     <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong>, 535 (2026) 146819</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.146819" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 8.9</p>
-  </div>
-</div>
-
-<div class='paper-box publication-paper aligned-paper'>
-  <div class='paper-box-image'>
-    <div class='badge'>JCR Q1</div>
-    <img src="{{ '/personal_image/ACS-Zhang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/ACS-Zhang.jpg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication image">
-  </div>
-  <div class='paper-box-text'>
-    <div class="title">CO<sub>2</sub> Mineralization Pathways in Phosphogypsum-Based Cementitious Materials: Carbon Sequestration and Mechanical Enhancement</div>
-    <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
-    <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>JCR Q1</strong>, Impact Factor = 7.8, Status: Revised</p>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 8.9)</strong></p>
   </div>
 </div>
 
@@ -514,9 +501,22 @@ body.protected-image-open {
   </div>
   <div class='paper-box-text'>
     <div class="title">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</div>
-    <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, Jin Huang</div>
+    <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu &amp; Jin Huang</div>
     <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em> <a class="article-link" href="https://doi.org/10.1007/s10163-025-02425-y" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>JCR Q2</strong>, Impact Factor = 3.8</p>
+    <p class="desc"><strong>(SCIE, JCR Q2, Impact Factor = 3.8)</strong></p>
+  </div>
+</div>
+
+<div class='paper-box publication-paper aligned-paper'>
+  <div class='paper-box-image'>
+    <div class='badge'>JCR Q1</div>
+    <img src="{{ '/personal_image/ACS-Zhang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/ACS-Zhang.jpg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication image">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
+    <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
+    <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 7.8) (Revised)</strong></p>
   </div>
 </div>
 
@@ -526,10 +526,10 @@ body.protected-image-open {
     <img src="{{ '/personal_image/EI-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/EI-Wang.jpg' | relative_url }}" alt="Science Technology and Engineering publication image">
   </div>
   <div class='paper-box-text'>
-    <div class="title">Performance Optimization and Environmental Benefits of Nanosilica-Modified Phosphogypsum-Based Composite Concrete</div>
+    <div class="title">Performance optimization and environmental benefits of nanosilica-modified phosphogypsum-based composite concrete</div>
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
-    <div class="venue"><em><strong>Science Technology and Engineering</strong></em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>EI Compendex</strong>. Status: Accepted.</p>
+    <div class="venue"><em><strong>Science Technology and Engineering</strong>, 26 (2026) 1671&ndash;1815</em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
+    <p class="desc"><strong>(Engineering Index) (Accepted)</strong></p>
   </div>
 </div>
 
