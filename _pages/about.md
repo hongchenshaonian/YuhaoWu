@@ -509,19 +509,6 @@ body.protected-image-open {
 
 <div class='paper-box publication-paper aligned-paper'>
   <div class='paper-box-image'>
-    <div class='badge'>JCR Q1</div>
-    <img src="{{ '/personal_image/ACS-Zhang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/ACS-Zhang.jpg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication image">
-  </div>
-  <div class='paper-box-text'>
-    <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
-    <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
-    <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 7.8) (Revised)</strong></p>
-  </div>
-</div>
-
-<div class='paper-box publication-paper aligned-paper'>
-  <div class='paper-box-image'>
     <div class='badge'>EI Compendex</div>
     <img src="{{ '/personal_image/EI-Wang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/EI-Wang.jpg' | relative_url }}" alt="Science Technology and Engineering publication image">
   </div>
@@ -530,6 +517,19 @@ body.protected-image-open {
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
     <div class="venue"><em><strong>Science Technology and Engineering</strong>, 26 (2026) 1671&ndash;1815</em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
     <p class="desc"><strong>(Engineering Index) (Accepted)</strong></p>
+  </div>
+</div>
+
+<div class='paper-box publication-paper aligned-paper'>
+  <div class='paper-box-image'>
+    <div class='badge'>JCR Q1</div>
+    <img src="{{ '/personal_image/ACS-Zhang-preview.jpg' | relative_url }}" data-full-src="{{ '/personal_image/ACS-Zhang.jpg' | relative_url }}" alt="ACS Applied Materials & Interfaces revised publication image">
+  </div>
+  <div class='paper-box-text'>
+    <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
+    <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
+    <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
+    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 7.8) (Revised)</strong></p>
   </div>
 </div>
 
