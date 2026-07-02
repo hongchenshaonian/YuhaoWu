@@ -37,14 +37,11 @@ redirect_from:
   gap: 0.45rem;
   margin: 1.55rem 0 0.9rem;
   padding: 0.52rem 0.9rem 0.52rem 1rem;
-  border: 1px solid rgba(219, 234, 254, 0.9);
-  border-right-color: rgba(219, 234, 254, 0.18);
+  border: 0;
   border-left: 5px solid #0366d6;
-  border-radius: 6px;
-  background:
-    linear-gradient(90deg, #eff6ff 0%, rgba(239, 246, 255, 0.72) 42%, rgba(255, 255, 255, 0.08) 84%, rgba(255, 255, 255, 0) 100%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.42));
-  box-shadow: 0 8px 20px rgba(3, 102, 214, 0.06);
+  border-radius: 6px 0 0 6px;
+  background: linear-gradient(90deg, #eff6ff 0%, rgba(239, 246, 255, 0.72) 34%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: none;
   color: #1f2937;
   font-size: 1.45em !important;
   line-height: 1.2;
@@ -59,7 +56,7 @@ redirect_from:
   min-width: 24px;
   height: 1px;
   margin-left: 0.55rem;
-  background: linear-gradient(90deg, rgba(3, 102, 214, 0.24), rgba(3, 102, 214, 0.08) 42%, rgba(3, 102, 214, 0) 82%);
+  background: linear-gradient(90deg, rgba(3, 102, 214, 0.28), rgba(3, 102, 214, 0));
 }
 
 /* Research Experience Timeline Styling */
