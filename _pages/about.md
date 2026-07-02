@@ -29,6 +29,36 @@ redirect_from:
 .intro-text p { margin: 0 0 1.05em 0; }
 .intro-text p:last-child { margin-bottom: 0; }
 
+/* Section headings */
+.page__content h1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 1.55rem 0 0.9rem;
+  padding: 0.52rem 0.9rem 0.52rem 1rem;
+  border: 1px solid #dbeafe;
+  border-left: 5px solid #0366d6;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #eff6ff 0%, #ffffff 72%);
+  box-shadow: 0 8px 22px rgba(3, 102, 214, 0.08);
+  color: #1f2937;
+  font-size: 1.45em !important;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.page__content h1:first-of-type {
+  margin-top: 0.2rem;
+}
+.page__content h1::after {
+  content: "";
+  flex: 1 1 auto;
+  min-width: 24px;
+  height: 1px;
+  margin-left: 0.55rem;
+  background: linear-gradient(90deg, rgba(3, 102, 214, 0.28), rgba(3, 102, 214, 0));
+}
+
 /* Research Experience Timeline Styling */
 .timeline-container {
   position: relative;
@@ -412,6 +442,19 @@ body.protected-image-open {
   h1[id="-awards"] + ul,
   h1[id="-projects"] + ul {
     max-width: calc(100% - 18rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .page__content h1 {
+    align-items: flex-start;
+    margin: 1.25rem 0 0.75rem;
+    padding: 0.48rem 0.72rem;
+    font-size: 1.24em !important;
+  }
+
+  .page__content h1::after {
+    display: none;
   }
 }
 </style>
