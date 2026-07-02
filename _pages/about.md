@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <span class="anchor" id="about-me"></span>
-# 👋 Welcome to my homepage!
+# 👋 About me
 
 <div class="intro-text">
 
@@ -56,7 +56,7 @@ redirect_from:
   min-width: 24px;
   height: 1px;
   margin-left: 0.55rem;
-  background: linear-gradient(90deg, rgba(3, 102, 214, 0.28), rgba(3, 102, 214, 0));
+  background: linear-gradient(90deg, rgba(3, 102, 214, 0.34), rgba(3, 102, 214, 0.18) 58%, rgba(3, 102, 214, 0.06) 100%);
 }
 
 /* Research Experience Timeline Styling */
