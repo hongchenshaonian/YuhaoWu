@@ -127,7 +127,7 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
       {% if author.cv %}
-        <li class="cv-link-item">
+        <li class="cv-link-item" hidden aria-hidden="true" style="display: none !important;">
           <a href="{{ author.cv | relative_url }}" class="btn cv-sidebar-btn">
             <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download CV
           </a>
