@@ -40,7 +40,7 @@ redirect_from:
   border: 0;
   border-left: 5px solid #0366d6;
   border-radius: 6px 0 0 6px;
-  background: linear-gradient(90deg, #eff6ff 0%, rgba(239, 246, 255, 0.9) 48%, rgba(239, 246, 255, 0.64) 78%, rgba(239, 246, 255, 0.42) 100%);
+  background: linear-gradient(90deg, #e8f3ff 0%, rgba(232, 243, 255, 0.95) 48%, rgba(232, 243, 255, 0.72) 78%, rgba(232, 243, 255, 0.5) 100%);
   box-shadow: none;
   color: #1f2937;
   font-size: 1.45em !important;
