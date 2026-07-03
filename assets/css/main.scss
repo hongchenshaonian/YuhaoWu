@@ -322,6 +322,17 @@ img.author__avatar {
   display: none !important;
 }
 
+@media (min-width: 1280px) {
+  .greedy-nav a {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  }
+
+  .masthead__menu-item--lg {
+    padding-right: 1rem;
+  }
+}
+
 /* Keep the desktop presentation intact on narrow desktop windows.
    The fixed desktop canvas uses the content width, so the left and
    right gutters collapse together before horizontal scrolling begins. */
