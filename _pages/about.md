@@ -460,7 +460,7 @@ body.protected-image-open {
 </style>
 
 <span class="anchor" id="education"></span>
-# 🎓 Education
+# Education
 
 <div class="exp-card education-card">
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
@@ -482,7 +482,7 @@ body.protected-image-open {
 
 
 <span class="anchor" id="publications"></span>
-# 📝 Publications
+# Publications
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box featured-paper publication-paper aligned-paper'>
@@ -577,7 +577,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="patents"></span>
-# 📰 Patents
+# Patents
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
@@ -636,8 +636,31 @@ body.protected-image-open {
   </div>
 </div>
 
+<span class="anchor" id="research-experience"></span>
+# Research Experience
+
+<span class="anchor" id="work-experience"></span>
+# Work Experience
+
+<span class="anchor" id="projects"></span>
+# Funded Project Participation
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Technological Innovation Program</div>
+    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>No. 2025BCB081</strong>.</p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
+    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, <strong>Pending</strong>.</p>
+  </div>
+</div>
+
 <span class="anchor" id="honors-awards"></span>
-# 🏆 Awards
+# Competition Awards
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -667,26 +690,5 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="projects"></span>
-# 💻 Projects
-
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Technological Innovation Program</div>
-    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>No. 2025BCB081</strong>.</p>
-  </div>
-</div>
-
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
-    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, <strong>Pending</strong>.</p>
-  </div>
-</div>
-
-
-<span class="anchor" id="research-experience"></span>
-# 🔬 Research experience
-
 <span class="anchor" id="services"></span>
-# 💬 Others
+# Others

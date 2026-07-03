@@ -12,14 +12,17 @@ main:
   - title: "Patents"
     url: "/#patents"
 
-  - title: "Awards"
-    url: "/#honors-awards"
+  - title: "Research Experience"
+    url: "/#research-experience"
 
-  - title: "Projects"
+  - title: "Work Experience"
+    url: "/#work-experience"
+
+  - title: "Funded Project Participation"
     url: "/#projects"
 
-  - title: "Research experience"
-    url: "/#research-experience"
+  - title: "Competition Awards"
+    url: "/#honors-awards"
 
   - title: "Others"
     url: "/#services"
