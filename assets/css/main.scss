@@ -324,10 +324,18 @@ img.author__avatar {
 
 @media (min-width: 1280px) {
   .masthead__inner-wrap {
+    width: 100%;
     max-width: none;
   }
 
+  .masthead__menu {
+    width: 100%;
+  }
+
   .greedy-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     min-width: 0;
   }
 
@@ -335,6 +343,8 @@ img.author__avatar {
     display: flex !important;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    width: 100%;
     row-gap: 0.15rem;
   }
 

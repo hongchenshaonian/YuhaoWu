@@ -58,6 +58,11 @@ redirect_from:
   margin-left: 0.55rem;
   background: linear-gradient(90deg, rgba(3, 102, 214, 0.36), rgba(3, 102, 214, 0.18) 48%, rgba(3, 102, 214, 0.04) 100%);
 }
+.page__content strong,
+.page__content b {
+  color: #111827;
+  font-weight: 800 !important;
+}
 
 /* Research Experience Timeline Styling */
 .timeline-container {
@@ -471,7 +476,7 @@ body.protected-image-open {
 </style>
 
 <span class="anchor" id="education"></span>
-# Education
+# 🎓 Education
 
 <div class="exp-card education-card">
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
@@ -493,7 +498,7 @@ body.protected-image-open {
 
 
 <span class="anchor" id="publications"></span>
-# Publications
+# 📝 Publications
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box featured-paper publication-paper aligned-paper'>
@@ -588,7 +593,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="patents"></span>
-# Patents
+# 📰 Patents
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
@@ -648,7 +653,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="research-experience"></span>
-# Research Experience
+# 🔬 Research Experience
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -665,7 +670,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="work-experience"></span>
-# Work Experience
+# 💼 Work Experience
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -679,7 +684,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="projects"></span>
-# Funded Project Participation
+# 💻 Funded Project Participation
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -696,7 +701,7 @@ body.protected-image-open {
 </div>
 
 <span class="anchor" id="honors-awards"></span>
-# Competition Awards
+# 🏆 Competition Awards
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -708,23 +713,23 @@ body.protected-image-open {
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Second Prize</div>
-    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. <strong>(Provincial Level)</strong></p>
-  </div>
-</div>
-
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Bronze Award</div>
-    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024. <strong>(Provincial Level)</strong></p>
+    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
   </div>
 </div>
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Second Prize</div>
-    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
+    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024.</p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Bronze Award</div>
+    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024.</p>
   </div>
 </div>
 
 <span class="anchor" id="services"></span>
-# Others
+# 💬 Others
