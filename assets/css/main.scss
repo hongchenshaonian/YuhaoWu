@@ -357,6 +357,16 @@ img.author__avatar {
     margin-right: 0.85rem;
   }
 
+  .greedy-nav .visible-links li.is-active > a {
+    color: #0366d6;
+    font-weight: 800;
+  }
+
+  .greedy-nav .visible-links li.is-active > a:before {
+    background: #0366d6;
+    transform: scaleX(1);
+  }
+
   .masthead__menu-item--lg {
     padding-right: 0.8rem;
   }
