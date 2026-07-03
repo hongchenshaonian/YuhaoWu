@@ -41,7 +41,7 @@
 
     function getNavOffset() {
       var masthead = document.querySelector('.masthead');
-      return (masthead ? masthead.offsetHeight : 0) + 20;
+      return (masthead ? masthead.offsetHeight : 0) + 2;
     }
 
     function cleanHashFromLocation() {
@@ -54,7 +54,9 @@
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
-      var y = target.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
+      var heading = target.nextElementSibling;
+      var scrollTarget = heading && /^H[1-6]$/.test(heading.tagName) ? heading : target;
+      var y = scrollTarget.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
       window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
       return true;
     }
@@ -84,6 +86,9 @@
           current = '#' + id;
         }
       });
+      if (window.pageYOffset >= document.documentElement.scrollHeight - window.innerHeight - 2) {
+        current = '#' + sectionIds[sectionIds.length - 1];
+      }
       setActiveNav(current);
     }
 
