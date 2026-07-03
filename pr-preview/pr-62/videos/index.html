@@ -45,7 +45,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783080285">
+<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783081291">
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
@@ -79,13 +79,13 @@
           
             <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#patents">Patents</a></li>
           
-            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#research-experience">Research</a></li>
+            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#research-experience">Research Experience</a></li>
           
-            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#work-experience">Work</a></li>
+            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#work-experience">Work Experience</a></li>
           
-            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#projects">Projects</a></li>
+            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#projects">Funded Project Participation</a></li>
           
-            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#honors-awards">Awards</a></li>
+            <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#honors-awards">Competition Awards</a></li>
           
             <li class="masthead__menu-item"><a href="/pr-preview/pr-62/#services">Others</a></li>
           
@@ -247,6 +247,25 @@
     </div>
 
     <script src="/pr-preview/pr-62/assets/js/main.min.js"></script>
+<script>
+  (function() {
+    function keepFullNavVisible() {
+      var visible = document.querySelector('#site-nav .visible-links');
+      var hidden = document.querySelector('#site-nav .hidden-links');
+      var button = document.querySelector('#site-nav button');
+      if (!visible || !hidden) return;
+      while (hidden.firstChild) {
+        visible.appendChild(hidden.firstChild);
+      }
+      hidden.classList.add('hidden');
+      if (button) button.classList.add('hidden');
+    }
+
+    keepFullNavVisible();
+    window.addEventListener('load', keepFullNavVisible);
+    window.addEventListener('resize', keepFullNavVisible);
+  }());
+</script>
 <script src="/pr-preview/pr-62/assets/js/protected-images.js?v=20260617a"></script>
 <script src="/pr-preview/pr-62/assets/js/background-orbs.js"></script>
 
