@@ -44,15 +44,18 @@
       return (masthead ? masthead.offsetHeight : 0) + 20;
     }
 
-    function scrollToHash(hash, updateHistory) {
+    function cleanHashFromLocation() {
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    function scrollToHash(hash) {
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
       var y = target.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
       window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-      if (updateHistory) {
-        history.pushState(null, '', hash);
-      }
       return true;
     }
 
@@ -88,8 +91,9 @@
       document.querySelectorAll('#site-nav a').forEach(function(link) {
         link.addEventListener('click', function(event) {
           var hash = normalizeHash(link.getAttribute('href'));
-          if (scrollToHash(hash, true)) {
+          if (scrollToHash(hash)) {
             event.preventDefault();
+            cleanHashFromLocation();
             setActiveNav(hash);
           }
         });
@@ -100,9 +104,11 @@
     bindNavScrolling();
     updateActiveNav();
     if (window.location.hash) {
+      var initialHash = window.location.hash;
       window.setTimeout(function() {
-        scrollToHash(window.location.hash, false);
-        setActiveNav(window.location.hash);
+        scrollToHash(initialHash);
+        setActiveNav(initialHash);
+        cleanHashFromLocation();
       }, 50);
     }
     window.addEventListener('load', keepFullNavVisible);
@@ -111,8 +117,11 @@
     window.addEventListener('resize', updateActiveNav);
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     window.addEventListener('hashchange', function() {
-      scrollToHash(window.location.hash, false);
-      setActiveNav(window.location.hash);
+      var hash = window.location.hash;
+      if (scrollToHash(hash)) {
+        setActiveNav(hash);
+        window.setTimeout(cleanHashFromLocation, 0);
+      }
     });
   }());
 </script>
