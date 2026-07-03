@@ -35,7 +35,7 @@ redirect_from:
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  margin: 1.55rem 0 0.9rem;
+  margin: 0.85rem 0 0.7rem;
   padding: 0.52rem 0.9rem 0.52rem 1rem;
   border: 0;
   border-left: 5px solid #0366d6;
@@ -407,7 +407,7 @@ body.protected-image-open {
 .exp-card {
   display: flex; align-items: flex-start;
   background: #fdfdfd; border: 1px solid #eaeaea;
-  border-radius: 8px; padding: 16px; margin-bottom: 16px;
+  border-radius: 8px; padding: 16px; margin-bottom: 10px;
   transition: background-color 0.2s;
 }
 .exp-card:hover { background: #f8f9fa; }
@@ -448,7 +448,7 @@ body.protected-image-open {
 @media (max-width: 640px) {
   .page__content h1 {
     align-items: flex-start;
-    margin: 1.25rem 0 0.75rem;
+    margin: 0.75rem 0 0.6rem;
     padding: 0.48rem 0.72rem;
     font-size: 1.24em !important;
   }
