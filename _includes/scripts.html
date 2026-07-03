@@ -39,11 +39,17 @@
       return '';
     }
 
+    function getNavOffset() {
+      var masthead = document.querySelector('.masthead');
+      return (masthead ? masthead.offsetHeight : 0) + 20;
+    }
+
     function scrollToHash(hash, updateHistory) {
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var y = target.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
+      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
       if (updateHistory) {
         history.pushState(null, '', hash);
       }
@@ -67,8 +73,7 @@
     }
 
     function updateActiveNav() {
-      var masthead = document.querySelector('.masthead');
-      var offset = (masthead ? masthead.offsetHeight : 0) + 24;
+      var offset = getNavOffset() + 4;
       var current = '#about-me';
       sectionIds.forEach(function(id) {
         var section = document.getElementById(id);
