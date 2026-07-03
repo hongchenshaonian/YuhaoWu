@@ -94,7 +94,7 @@ redirect_from:
   position: relative;
   display: flex;
   align-items: flex-start;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   border-radius: 8px;
   padding: 14px;
   border: 1px solid #ececec;
