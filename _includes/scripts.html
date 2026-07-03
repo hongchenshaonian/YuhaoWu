@@ -55,7 +55,7 @@
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
       var y = target.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
-      window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+      window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
       return true;
     }
 
