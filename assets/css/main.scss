@@ -323,13 +323,37 @@ img.author__avatar {
 }
 
 @media (min-width: 1280px) {
+  .masthead__inner-wrap {
+    max-width: none;
+  }
+
+  .greedy-nav {
+    min-width: 0;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 0.15rem;
+  }
+
+  .greedy-nav .visible-links li {
+    display: block !important;
+  }
+
   .greedy-nav a {
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+    margin-left: 0.45rem;
+    margin-right: 0.45rem;
   }
 
   .masthead__menu-item--lg {
-    padding-right: 1rem;
+    padding-right: 0.6rem;
+  }
+
+  .greedy-nav .hidden-links,
+  .greedy-nav button {
+    display: none !important;
   }
 }
 

@@ -181,6 +181,7 @@ redirect_from:
 }
 .paper-box.compact-info-card .desc {
   margin: 0;
+  font-size: 1em;
   line-height: 1.45;
 }
 .paper-box.compact-info-card ul.desc {
@@ -356,8 +357,8 @@ body.protected-image-open {
 .paper-box-text .title:hover { color: #0366d6; }
 .paper-box-text .title a { color: inherit; text-decoration: none; }
 .paper-box-text .title a:hover { color: #0366d6; }
-.paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 0.95em; }
-.paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 0.95em; }
+.paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 1em; }
+.paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 1em; }
 .article-link {
   margin-left: 0.75em;
   color: #0366d6;
@@ -369,10 +370,10 @@ body.protected-image-open {
 .article-link:focus {
   color: #005cc5;
 }
-.paper-box-text .desc { font-size: 0.9em; margin: 6px 0 8px 0; color: #444; }
+.paper-box-text .desc { font-size: 1em; margin: 6px 0 8px 0; color: #444; }
 .paper-box-text .links a {
   margin-right: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 500;
   color: #0366d6;
   text-decoration: none;
@@ -435,9 +436,9 @@ body.protected-image-open {
 .exp-role a { color: inherit; text-decoration: none; }
 .exp-role a:hover,
 .exp-role a:focus { color: #005cc5; text-decoration: none; }
-.exp-time { font-size: 0.9em; color: #586069; white-space: nowrap; }
-.exp-org { font-weight: 500; color: #0366d6; font-size: 0.95em; margin-bottom: 6px; }
-.exp-desc { font-size: 0.9em; color: #444; margin: 0; line-height: 1.5; }
+.exp-time { font-size: 1em; color: #586069; white-space: nowrap; }
+.exp-org { font-weight: 500; color: #0366d6; font-size: 1em; margin-bottom: 6px; }
+.exp-desc { font-size: 1em; color: #444; margin: 0; line-height: 1.5; }
 
 /* Highlights */
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
@@ -482,7 +483,7 @@ body.protected-image-open {
 
     <div style="margin-top: 8px;">
       <div class="exp-header">
-        <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
+        <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
         <span class="exp-time">Sep. 2022 - Present</span>
       </div>
       <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>

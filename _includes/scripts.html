@@ -1,4 +1,23 @@
 <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+<script>
+  (function() {
+    function keepFullNavVisible() {
+      var visible = document.querySelector('#site-nav .visible-links');
+      var hidden = document.querySelector('#site-nav .hidden-links');
+      var button = document.querySelector('#site-nav button');
+      if (!visible || !hidden) return;
+      while (hidden.firstChild) {
+        visible.appendChild(hidden.firstChild);
+      }
+      hidden.classList.add('hidden');
+      if (button) button.classList.add('hidden');
+    }
+
+    keepFullNavVisible();
+    window.addEventListener('load', keepFullNavVisible);
+    window.addEventListener('resize', keepFullNavVisible);
+  }());
+</script>
 <script src="{{ '/assets/js/protected-images.js?v=20260617a' | relative_url }}"></script>
 <script src="{{ '/assets/js/background-orbs.js' | relative_url }}"></script>
 
