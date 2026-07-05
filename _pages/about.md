@@ -700,7 +700,7 @@ body.protected-image-open {
   </div>
 </div>
 
-# 💼 Work Experience {#work-experience}
+# 💼 Industry Experience {#work-experience}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -729,7 +729,7 @@ body.protected-image-open {
   </div>
 </div>
 
-# 🏆 Honor and Awards {#honors-awards}
+# 🏆 Honors and Awards {#honors-awards}
 
 <div class="timeline-container awards-timeline">
   <div class="timeline-item">
