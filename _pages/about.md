@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span class="anchor" id="about-me"></span>
-# 👋 About me
+# 👋 About me {#about-me}
 
 <div class="intro-text">
 
@@ -57,6 +56,11 @@ redirect_from:
   height: 1px;
   margin-left: 0.55rem;
   background: linear-gradient(90deg, rgba(3, 102, 214, 0.36), rgba(3, 102, 214, 0.18) 48%, rgba(3, 102, 214, 0.04) 100%);
+}
+.page__content strong,
+.page__content b {
+  color: #111827;
+  font-weight: 800 !important;
 }
 
 /* Research Experience Timeline Styling */
@@ -181,7 +185,18 @@ redirect_from:
 }
 .paper-box.compact-info-card .desc {
   margin: 0;
+  font-size: 1em;
   line-height: 1.45;
+}
+.paper-box.compact-info-card ul.desc {
+  margin: 8px 0 0 1.15rem;
+  padding-left: 0;
+}
+.paper-box.compact-info-card ul.desc li {
+  margin-bottom: 6px;
+}
+.paper-box.compact-info-card ul.desc li:last-child {
+  margin-bottom: 0;
 }
 .page__content .section-image-note {
   margin: -0.65em 0 6px !important;
@@ -346,8 +361,8 @@ body.protected-image-open {
 .paper-box-text .title:hover { color: #0366d6; }
 .paper-box-text .title a { color: inherit; text-decoration: none; }
 .paper-box-text .title a:hover { color: #0366d6; }
-.paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 0.95em; }
-.paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 0.95em; }
+.paper-box-text .authors { margin: 4px 0 3px 0; color: #333; font-size: 1em; }
+.paper-box-text .venue { margin-bottom: 4px; color: #555; font-size: 1em; }
 .article-link {
   margin-left: 0.75em;
   color: #0366d6;
@@ -359,10 +374,10 @@ body.protected-image-open {
 .article-link:focus {
   color: #005cc5;
 }
-.paper-box-text .desc { font-size: 0.9em; margin: 6px 0 8px 0; color: #444; }
+.paper-box-text .desc { font-size: 1em; margin: 6px 0 8px 0; color: #444; }
 .paper-box-text .links a {
   margin-right: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 500;
   color: #0366d6;
   text-decoration: none;
@@ -425,9 +440,9 @@ body.protected-image-open {
 .exp-role a { color: inherit; text-decoration: none; }
 .exp-role a:hover,
 .exp-role a:focus { color: #005cc5; text-decoration: none; }
-.exp-time { font-size: 0.9em; color: #586069; white-space: nowrap; }
-.exp-org { font-weight: 500; color: #0366d6; font-size: 0.95em; margin-bottom: 6px; }
-.exp-desc { font-size: 0.9em; color: #444; margin: 0; line-height: 1.5; }
+.exp-time { font-size: 1em; color: #586069; white-space: nowrap; }
+.exp-org { font-weight: 500; color: #0366d6; font-size: 1em; margin-bottom: 6px; }
+.exp-desc { font-size: 1em; color: #444; margin: 0; line-height: 1.5; }
 
 /* Highlights */
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
@@ -459,8 +474,7 @@ body.protected-image-open {
 }
 </style>
 
-<span class="anchor" id="education"></span>
-# 🎓 Education
+# 🎓 Education {#education}
 
 <div class="exp-card education-card">
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
@@ -472,7 +486,7 @@ body.protected-image-open {
 
     <div style="margin-top: 8px;">
       <div class="exp-header">
-        <p class="exp-desc" style="font-size: 0.98em; margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
+        <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
         <span class="exp-time">Sep. 2022 - Present</span>
       </div>
       <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
@@ -481,8 +495,7 @@ body.protected-image-open {
 </div>
 
 
-<span class="anchor" id="publications"></span>
-# 📝 Publications
+# 📝 Publications {#publications}
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box featured-paper publication-paper aligned-paper'>
@@ -576,8 +589,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="patents"></span>
-# 📰 Patents
+# 📰 Patents {#patents}
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
@@ -589,7 +601,7 @@ body.protected-image-open {
     <div class="title">Full-solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
     <div class="venue"><em><strong>CN120590137A</strong>, 2025</em> <a class="article-link" href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
-    <p class="desc">China Invention patent. Status: Pending.</p>
+    <p class="desc">China Invention patent. Status: Published.</p>
   </div>
 </div>
 
@@ -602,7 +614,7 @@ body.protected-image-open {
     <div class="title">Venetian blind and adjusting mechanism</div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
     <div class="venue"><em><strong>CN223190347U</strong>, 2024</em> <a class="article-link" href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
-    <p class="desc">China Utility model patent.</p>
+    <p class="desc">China Utility model patent. Status: Granted.</p>
   </div>
 </div>
 
@@ -612,7 +624,7 @@ body.protected-image-open {
     <div class="title">Carbonated Steel Slag-Phosphogypsum-Slag Cementitious Material and Preparation Method Thereof</div>
     <div class="authors"><strong>Y. Wu</strong>, X. Qin, Z. Liu, R. Luo, S. Zhu, J. Liu, H. Liu, B. Hu, H. Xia, Z. Chen, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094419</strong>, 2026</em></div>
-    <p class="desc">China Invention patent.</p>
+    <p class="desc">China Invention patent. Status: Filed.</p>
   </div>
 </div>
 
@@ -622,7 +634,7 @@ body.protected-image-open {
     <div class="title">Full-Depth Phosphogypsum-Based Multi-Source Solid Waste Composite Roadbed and Pavement Structure</div>
     <div class="authors">X. Qin, R. Luo, Z. Liu, S. Zhu, Z. Zhang, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094387</strong>, 2026</em></div>
-    <p class="desc">China Invention patent.</p>
+    <p class="desc">China Invention patent. Status: Filed.</p>
   </div>
 </div>
 
@@ -632,12 +644,56 @@ body.protected-image-open {
     <div class="title">CO2 Mineralization-Enhanced Phosphogypsum-Slag-Steel Slag Cementitious Material and Preparation Method Thereof</div>
     <div class="authors">X. Qin, Z. Liu, J. Zhang, S. Zhu, J. Liu, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094423</strong>, 2026</em></div>
-    <p class="desc">China Invention patent.</p>
+    <p class="desc">China Invention patent. Status: Filed.</p>
   </div>
 </div>
 
-<span class="anchor" id="honors-awards"></span>
-# 🏆 Awards
+# 🔬 Research Experience {#research-experience}
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</div>
+    <p class="desc"><strong>Research Assistant</strong> | Wuhan, China | Feb. 2024 - Present</p>
+    <ul class="desc">
+      <li><strong>Development of low-carbon cementitious composites:</strong> Developed cementitious composites from industrial solid wastes through alkali activation and composition design, elucidating composition-property relationships to address the intrinsic low strength and poor water resistance of phosphogypsum-rich binders while delivering lower CO<sub>2</sub> emissions, energy consumption, and production cost relative to conventional cement.</li>
+      <li><strong>Mechanistic investigation of CO<sub>2</sub> mineralization:</strong> Developed a low-L/S-ratio aqueous carbonation method for steel slag under mild conditions, characterized the phase assemblage and micromorphological evolution of carbonated steel slag, identified the sequential in-situ generation of nanoscale calcite and monohydrocalcite, and proposed a three-layer core-shell structure based on the hydration-carbonation coupling mechanism.</li>
+      <li><strong>Modification of solid-waste precursors:</strong> Contributed to the investigation of two-stage calcination modification of phosphogypsum, analyzing phase transformation, particle-size refinement, impurity removal, and changes in cementitious activity for its application in solid-waste cementitious materials.</li>
+      <li><strong>Gel transformation-water resistance relationship:</strong> Contributed to the mechanistic investigation of Al-Na-modified all-solid-waste cementitious materials, elucidating the NaAlO<sub>2</sub>-driven transition from hydrophilic C-S-H toward water-resistant C-A-S-H/N-A-S-H gel networks and establishing its relationship with microstructural densification, hydration-product assemblage, and water-resistance enhancement.</li>
+      <li><strong>Sulfate leaching-water resistance degradation coupling:</strong> Contributed to the mechanistic investigation of phosphogypsum-based composite concrete under accelerated wet-dry sulfate leaching, elucidating the coupled evolution of sulfate migration, hydration-product dissolution, microcrack propagation, and water-resistance degradation, with COMSOL-based modeling used to project long-term durability.</li>
+    </ul>
+  </div>
+</div>
+
+# 💼 Work Experience {#work-experience}
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Juhai Environment Technology Co., Ltd.</div>
+    <p class="desc"><strong>Assistant Research Fellow</strong> | Xiaogan, China | Jul. 2024 - Aug. 2024</p>
+    <ul class="desc">
+      <li>Conducted on-site investigations of phosphogypsum storage facilities to evaluate disposal conditions, material management practices, and key constraints for resource-oriented utilization.</li>
+      <li>Supported enterprise-oriented optimization of solid-waste-based cementitious materials, including formulation adjustment, application-scenario analysis, and scale-up feasibility assessment for industrial implementation.</li>
+    </ul>
+  </div>
+</div>
+
+# 💻 Funded Project Participation {#projects}
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Technological Innovation Program</div>
+    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>Grant No. 2025BCB081</strong>. PI: Prof. Xiantao Qin.</p>
+  </div>
+</div>
+
+<div class='paper-box compact-info-card'>
+  <div class='paper-box-text'>
+    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
+    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials. PI: Prof. Xiantao Qin.</p>
+  </div>
+</div>
+
+# 🏆 Competition Awards {#honors-awards}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -649,44 +705,22 @@ body.protected-image-open {
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Second Prize</div>
-    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024. <strong>(Provincial Level)</strong></p>
-  </div>
-</div>
-
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Bronze Award</div>
-    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024. <strong>(Provincial Level)</strong></p>
+    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
   </div>
 </div>
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Second Prize</div>
-    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
-  </div>
-</div>
-
-<span class="anchor" id="projects"></span>
-# 💻 Projects
-
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Technological Innovation Program</div>
-    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>No. 2025BCB081</strong>.</p>
+    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024.</p>
   </div>
 </div>
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
-    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials, <strong>Pending</strong>.</p>
+    <div class="title">Bronze Award</div>
+    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024.</p>
   </div>
 </div>
 
-
-<span class="anchor" id="research-experience"></span>
-# 🔬 Research experience
-
-<span class="anchor" id="services"></span>
-# 💬 Others
+# 💬 Others {#services}

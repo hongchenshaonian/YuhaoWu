@@ -4,9 +4,16 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" data-nav-label="Homepage">Homepage</a></li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+            {% assign first_char = link.url | slice: 0, 1 %}
+            <li class="masthead__menu-item">
+              {% if first_char == "#" %}
+                <a href="{{ link.url }}" data-nav-label="{{ link.title | escape }}">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ link.url | relative_url }}" data-nav-label="{{ link.title | escape }}">{{ link.title }}</a>
+              {% endif %}
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

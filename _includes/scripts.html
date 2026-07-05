@@ -1,4 +1,210 @@
 <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+<script>
+  (function() {
+    var sectionIds = [
+      'about-me',
+      'education',
+      'publications',
+      'patents',
+      'research-experience',
+      'work-experience',
+      'projects',
+      'honors-awards',
+      'services'
+    ];
+    var sectionHeadings = [];
+    var sectionObserver = null;
+    var resizeTimer = null;
+    var activeUpdateFrame = null;
+
+    function keepFullNavVisible() {
+      var visible = document.querySelector('#site-nav .visible-links');
+      var hidden = document.querySelector('#site-nav .hidden-links');
+      var button = document.querySelector('#site-nav button');
+      if (!visible || !hidden) return;
+      while (hidden.firstChild) {
+        visible.appendChild(hidden.firstChild);
+      }
+      hidden.classList.add('hidden');
+      if (button) button.classList.add('hidden');
+    }
+
+    function refreshSectionHeadings() {
+      sectionHeadings = sectionIds.map(function(id) {
+        return document.getElementById(id);
+      }).filter(Boolean);
+    }
+
+    function normalizeHash(href) {
+      if (!href) return '';
+      if (href.charAt(0) === '#') return href;
+      try {
+        var url = new URL(href, window.location.href);
+        if (url.origin === window.location.origin && url.pathname === window.location.pathname) {
+          return url.hash;
+        }
+      } catch (error) {
+        return '';
+      }
+      return '';
+    }
+
+    function getMastheadOffset() {
+      var masthead = document.querySelector('.masthead');
+      return (masthead ? Math.ceil(masthead.getBoundingClientRect().height) : 0) + 6;
+    }
+
+    function updateScrollOffset() {
+      document.documentElement.style.setProperty('--masthead-scroll-offset', getMastheadOffset() + 'px');
+    }
+
+    function cleanHashFromLocation(hash) {
+      if (window.location.hash) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      } else if (hash && window.location.href.indexOf(hash) !== -1) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+    }
+
+    function scrollToHash(hash, smooth) {
+      if (!hash) return false;
+      var target = document.getElementById(hash.slice(1));
+      if (!target) return false;
+      alignToTarget(target, smooth);
+      if (smooth) {
+        window.setTimeout(function() {
+          alignToTarget(target, true);
+        }, 120);
+        window.setTimeout(function() {
+          alignToTarget(target, true);
+        }, 320);
+      }
+      return true;
+    }
+
+    function alignToTarget(target, smooth) {
+      updateScrollOffset();
+      var targetY = Math.max(0, window.pageYOffset + target.getBoundingClientRect().top - getMastheadOffset());
+      window.scrollTo({
+        top: targetY,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+    }
+
+    function setActiveNav(hash) {
+      var navItems = document.querySelectorAll('#site-nav .visible-links li');
+      var activeLink = null;
+      navItems.forEach(function(item) {
+        var link = item.querySelector('a');
+        var itemHash = link ? normalizeHash(link.getAttribute('href')) : '';
+        item.classList.remove('is-active');
+        if (itemHash === hash) {
+          activeLink = link;
+        }
+      });
+      if (activeLink) {
+        activeLink.closest('li').classList.add('is-active');
+      }
+    }
+
+    function getCurrentSectionHash() {
+      var offset = getMastheadOffset() + 2;
+      var current = '#about-me';
+      sectionHeadings.forEach(function(heading) {
+        if (heading.getBoundingClientRect().top <= offset) {
+          current = '#' + heading.id;
+        }
+      });
+      return current;
+    }
+
+    function updateActiveNav(hash) {
+      setActiveNav(hash || getCurrentSectionHash());
+    }
+
+    function scheduleActiveUpdate() {
+      if (activeUpdateFrame) return;
+      activeUpdateFrame = window.requestAnimationFrame(function() {
+        activeUpdateFrame = null;
+        updateActiveNav();
+      });
+    }
+
+    function installSectionObserver() {
+      if (!('IntersectionObserver' in window)) {
+        updateActiveNav();
+        return;
+      }
+      if (sectionObserver) {
+        sectionObserver.disconnect();
+      }
+      sectionObserver = new IntersectionObserver(function() {
+        updateActiveNav();
+      }, {
+        root: null,
+        rootMargin: '-' + getMastheadOffset() + 'px 0px -72% 0px',
+        threshold: 0
+      });
+      sectionHeadings.forEach(function(heading) {
+        sectionObserver.observe(heading);
+      });
+    }
+
+    function bindNavScrolling() {
+      document.querySelectorAll('#site-nav a').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+          var hash = normalizeHash(link.getAttribute('href'));
+          if (scrollToHash(hash, true)) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            updateActiveNav(hash);
+            cleanHashFromLocation(hash);
+          }
+        }, true);
+      });
+    }
+
+    function refreshNavigationState() {
+      keepFullNavVisible();
+      updateScrollOffset();
+      refreshSectionHeadings();
+      installSectionObserver();
+      updateActiveNav();
+    }
+
+    function scheduleRefresh() {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(refreshNavigationState, 80);
+    }
+
+    keepFullNavVisible();
+    updateScrollOffset();
+    refreshSectionHeadings();
+    bindNavScrolling();
+    installSectionObserver();
+    updateActiveNav();
+    if (window.location.hash) {
+      var initialHash = window.location.hash;
+      window.setTimeout(function() {
+        scrollToHash(initialHash, false);
+        updateActiveNav(initialHash);
+        cleanHashFromLocation(initialHash);
+      }, 50);
+    }
+    window.addEventListener('load', refreshNavigationState);
+    window.addEventListener('resize', scheduleRefresh);
+    window.addEventListener('scroll', scheduleActiveUpdate, { passive: true });
+    window.addEventListener('hashchange', function() {
+      var hash = window.location.hash;
+      if (scrollToHash(hash, false)) {
+        updateActiveNav(hash);
+        window.setTimeout(function() {
+          cleanHashFromLocation(hash);
+        }, 0);
+      }
+    });
+  }());
+</script>
 <script src="{{ '/assets/js/protected-images.js?v=20260617a' | relative_url }}"></script>
 <script src="{{ '/assets/js/background-orbs.js' | relative_url }}"></script>
 

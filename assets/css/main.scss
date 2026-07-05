@@ -40,6 +40,22 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+:root {
+  --masthead-scroll-offset: 66px;
+}
+
+html {
+  scroll-padding-top: var(--masthead-scroll-offset);
+}
+
+.page__content h1[id] {
+  scroll-margin-top: var(--masthead-scroll-offset);
+}
+
+.page__content {
+  padding-bottom: 3.5rem;
+}
+
 .paper-box {
     display: flex;
     justify-content: left;
@@ -85,16 +101,6 @@
     }
 
 
-}
-
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
 }
 
 .badge {
@@ -320,6 +326,72 @@ img.author__avatar {
 
 .author__urls_sm {
   display: none !important;
+}
+
+@media (min-width: 1280px) {
+  .masthead__inner-wrap {
+    width: 100%;
+    max-width: none;
+  }
+
+  .masthead__menu {
+    width: 100%;
+  }
+
+  .greedy-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .greedy-nav .visible-links {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 0.35rem;
+  }
+
+  .greedy-nav .visible-links li {
+    display: block !important;
+  }
+
+  .greedy-nav a {
+    display: inline-block;
+    margin-left: 0.85rem;
+    margin-right: 0.85rem;
+  }
+
+  .greedy-nav .visible-links a:after {
+    content: attr(data-nav-label);
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 800;
+    pointer-events: none;
+  }
+
+  .greedy-nav .visible-links li.is-active > a {
+    color: #0366d6;
+    font-weight: 800;
+  }
+
+  .greedy-nav .visible-links li.is-active > a:before {
+    background: #0366d6;
+    transform: scaleX(1);
+  }
+
+  .masthead__menu-item--lg {
+    padding-right: 0.8rem;
+  }
+
+  .greedy-nav .hidden-links,
+  .greedy-nav button {
+    display: none !important;
+  }
 }
 
 /* Keep the desktop presentation intact on narrow desktop windows.

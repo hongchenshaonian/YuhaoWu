@@ -1,25 +1,28 @@
 # main links links
 main:
   - title: "About Me"
-    url: "/#about-me"
+    url: "#about-me"
 
   - title: "Education"
-    url: "/#education"
+    url: "#education"
 
   - title: "Publications"
-    url: "/#publications"
+    url: "#publications"
 
   - title: "Patents"
-    url: "/#patents"
+    url: "#patents"
 
-  - title: "Awards"
-    url: "/#honors-awards"
+  - title: "Research Experience"
+    url: "#research-experience"
 
-  - title: "Projects"
-    url: "/#projects"
+  - title: "Work Experience"
+    url: "#work-experience"
 
-  - title: "Research experience"
-    url: "/#research-experience"
+  - title: "Funded Project Participation"
+    url: "#projects"
+
+  - title: "Competition Awards"
+    url: "#honors-awards"
 
   - title: "Others"
-    url: "/#services"
+    url: "#services"
