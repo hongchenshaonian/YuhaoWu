@@ -40,6 +40,22 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+:root {
+  --masthead-scroll-offset: 66px;
+}
+
+html {
+  scroll-padding-top: var(--masthead-scroll-offset);
+}
+
+.page__content h1[id] {
+  scroll-margin-top: var(--masthead-scroll-offset);
+}
+
+.page__content {
+  padding-bottom: 3.5rem;
+}
+
 .paper-box {
     display: flex;
     justify-content: left;
@@ -85,16 +101,6 @@
     }
 
 
-}
-
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
 }
 
 .badge {

@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-<span class="anchor" id="about-me"></span>
-# 👋 About me
+# 👋 About me {#about-me}
 
 <div class="intro-text">
 
@@ -475,8 +474,7 @@ body.protected-image-open {
 }
 </style>
 
-<span class="anchor" id="education"></span>
-# 🎓 Education
+# 🎓 Education {#education}
 
 <div class="exp-card education-card">
   <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
@@ -497,8 +495,7 @@ body.protected-image-open {
 </div>
 
 
-<span class="anchor" id="publications"></span>
-# 📝 Publications
+# 📝 Publications {#publications}
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box featured-paper publication-paper aligned-paper'>
@@ -592,8 +589,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="patents"></span>
-# 📰 Patents
+# 📰 Patents {#patents}
 <p class="section-image-note">(Please click on any image to view a larger version.)</p>
 
 <div class='paper-box aligned-paper'>
@@ -652,8 +648,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="research-experience"></span>
-# 🔬 Research Experience
+# 🔬 Research Experience {#research-experience}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -669,8 +664,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="work-experience"></span>
-# 💼 Work Experience
+# 💼 Work Experience {#work-experience}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -683,8 +677,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="projects"></span>
-# 💻 Funded Project Participation
+# 💻 Funded Project Participation {#projects}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -700,8 +693,7 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="honors-awards"></span>
-# 🏆 Competition Awards
+# 🏆 Competition Awards {#honors-awards}
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
@@ -731,5 +723,4 @@ body.protected-image-open {
   </div>
 </div>
 
-<span class="anchor" id="services"></span>
-# 💬 Others
+# 💬 Others {#services}
