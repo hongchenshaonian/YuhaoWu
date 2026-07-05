@@ -462,6 +462,9 @@ body.protected-image-open {
   transition: background-color 0.2s;
 }
 .exp-card:hover { background: #f8f9fa; }
+.experience-card {
+  display: block;
+}
 .exp-logo {
   width: 72px;
   height: 72px;
@@ -470,24 +473,42 @@ body.protected-image-open {
   border-radius: 4px;
   object-fit: contain;
 }
-.exp-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef6ff;
-  color: #0366d6;
-  font-size: 2.1rem;
-  line-height: 1;
-}
 .exp-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; min-height: 72px; }
-.exp-header { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; margin-bottom: 1px; }
-.exp-role { font-weight: 600; font-size: 1.05em; color: #24292e; margin: 0; }
+.exp-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  align-items: baseline;
+  column-gap: 24px;
+  margin-bottom: 1px;
+}
+.exp-role {
+  font-weight: 700;
+  font-size: 1.05em;
+  line-height: 1.35;
+  color: #111827;
+  margin: 0;
+}
 .exp-role a { color: inherit; text-decoration: none; }
 .exp-role a:hover,
 .exp-role a:focus { color: #005cc5; text-decoration: none; }
-.exp-time { font-size: 1em; color: #111827; white-space: nowrap; }
+.exp-time {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #111827;
+  white-space: nowrap;
+  text-align: left;
+}
 .exp-org { font-weight: 500; color: #0366d6; font-size: 1em; margin-bottom: 6px; }
 .exp-desc { font-size: 1em; color: #444; margin: 0; line-height: 1.5; }
+.exp-header .exp-desc {
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.exp-header .exp-desc em {
+  font-weight: 700;
+}
 .exp-details { margin-top: 2px; }
 .exp-bullets {
   margin: 8px 0 0 1.15rem;
@@ -506,13 +527,20 @@ body.protected-image-open {
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 
 @media (min-width: 900px) {
-  .education-card .exp-time {
-    margin-right: 32px;
-  }
-
   h1[id="-awards"] + ul,
   h1[id="-projects"] + ul {
     max-width: calc(100% - 18rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .exp-header {
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+  }
+
+  .exp-time {
+    white-space: normal;
   }
 }
 
@@ -707,7 +735,6 @@ body.protected-image-open {
 # 🔬 Research Experience {#research-experience}
 
 <div class="exp-card experience-card">
-  <img src="{{ '/personal_image/Wuhan_Polytechnic_University_Emblem.svg.png' | relative_url }}" class="exp-logo" alt="Wuhan Polytechnic University logo">
   <div class="exp-content">
     <div class="exp-header">
       <h3 class="exp-role">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</h3>
@@ -732,7 +759,6 @@ body.protected-image-open {
 # 💼 Industry Experience {#work-experience}
 
 <div class="exp-card experience-card">
-  <div class="exp-logo exp-icon" aria-hidden="true">💼</div>
   <div class="exp-content">
     <div class="exp-header">
       <h3 class="exp-role">Hubei Juhai Environment Technology Co., Ltd.</h3>
@@ -741,7 +767,7 @@ body.protected-image-open {
 
     <div class="exp-header exp-details">
       <p class="exp-desc"><strong>Assistant Research Fellow</strong></p>
-      <span class="exp-time">July 2024 – August 2024</span>
+      <span class="exp-time">July – August 2024</span>
     </div>
 
     <ul class="exp-desc exp-bullets">
