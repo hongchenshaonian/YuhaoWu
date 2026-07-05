@@ -47,7 +47,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783240194">
+<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783240474">
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
@@ -1066,6 +1066,30 @@ body.protected-image-open {
       }
     }
 
+    function animateScrollTo(targetY) {
+      var startY = window.pageYOffset;
+      var distance = targetY - startY;
+      var duration = Math.min(900, Math.max(360, Math.abs(distance) / 3));
+      var startTime = null;
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function step(timestamp) {
+        if (startTime === null) startTime = timestamp;
+        var elapsed = timestamp - startTime;
+        var progress = Math.min(1, elapsed / duration);
+        window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      }
+
+      window.requestAnimationFrame(step);
+      return duration;
+    }
+
     function scrollToHash(hash, smooth) {
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
@@ -1073,11 +1097,15 @@ body.protected-image-open {
       var heading = target.nextElementSibling;
       var scrollTarget = heading && /^H[1-6]$/.test(heading.tagName) ? heading : target;
       var y = scrollTarget.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
-      window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
-      return true;
+      var targetY = Math.max(0, y);
+      if (smooth && window.requestAnimationFrame) {
+        return animateScrollTo(targetY);
+      }
+      window.scrollTo(0, targetY);
+      return 0;
     }
 
-    function lockActiveNav(hash) {
+    function lockActiveNav(hash, duration) {
       activeNavLock = hash;
       if (activeNavLockTimer) {
         window.clearTimeout(activeNavLockTimer);
@@ -1085,7 +1113,7 @@ body.protected-image-open {
       activeNavLockTimer = window.setTimeout(function() {
         activeNavLock = '';
         updateActiveNav();
-      }, 900);
+      }, duration + 150);
     }
 
     function setActiveNav(hash) {
@@ -1124,10 +1152,11 @@ body.protected-image-open {
       document.querySelectorAll('#site-nav a').forEach(function(link) {
         link.addEventListener('click', function(event) {
           var hash = normalizeHash(link.getAttribute('href'));
-          if (scrollToHash(hash, true)) {
+          var duration = scrollToHash(hash, true);
+          if (duration !== false) {
             event.preventDefault();
             cleanHashFromLocation();
-            lockActiveNav(hash);
+            lockActiveNav(hash, duration);
             setActiveNav(hash);
           }
         });
