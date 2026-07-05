@@ -70,13 +70,25 @@
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
+      alignToTarget(target, smooth);
+      if (smooth) {
+        window.setTimeout(function() {
+          alignToTarget(target, true);
+        }, 120);
+        window.setTimeout(function() {
+          alignToTarget(target, true);
+        }, 320);
+      }
+      return true;
+    }
+
+    function alignToTarget(target, smooth) {
       updateScrollOffset();
       var targetY = Math.max(0, window.pageYOffset + target.getBoundingClientRect().top - getMastheadOffset());
       window.scrollTo({
         top: targetY,
         behavior: smooth ? 'smooth' : 'auto'
       });
-      return true;
     }
 
     function setActiveNav(hash) {
