@@ -101,16 +101,16 @@ redirect_from:
 .awards-timeline .timeline-arrow,
 .awards-timeline .timeline-content {
   font-family: inherit;
-  font-size: 0.94rem;
+  font-size: 1em;
   line-height: 1.45;
 }
 .awards-timeline .timeline-date {
   margin-bottom: 0;
-  font-weight: 600;
-  color: #24292e;
+  font-weight: 700;
+  color: #111827;
 }
 .awards-timeline .timeline-arrow {
-  color: #586069;
+  color: #24292e;
 }
 .awards-timeline .timeline-content {
   color: #24292e;
