@@ -523,7 +523,7 @@ body.protected-image-open {
     <div style="margin-top: 8px;">
       <div class="exp-header">
         <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
-        <span class="exp-time">September 2022 - Present</span>
+        <span class="exp-time">September 2022 – Present</span>
       </div>
       <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
     </div>
@@ -689,7 +689,7 @@ body.protected-image-open {
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</div>
-    <p class="desc"><strong>Research Assistant</strong> | Wuhan, China | February 2024 - Present</p>
+    <p class="desc"><strong>Research Assistant</strong> | Wuhan, China | February 2024 – Present</p>
     <ul class="desc">
       <li><strong>Development of low-carbon cementitious composites:</strong> Developed cementitious composites from industrial solid wastes through alkali activation and composition design, elucidating composition-property relationships to address the intrinsic low strength and poor water resistance of phosphogypsum-rich binders while delivering lower CO<sub>2</sub> emissions, energy consumption, and production cost relative to conventional cement.</li>
       <li><strong>Mechanistic investigation of CO<sub>2</sub> mineralization:</strong> Developed a low-L/S-ratio aqueous carbonation method for steel slag under mild conditions, characterized the phase assemblage and micromorphological evolution of carbonated steel slag, identified the sequential in-situ generation of nanoscale calcite and monohydrocalcite, and proposed a three-layer core-shell structure based on the hydration-carbonation coupling mechanism.</li>
@@ -705,7 +705,7 @@ body.protected-image-open {
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Hubei Juhai Environment Technology Co., Ltd.</div>
-    <p class="desc"><strong>Assistant Research Fellow</strong> | Xiaogan, China | July 2024 - August 2024</p>
+    <p class="desc"><strong>Assistant Research Fellow</strong> | Xiaogan, China | July 2024 – August 2024</p>
     <ul class="desc">
       <li>Conducted on-site investigations of phosphogypsum storage facilities to evaluate disposal conditions, material management practices, and key constraints for resource-oriented utilization.</li>
       <li>Supported enterprise-oriented optimization of solid-waste-based cementitious materials, including formulation adjustment, application-scenario analysis, and scale-up feasibility assessment for industrial implementation.</li>
