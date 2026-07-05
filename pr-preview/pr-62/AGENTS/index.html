@@ -45,7 +45,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783241115">
+<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783244122">
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
@@ -325,8 +325,10 @@
       'honors-awards',
       'services'
     ];
-    var activeNavLock = '';
-    var activeNavLockTimer = null;
+    var sectionHeadings = [];
+    var sectionObserver = null;
+    var resizeTimer = null;
+    var activeUpdateFrame = null;
 
     function keepFullNavVisible() {
       var visible = document.querySelector('#site-nav .visible-links');
@@ -338,6 +340,12 @@
       }
       hidden.classList.add('hidden');
       if (button) button.classList.add('hidden');
+    }
+
+    function refreshSectionHeadings() {
+      sectionHeadings = sectionIds.map(function(id) {
+        return document.getElementById(id);
+      }).filter(Boolean);
     }
 
     function normalizeHash(href) {
@@ -354,65 +362,34 @@
       return '';
     }
 
-    function getNavOffset() {
+    function getMastheadOffset() {
       var masthead = document.querySelector('.masthead');
-      return (masthead ? masthead.offsetHeight : 0) + 2;
+      return (masthead ? Math.ceil(masthead.getBoundingClientRect().height) : 0) + 6;
     }
 
-    function cleanHashFromLocation() {
+    function updateScrollOffset() {
+      document.documentElement.style.setProperty('--masthead-scroll-offset', getMastheadOffset() + 'px');
+    }
+
+    function cleanHashFromLocation(hash) {
       if (window.location.hash) {
         history.replaceState(null, '', window.location.pathname + window.location.search);
+      } else if (hash && window.location.href.indexOf(hash) !== -1) {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
       }
-    }
-
-    function animateScrollTo(targetY) {
-      var startY = window.pageYOffset;
-      var distance = targetY - startY;
-      var duration = Math.min(900, Math.max(360, Math.abs(distance) / 3));
-      var startTime = null;
-
-      function easeInOutCubic(t) {
-        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-      }
-
-      function step(timestamp) {
-        if (startTime === null) startTime = timestamp;
-        var elapsed = timestamp - startTime;
-        var progress = Math.min(1, elapsed / duration);
-        window.scrollTo(0, startY + distance * easeInOutCubic(progress));
-        if (progress < 1) {
-          window.requestAnimationFrame(step);
-        }
-      }
-
-      window.requestAnimationFrame(step);
-      return duration;
     }
 
     function scrollToHash(hash, smooth) {
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
-      var heading = target.nextElementSibling;
-      var scrollTarget = heading && /^H[1-6]$/.test(heading.tagName) ? heading : target;
-      var y = scrollTarget.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
-      var targetY = Math.max(0, y);
-      if (smooth && window.requestAnimationFrame) {
-        return animateScrollTo(targetY);
-      }
-      window.scrollTo(0, targetY);
-      return 0;
-    }
-
-    function lockActiveNav(hash, duration) {
-      activeNavLock = hash;
-      if (activeNavLockTimer) {
-        window.clearTimeout(activeNavLockTimer);
-      }
-      activeNavLockTimer = window.setTimeout(function() {
-        activeNavLock = '';
-        updateActiveNav();
-      }, duration + 150);
+      updateScrollOffset();
+      var targetY = Math.max(0, window.pageYOffset + target.getBoundingClientRect().top - getMastheadOffset());
+      window.scrollTo({
+        top: targetY,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+      return true;
     }
 
     function setActiveNav(hash) {
@@ -431,58 +408,100 @@
       }
     }
 
-    function updateActiveNav() {
-      if (activeNavLock) {
-        setActiveNav(activeNavLock);
-        return;
-      }
-      var offset = getNavOffset() + 4;
+    function getCurrentSectionHash() {
+      var offset = getMastheadOffset() + 2;
       var current = '#about-me';
-      sectionIds.forEach(function(id) {
-        var section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= offset) {
-          current = '#' + id;
+      sectionHeadings.forEach(function(heading) {
+        if (heading.getBoundingClientRect().top <= offset) {
+          current = '#' + heading.id;
         }
       });
-      setActiveNav(current);
+      return current;
+    }
+
+    function updateActiveNav(hash) {
+      setActiveNav(hash || getCurrentSectionHash());
+    }
+
+    function scheduleActiveUpdate() {
+      if (activeUpdateFrame) return;
+      activeUpdateFrame = window.requestAnimationFrame(function() {
+        activeUpdateFrame = null;
+        updateActiveNav();
+      });
+    }
+
+    function installSectionObserver() {
+      if (!('IntersectionObserver' in window)) {
+        updateActiveNav();
+        return;
+      }
+      if (sectionObserver) {
+        sectionObserver.disconnect();
+      }
+      sectionObserver = new IntersectionObserver(function() {
+        updateActiveNav();
+      }, {
+        root: null,
+        rootMargin: '-' + getMastheadOffset() + 'px 0px -72% 0px',
+        threshold: 0
+      });
+      sectionHeadings.forEach(function(heading) {
+        sectionObserver.observe(heading);
+      });
     }
 
     function bindNavScrolling() {
       document.querySelectorAll('#site-nav a').forEach(function(link) {
         link.addEventListener('click', function(event) {
           var hash = normalizeHash(link.getAttribute('href'));
-          var duration = scrollToHash(hash, true);
-          if (duration !== false) {
+          if (scrollToHash(hash, true)) {
             event.preventDefault();
-            cleanHashFromLocation();
-            lockActiveNav(hash, duration);
-            setActiveNav(hash);
+            event.stopImmediatePropagation();
+            updateActiveNav(hash);
+            cleanHashFromLocation(hash);
           }
-        });
+        }, true);
       });
     }
 
+    function refreshNavigationState() {
+      keepFullNavVisible();
+      updateScrollOffset();
+      refreshSectionHeadings();
+      installSectionObserver();
+      updateActiveNav();
+    }
+
+    function scheduleRefresh() {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(refreshNavigationState, 80);
+    }
+
     keepFullNavVisible();
+    updateScrollOffset();
+    refreshSectionHeadings();
     bindNavScrolling();
+    installSectionObserver();
     updateActiveNav();
     if (window.location.hash) {
       var initialHash = window.location.hash;
       window.setTimeout(function() {
         scrollToHash(initialHash, false);
-        setActiveNav(initialHash);
-        cleanHashFromLocation();
+        updateActiveNav(initialHash);
+        cleanHashFromLocation(initialHash);
       }, 50);
     }
-    window.addEventListener('load', keepFullNavVisible);
-    window.addEventListener('load', updateActiveNav);
-    window.addEventListener('resize', keepFullNavVisible);
-    window.addEventListener('resize', updateActiveNav);
-    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    window.addEventListener('load', refreshNavigationState);
+    window.addEventListener('resize', scheduleRefresh);
+    window.addEventListener('scroll', scheduleActiveUpdate, { passive: true });
     window.addEventListener('hashchange', function() {
       var hash = window.location.hash;
       if (scrollToHash(hash, false)) {
-        setActiveNav(hash);
-        window.setTimeout(cleanHashFromLocation, 0);
+        updateActiveNav(hash);
+        window.setTimeout(function() {
+          cleanHashFromLocation(hash);
+        }, 0);
       }
     });
   }());
