@@ -17,9 +17,6 @@
   <div class="author__urls-wrapper">
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
-        <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
-      {% endif %}
       {% if author.location %}
         {% if author.location_url %}
           <li><a href="{{ author.location_url }}"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span class="author__link-label">{{ author.location }}</span></a></li>
@@ -127,8 +124,8 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
       {% if author.cv %}
-        <li class="cv-link-item" hidden aria-hidden="true" style="display: none !important;">
-          <a href="{{ author.cv | relative_url }}" class="btn cv-sidebar-btn">
+        <li class="cv-link-item">
+          <a href="{{ author.cv | relative_url }}" class="btn cv-sidebar-btn" download>
             <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download CV
           </a>
         </li>
