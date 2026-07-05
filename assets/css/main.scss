@@ -359,8 +359,19 @@ img.author__avatar {
   }
 
   .greedy-nav a {
+    display: inline-block;
     margin-left: 0.85rem;
     margin-right: 0.85rem;
+  }
+
+  .greedy-nav .visible-links a:after {
+    content: attr(data-nav-label);
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    font-weight: 800;
+    pointer-events: none;
   }
 
   .greedy-nav .visible-links li.is-active > a {
