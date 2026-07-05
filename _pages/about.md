@@ -79,6 +79,42 @@ redirect_from:
 }
 .timeline-date { font-weight: 600; color: #0366d6; font-size: 0.95em; margin-bottom: 2px; }
 .timeline-content { font-size: 0.95em; color: #24292e; }
+.awards-timeline {
+  margin-top: 0.15rem;
+  margin-bottom: 1rem;
+  padding-left: 18px;
+}
+.awards-timeline .timeline-item {
+  display: grid;
+  grid-template-columns: 3.25rem 1.1rem minmax(0, 1fr);
+  column-gap: 0.1rem;
+  align-items: baseline;
+  margin-bottom: 0.55rem;
+}
+.awards-timeline .timeline-item::before {
+  left: -25px;
+  top: 0.45em;
+  width: 10px;
+  height: 10px;
+}
+.awards-timeline .timeline-date,
+.awards-timeline .timeline-arrow,
+.awards-timeline .timeline-content {
+  font-family: inherit;
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+.awards-timeline .timeline-date {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #24292e;
+}
+.awards-timeline .timeline-arrow {
+  color: #586069;
+}
+.awards-timeline .timeline-content {
+  color: #24292e;
+}
 
 /* 现代化的 Show more 按钮 */
 .timeline-details summary {
@@ -695,29 +731,34 @@ body.protected-image-open {
 
 # 🏆 Honor and Awards {#honors-awards}
 
-<div class="timeline-container">
+<div class="timeline-container awards-timeline">
   <div class="timeline-item">
     <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
     <div class="timeline-content">Academic merit scholarship, Wuhan Polytechnic University, <strong>Third Class (Top 12%).</strong></div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
     <div class="timeline-content">The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, <strong>Second Prize.</strong></div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
     <div class="timeline-content">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, <strong>Second Prize.</strong></div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-date">2024</div>
+    <div class="timeline-arrow">-&gt;</div>
     <div class="timeline-content">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, <strong>Second Prize.</strong></div>
   </div>
 
   <div class="timeline-item">
     <div class="timeline-date">2024</div>
+    <div class="timeline-arrow">-&gt;</div>
     <div class="timeline-content">Hubei Final of the China International College Students' Innovation Competition, <strong>Bronze Award.</strong></div>
   </div>
 </div>
