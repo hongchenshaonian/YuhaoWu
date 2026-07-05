@@ -45,7 +45,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783237829">
+<link rel="stylesheet" href="/pr-preview/pr-62/assets/css/main.css?v=1783238500">
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
@@ -327,6 +327,8 @@
       'honors-awards',
       'services'
     ];
+    var activeNavLock = '';
+    var activeNavLockTimer = null;
 
     function keepFullNavVisible() {
       var visible = document.querySelector('#site-nav .visible-links');
@@ -365,15 +367,26 @@
       }
     }
 
-    function scrollToHash(hash) {
+    function scrollToHash(hash, smooth) {
       if (!hash) return false;
       var target = document.getElementById(hash.slice(1));
       if (!target) return false;
       var heading = target.nextElementSibling;
       var scrollTarget = heading && /^H[1-6]$/.test(heading.tagName) ? heading : target;
       var y = scrollTarget.getBoundingClientRect().top + window.pageYOffset - getNavOffset();
-      window.scrollTo({ top: Math.max(0, y), behavior: 'auto' });
+      window.scrollTo({ top: Math.max(0, y), behavior: smooth ? 'smooth' : 'auto' });
       return true;
+    }
+
+    function lockActiveNav(hash) {
+      activeNavLock = hash;
+      if (activeNavLockTimer) {
+        window.clearTimeout(activeNavLockTimer);
+      }
+      activeNavLockTimer = window.setTimeout(function() {
+        activeNavLock = '';
+        updateActiveNav();
+      }, 900);
     }
 
     function setActiveNav(hash) {
@@ -393,6 +406,10 @@
     }
 
     function updateActiveNav() {
+      if (activeNavLock) {
+        setActiveNav(activeNavLock);
+        return;
+      }
       var offset = getNavOffset() + 4;
       var current = '#about-me';
       sectionIds.forEach(function(id) {
@@ -408,9 +425,10 @@
       document.querySelectorAll('#site-nav a').forEach(function(link) {
         link.addEventListener('click', function(event) {
           var hash = normalizeHash(link.getAttribute('href'));
-          if (scrollToHash(hash)) {
+          if (scrollToHash(hash, true)) {
             event.preventDefault();
             cleanHashFromLocation();
+            lockActiveNav(hash);
             setActiveNav(hash);
           }
         });
@@ -423,7 +441,7 @@
     if (window.location.hash) {
       var initialHash = window.location.hash;
       window.setTimeout(function() {
-        scrollToHash(initialHash);
+        scrollToHash(initialHash, false);
         setActiveNav(initialHash);
         cleanHashFromLocation();
       }, 50);
@@ -435,7 +453,7 @@
     window.addEventListener('scroll', updateActiveNav, { passive: true });
     window.addEventListener('hashchange', function() {
       var hash = window.location.hash;
-      if (scrollToHash(hash)) {
+      if (scrollToHash(hash, false)) {
         setActiveNav(hash);
         window.setTimeout(cleanHashFromLocation, 0);
       }
