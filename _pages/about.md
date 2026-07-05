@@ -476,15 +476,15 @@ body.protected-image-open {
 .exp-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; min-height: 72px; }
 .exp-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 18rem;
+  grid-template-columns: minmax(0, 1fr) max-content;
   align-items: baseline;
   column-gap: 24px;
-  margin-bottom: 1px;
+  margin-bottom: 0;
 }
 .exp-role {
   font-weight: 700;
   font-size: 1.05em;
-  line-height: 1.35;
+  line-height: 1.28;
   color: #111827;
   margin: 0;
 }
@@ -492,24 +492,25 @@ body.protected-image-open {
 .exp-role a:hover,
 .exp-role a:focus { color: #005cc5; text-decoration: none; }
 .exp-time {
-  font-size: 1em;
+  font-size: 1.05em;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.28;
   color: #111827;
   white-space: nowrap;
-  text-align: left;
+  text-align: right;
 }
 .exp-org { font-weight: 500; color: #0366d6; font-size: 1em; margin-bottom: 6px; }
 .exp-desc { font-size: 1em; color: #444; margin: 0; line-height: 1.5; }
 .exp-header .exp-desc {
+  font-size: 1.05em;
   color: #111827;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.28;
 }
 .exp-header .exp-desc em {
   font-weight: 700;
 }
-.exp-details { margin-top: 2px; }
+.exp-details { margin-top: 5px; }
 .exp-bullets {
   margin: 8px 0 0 1.15rem;
   padding-left: 0;
