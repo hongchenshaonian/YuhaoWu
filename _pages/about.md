@@ -588,16 +588,11 @@ body.protected-image-open {
   line-height: 1.45;
 }
 .award-result {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.16rem 0.55rem;
-  border-radius: 4px;
-  background: #f0f7ff;
   color: #111827;
   font-weight: 700;
   line-height: 1.35;
   white-space: nowrap;
+  text-align: right;
 }
 
 /* Highlights */
@@ -638,7 +633,7 @@ body.protected-image-open {
 
   .award-result {
     grid-column: 2;
-    justify-self: start;
+    text-align: left;
     white-space: normal;
   }
 }
