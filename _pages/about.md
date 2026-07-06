@@ -521,6 +521,60 @@ body.protected-image-open {
 .exp-bullets li:last-child {
   margin-bottom: 0;
 }
+.research-task-list {
+  display: grid;
+  gap: 0.62rem;
+  margin-top: 10px;
+}
+.research-task {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 0.38rem;
+  row-gap: 0.16rem;
+}
+.research-task-marker {
+  color: #111827;
+  font-weight: 600;
+  line-height: 1.42;
+  white-space: nowrap;
+}
+.research-task-title {
+  color: #111827;
+  font-weight: 800;
+  line-height: 1.42;
+}
+.research-task-detail {
+  grid-column: 2;
+  margin: 0;
+  color: #374151;
+  font-size: 0.98em;
+  line-height: 1.48;
+}
+.awards-table {
+  width: 100%;
+  margin: 0.1rem 0 1rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #24292e;
+}
+.awards-table col:nth-child(1) { width: 5.8rem; }
+.awards-table col:nth-child(3) { width: 12rem; }
+.awards-table td {
+  padding: 0.52rem 0.62rem;
+  border: 1px solid #d8dee4;
+  vertical-align: top;
+  line-height: 1.45;
+}
+.awards-table .award-year {
+  color: #111827;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.awards-table .award-result {
+  color: #111827;
+  font-weight: 800;
+  white-space: nowrap;
+}
 
 /* Highlights */
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
@@ -541,6 +595,41 @@ body.protected-image-open {
   }
 
   .exp-time {
+    white-space: normal;
+  }
+
+  .research-task {
+    grid-template-columns: 1fr;
+  }
+
+  .research-task-detail {
+    grid-column: 1;
+    padding-left: 1.9rem;
+  }
+
+  .awards-table,
+  .awards-table tbody,
+  .awards-table tr,
+  .awards-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .awards-table col {
+    width: auto !important;
+  }
+
+  .awards-table tr {
+    border: 1px solid #d8dee4;
+    margin-bottom: 0.65rem;
+  }
+
+  .awards-table td {
+    border: 0;
+    padding: 0.42rem 0.58rem;
+  }
+
+  .awards-table .award-result {
     white-space: normal;
   }
 }
@@ -747,13 +836,48 @@ body.protected-image-open {
       <span class="exp-time">February 2024 – Present</span>
     </div>
 
-    <ul class="exp-desc exp-bullets">
-      <li><strong>Modifying solid waste precursors through thermal treatment:</strong> Calcined phosphogypsum at 150-800°C in a muffle furnace to remove P/F impurities and transform gypsum phases, and measured whiteness, density, pH, and particle-size distribution under varied temperatures.</li>
-      <li><strong>Tailoring alkali-activated solid waste cementitious composites:</strong> Formulated solid-waste-based mix designs for high-performance alkali-activated cementitious composites, integrated XRD, TG-DTG, and FTIR analyses to characterize hydration-product evolution and phase assemblage, identified a steel-slag-assisted microcrack sealing mechanism, and benchmarked binder sustainability against OPC and CSA cement using CO<sub>2</sub> emission, energy, and cost metrics.</li>
-      <li><strong>Carbonating solid waste precursors for CO<sub>2</sub> mineralization and sequestration:</strong> Developed an ambient-condition aqueous carbonation method for efficient CO<sub>2</sub> mineralization of steel slag, quantified phase assemblage, CO<sub>2</sub> uptake, and particle size using QXRD Rietveld, TG, and laser diffraction, characterized carbonation product nucleation and growth using FTIR and SEM-EDS evidence, and established how carbonated steel slag enhanced PG-GGBS binder strength and water resistance.</li>
-      <li><strong>Enhancing water resistance of solid waste binders through chemical modification:</strong> Tuned solid waste binder gel chemistry using NaAlO<sub>2</sub> as a dual Al-Na source, quantified gel type proportions and transformation pathways through <sup>29</sup>Si NMR spectral deconvolution analysis, and proposed and validated a gel transformation coefficient for evaluating water resistance in solid waste binders.</li>
-      <li><strong>Modeling long-term degradation of solid waste concrete under water exposure:</strong> Designed an accelerated sulfate leaching protocol to simulate water resistance degradation under wet-dry cycling, built a COMSOL transport model to project sulfate migration and leaching-depth evolution over 360 cycles, and validated the model using 90 accelerated sulfate leaching cycles correlated with strength loss.</li>
-    </ul>
+    <div class="research-task-list">
+      <div class="research-task">
+        <div class="research-task-marker">[1] -&gt;</div>
+        <div class="research-task-title">Modifying solid waste precursors through thermal treatment:</div>
+        <p class="research-task-detail">Calcined phosphogypsum at 150-800°C in a muffle furnace to remove P/F impurities and transform gypsum phases.</p>
+        <p class="research-task-detail">Conducted measurements of PG whiteness, density, pH, and particle-size distribution under varied temperatures.</p>
+      </div>
+
+      <div class="research-task">
+        <div class="research-task-marker">[2] -&gt;</div>
+        <div class="research-task-title">Tailoring alkali-activated solid waste cementitious composites:</div>
+        <p class="research-task-detail">Formulated solid-waste-based mix designs for high-performance alkali-activated cementitious composites.</p>
+        <p class="research-task-detail">Integrated XRD, TG-DTG, and FTIR analyses to characterize hydration-product evolution and phase assemblage.</p>
+        <p class="research-task-detail">Identified a steel-slag-assisted microcrack sealing mechanism governing strength and water resistance enhancement.</p>
+        <p class="research-task-detail">Benchmarked binder sustainability against OPC and CSA cement using CO<sub>2</sub> emission, energy, and cost metrics.</p>
+      </div>
+
+      <div class="research-task">
+        <div class="research-task-marker">[3] -&gt;</div>
+        <div class="research-task-title">Carbonating solid waste precursors for CO<sub>2</sub> mineralization and sequestration:</div>
+        <p class="research-task-detail">Developed an ambient-condition aqueous carbonation method for efficient CO<sub>2</sub> mineralization of steel slag.</p>
+        <p class="research-task-detail">Quantified phase assemblage, CO<sub>2</sub> uptake, and particle size using QXRD Rietveld, TG, and laser diffraction.</p>
+        <p class="research-task-detail">Characterized carbonation product nucleation and growth processes using FTIR and SEM-EDS evidence.</p>
+        <p class="research-task-detail">Established how carbonated steel slag enhanced PG-GGBS binder strength and water resistance.</p>
+      </div>
+
+      <div class="research-task">
+        <div class="research-task-marker">[4] -&gt;</div>
+        <div class="research-task-title">Enhancing water resistance of solid waste binders through chemical modification:</div>
+        <p class="research-task-detail">Tuned solid waste binder gel chemistry using NaAlO<sub>2</sub> as a dual Al-Na source for water resistance enhancement.</p>
+        <p class="research-task-detail">Quantified gel type proportions and transformation pathways through <sup>29</sup>Si NMR spectral deconvolution analysis.</p>
+        <p class="research-task-detail">Proposed and validated a gel transformation coefficient for evaluating water resistance in solid waste binders.</p>
+      </div>
+
+      <div class="research-task">
+        <div class="research-task-marker">[5] -&gt;</div>
+        <div class="research-task-title">Modeling long-term degradation of solid waste concrete under water exposure:</div>
+        <p class="research-task-detail">Designed an accelerated sulfate leaching protocol to simulate water resistance degradation under wet-dry cycling.</p>
+        <p class="research-task-detail">Built a COMSOL transport model to project sulfate migration and leaching-depth evolution over 360 cycles.</p>
+        <p class="research-task-detail">Validated the model using 90 accelerated sulfate leaching cycles and correlated leaching depth with strength loss.</p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -796,36 +920,39 @@ body.protected-image-open {
 
 # 🏆 Honors & Awards {#honors-awards}
 
-<div class="timeline-container awards-timeline">
-  <div class="timeline-item">
-    <div class="timeline-date">2025</div>
-    <div class="timeline-arrow">-&gt;</div>
-    <div class="timeline-content">Academic merit scholarship, Wuhan Polytechnic University, <strong>Third Class (Top 12%).</strong></div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">2025</div>
-    <div class="timeline-arrow">-&gt;</div>
-    <div class="timeline-content">2025 China Youth Sci-Tech Innovation Open Challenge, the 19th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition, <strong>Second Prize.</strong></div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">2025</div>
-    <div class="timeline-arrow">-&gt;</div>
-    <div class="timeline-content">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, <strong>Second Prize.</strong></div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">2024</div>
-    <div class="timeline-arrow">-&gt;</div>
-    <div class="timeline-content">The 13th Hubei "Challenge Cup" College Student Entrepreneurship Plan Competition, <strong>Second Prize.</strong></div>
-  </div>
-
-  <div class="timeline-item">
-    <div class="timeline-date">2024</div>
-    <div class="timeline-arrow">-&gt;</div>
-    <div class="timeline-content">The 7th Hubei "My Dream - Chu Tian Creator" Competition, China International College Students' Innovation Competition, <strong>Bronze Award.</strong></div>
-  </div>
-</div>
+<table class="awards-table">
+  <colgroup>
+    <col>
+    <col>
+    <col>
+  </colgroup>
+  <tbody>
+    <tr>
+      <td class="award-year">2025</td>
+      <td>Academic merit scholarship, Wuhan Polytechnic University.</td>
+      <td class="award-result">Third Class (Top 12%)</td>
+    </tr>
+    <tr>
+      <td class="award-year">2025</td>
+      <td>2025 China Youth Sci-Tech Innovation Open Challenge, the 19th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition.</td>
+      <td class="award-result">Second Prize</td>
+    </tr>
+    <tr>
+      <td class="award-year">2025</td>
+      <td>The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions.</td>
+      <td class="award-result">Second Prize</td>
+    </tr>
+    <tr>
+      <td class="award-year">2024</td>
+      <td>The 13th Hubei "Challenge Cup" College Student Entrepreneurship Plan Competition.</td>
+      <td class="award-result">Second Prize</td>
+    </tr>
+    <tr>
+      <td class="award-year">2024</td>
+      <td>The 7th Hubei "My Dream - Chu Tian Creator" Competition, China International College Students' Innovation Competition.</td>
+      <td class="award-result">Bronze Award</td>
+    </tr>
+  </tbody>
+</table>
 
 # 💬 Others {#services}
