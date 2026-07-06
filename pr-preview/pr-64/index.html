@@ -47,7 +47,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/pr-preview/pr-64/assets/css/main.css?v=1783341694">
+<link rel="stylesheet" href="/pr-preview/pr-64/assets/css/main.css?v=1783342064">
 
 <meta http-equiv="cleartype" content="on">
 <base target="_blank">
@@ -737,6 +737,22 @@ body.protected-image-open {
 .experience-card {
   display: block;
 }
+.education-card .exp-role {
+  font-weight: 650;
+}
+.education-card .exp-time {
+  color: #1f2937;
+  font-size: 1em;
+  font-weight: 600;
+}
+.education-card .exp-header .exp-desc,
+.education-card .exp-header .exp-desc em {
+  color: #1f2937;
+  font-weight: 500;
+}
+.education-card .exp-desc strong {
+  font-weight: 650 !important;
+}
 .exp-logo {
   width: 72px;
   height: 72px;
@@ -822,30 +838,37 @@ body.protected-image-open {
   font-size: 0.98em;
   line-height: 1.48;
 }
-.awards-table {
-  width: 100%;
-  margin: 0.1rem 0 1rem;
-  border-collapse: separate;
-  border-spacing: 0 0.18rem;
-  table-layout: fixed;
-  color: #24292e;
+.awards-list {
+  display: grid;
+  gap: 0.56rem;
+  margin: 0.2rem 0 1rem;
 }
-.awards-table col:nth-child(1) { width: 5.8rem; }
-.awards-table col:nth-child(3) { width: 12rem; }
-.awards-table td {
-  padding: 0.42rem 0.62rem;
-  border: 0;
-  vertical-align: top;
+.award-row {
+  display: grid;
+  grid-template-columns: 4.4rem minmax(0, 1fr) max-content;
+  column-gap: 1rem;
+  align-items: baseline;
+  padding: 0.28rem 0;
+}
+.award-year {
+  color: #111827;
+  font-weight: 700;
   line-height: 1.45;
 }
-.awards-table .award-year {
-  color: #111827;
-  font-weight: 600;
-  white-space: nowrap;
+.award-title {
+  color: #24292e;
+  line-height: 1.45;
 }
-.awards-table .award-result {
+.award-result {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.16rem 0.55rem;
+  border-radius: 4px;
+  background: #f0f7ff;
   color: #111827;
-  font-weight: 800;
+  font-weight: 700;
+  line-height: 1.35;
   white-space: nowrap;
 }
 
@@ -880,28 +903,14 @@ body.protected-image-open {
     padding-left: 1.9rem;
   }
 
-  .awards-table,
-  .awards-table tbody,
-  .awards-table tr,
-  .awards-table td {
-    display: block;
-    width: 100%;
+  .award-row {
+    grid-template-columns: 3.8rem minmax(0, 1fr);
+    row-gap: 0.28rem;
   }
 
-  .awards-table col {
-    width: auto !important;
-  }
-
-  .awards-table tr {
-    margin-bottom: 0.65rem;
-  }
-
-  .awards-table td {
-    border: 0;
-    padding: 0.42rem 0.58rem;
-  }
-
-  .awards-table .award-result {
+  .award-result {
+    grid-column: 2;
+    justify-self: start;
     white-space: normal;
   }
 }
@@ -1191,40 +1200,37 @@ body.protected-image-open {
 
 <h1 id="honors-awards">🏆 Honors &amp; Awards</h1>
 
-<table class="awards-table">
-  <colgroup>
-    <col />
-    <col />
-    <col />
-  </colgroup>
-  <tbody>
-    <tr>
-      <td class="award-year">2025</td>
-      <td>Academic merit scholarship, Wuhan Polytechnic University.</td>
-      <td class="award-result">Third Class (Top 12%)</td>
-    </tr>
-    <tr>
-      <td class="award-year">2025</td>
-      <td>2025 China Youth Sci-Tech Innovation Open Challenge, the 19th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition.</td>
-      <td class="award-result">Second Prize</td>
-    </tr>
-    <tr>
-      <td class="award-year">2025</td>
-      <td>The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions.</td>
-      <td class="award-result">Second Prize</td>
-    </tr>
-    <tr>
-      <td class="award-year">2024</td>
-      <td>The 13th Hubei "Challenge Cup" College Student Entrepreneurship Plan Competition.</td>
-      <td class="award-result">Second Prize</td>
-    </tr>
-    <tr>
-      <td class="award-year">2024</td>
-      <td>The 7th Hubei "My Dream - Chu Tian Creator" Competition, China International College Students' Innovation Competition.</td>
-      <td class="award-result">Bronze Award</td>
-    </tr>
-  </tbody>
-</table>
+<div class="awards-list">
+  <div class="award-row">
+    <div class="award-year">2025</div>
+    <div class="award-title">Academic merit scholarship, Wuhan Polytechnic University.</div>
+    <div class="award-result">Third Class (Top 12%)</div>
+  </div>
+
+  <div class="award-row">
+    <div class="award-year">2025</div>
+    <div class="award-title">2025 China Youth Sci-Tech Innovation Open Challenge, the 19th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition.</div>
+    <div class="award-result">Second Prize</div>
+  </div>
+
+  <div class="award-row">
+    <div class="award-year">2025</div>
+    <div class="award-title">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions.</div>
+    <div class="award-result">Second Prize</div>
+  </div>
+
+  <div class="award-row">
+    <div class="award-year">2024</div>
+    <div class="award-title">The 13th Hubei "Challenge Cup" College Student Entrepreneurship Plan Competition.</div>
+    <div class="award-result">Second Prize</div>
+  </div>
+
+  <div class="award-row">
+    <div class="award-year">2024</div>
+    <div class="award-title">The 7th Hubei "My Dream - Chu Tian Creator" Competition, China International College Students' Innovation Competition.</div>
+    <div class="award-result">Bronze Award</div>
+  </div>
+</div>
 
 <h1 id="services">💬 Others</h1>
 
