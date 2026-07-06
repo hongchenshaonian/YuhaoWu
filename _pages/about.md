@@ -79,6 +79,42 @@ redirect_from:
 }
 .timeline-date { font-weight: 600; color: #0366d6; font-size: 0.95em; margin-bottom: 2px; }
 .timeline-content { font-size: 0.95em; color: #24292e; }
+.awards-timeline {
+  margin-top: 0.15rem;
+  margin-bottom: 1rem;
+  padding-left: 18px;
+}
+.awards-timeline .timeline-item {
+  display: grid;
+  grid-template-columns: 3.25rem 1.1rem minmax(0, 1fr);
+  column-gap: 0.1rem;
+  align-items: baseline;
+  margin-bottom: 0.55rem;
+}
+.awards-timeline .timeline-item::before {
+  left: -25px;
+  top: 0.45em;
+  width: 10px;
+  height: 10px;
+}
+.awards-timeline .timeline-date,
+.awards-timeline .timeline-arrow,
+.awards-timeline .timeline-content {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+}
+.awards-timeline .timeline-date {
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #111827;
+}
+.awards-timeline .timeline-arrow {
+  color: #24292e;
+}
+.awards-timeline .timeline-content {
+  color: #24292e;
+}
 
 /* 现代化的 Show more 按钮 */
 .timeline-details summary {
@@ -426,6 +462,9 @@ body.protected-image-open {
   transition: background-color 0.2s;
 }
 .exp-card:hover { background: #f8f9fa; }
+.experience-card {
+  display: block;
+}
 .exp-logo {
   width: 72px;
   height: 72px;
@@ -435,14 +474,53 @@ body.protected-image-open {
   object-fit: contain;
 }
 .exp-content { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; min-height: 72px; }
-.exp-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
-.exp-role { font-weight: 600; font-size: 1.05em; color: #24292e; margin: 0; }
+.exp-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: baseline;
+  column-gap: 24px;
+  margin-bottom: 0;
+}
+.exp-role {
+  font-weight: 700;
+  font-size: 1.05em;
+  line-height: 1.28;
+  color: #111827;
+  margin: 0;
+}
 .exp-role a { color: inherit; text-decoration: none; }
 .exp-role a:hover,
 .exp-role a:focus { color: #005cc5; text-decoration: none; }
-.exp-time { font-size: 1em; color: #586069; white-space: nowrap; }
+.exp-time {
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1.28;
+  color: #111827;
+  white-space: nowrap;
+  text-align: right;
+}
 .exp-org { font-weight: 500; color: #0366d6; font-size: 1em; margin-bottom: 6px; }
 .exp-desc { font-size: 1em; color: #444; margin: 0; line-height: 1.5; }
+.exp-header .exp-desc {
+  font-size: 1.05em;
+  color: #111827;
+  font-weight: 700;
+  line-height: 1.28;
+}
+.exp-header .exp-desc em {
+  font-weight: 700;
+}
+.exp-details { margin-top: 5px; }
+.exp-bullets {
+  margin: 8px 0 0 1.15rem;
+  padding-left: 0;
+}
+.exp-bullets li {
+  margin-bottom: 6px;
+}
+.exp-bullets li:last-child {
+  margin-bottom: 0;
+}
 
 /* Highlights */
 .highlight-award { font-weight: 600; color: #b31b1b; background: #fff0f0; padding: 2px 6px; border-radius: 4px; }
@@ -450,13 +528,20 @@ body.protected-image-open {
 .zh-translation { font-size: 0.85em; color: #666; font-weight: normal; }
 
 @media (min-width: 900px) {
-  .education-card .exp-time {
-    margin-right: 32px;
-  }
-
   h1[id="-awards"] + ul,
   h1[id="-projects"] + ul {
     max-width: calc(100% - 18rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .exp-header {
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+  }
+
+  .exp-time {
+    white-space: normal;
   }
 }
 
@@ -484,10 +569,10 @@ body.protected-image-open {
       <span class="exp-time">Wuhan, China</span>
     </div>
 
-    <div style="margin-top: 8px;">
+    <div class="exp-details">
       <div class="exp-header">
         <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering in Architecture</em></p>
-        <span class="exp-time">Sep. 2022 - Present</span>
+        <span class="exp-time">September 2022 – Present</span>
       </div>
       <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
     </div>
@@ -650,11 +735,19 @@ body.protected-image-open {
 
 # 🔬 Research Experience {#research-experience}
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</div>
-    <p class="desc"><strong>Research Assistant</strong> | Wuhan, China | Feb. 2024 - Present</p>
-    <ul class="desc">
+<div class="exp-card experience-card">
+  <div class="exp-content">
+    <div class="exp-header">
+      <h3 class="exp-role">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</h3>
+      <span class="exp-time">Wuhan, China</span>
+    </div>
+
+    <div class="exp-header exp-details">
+      <p class="exp-desc"><strong>Research Assistant</strong></p>
+      <span class="exp-time">February 2024 – Present</span>
+    </div>
+
+    <ul class="exp-desc exp-bullets">
       <li><strong>Development of low-carbon cementitious composites:</strong> Developed cementitious composites from industrial solid wastes through alkali activation and composition design, elucidating composition-property relationships to address the intrinsic low strength and poor water resistance of phosphogypsum-rich binders while delivering lower CO<sub>2</sub> emissions, energy consumption, and production cost relative to conventional cement.</li>
       <li><strong>Mechanistic investigation of CO<sub>2</sub> mineralization:</strong> Developed a low-L/S-ratio aqueous carbonation method for steel slag under mild conditions, characterized the phase assemblage and micromorphological evolution of carbonated steel slag, identified the sequential in-situ generation of nanoscale calcite and monohydrocalcite, and proposed a three-layer core-shell structure based on the hydration-carbonation coupling mechanism.</li>
       <li><strong>Modification of solid-waste precursors:</strong> Contributed to the investigation of two-stage calcination modification of phosphogypsum, analyzing phase transformation, particle-size refinement, impurity removal, and changes in cementitious activity for its application in solid-waste cementitious materials.</li>
@@ -664,13 +757,21 @@ body.protected-image-open {
   </div>
 </div>
 
-# 💼 Work Experience {#work-experience}
+# 💼 Industry Experience {#work-experience}
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Hubei Juhai Environment Technology Co., Ltd.</div>
-    <p class="desc"><strong>Assistant Research Fellow</strong> | Xiaogan, China | Jul. 2024 - Aug. 2024</p>
-    <ul class="desc">
+<div class="exp-card experience-card">
+  <div class="exp-content">
+    <div class="exp-header">
+      <h3 class="exp-role">Hubei Juhai Environment Technology Co., Ltd.</h3>
+      <span class="exp-time">Xiaogan, China</span>
+    </div>
+
+    <div class="exp-header exp-details">
+      <p class="exp-desc"><strong>Assistant Research Fellow</strong></p>
+      <span class="exp-time">July – August 2024</span>
+    </div>
+
+    <ul class="exp-desc exp-bullets">
       <li>Conducted on-site investigations of phosphogypsum storage facilities to evaluate disposal conditions, material management practices, and key constraints for resource-oriented utilization.</li>
       <li>Supported enterprise-oriented optimization of solid-waste-based cementitious materials, including formulation adjustment, application-scenario analysis, and scale-up feasibility assessment for industrial implementation.</li>
     </ul>
@@ -693,33 +794,37 @@ body.protected-image-open {
   </div>
 </div>
 
-# 🏆 Competition Awards {#honors-awards}
+# 🏆 Honors and Awards {#honors-awards}
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Second Prize</div>
-    <p class="desc">The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, 2025. <strong>(National Level)</strong></p>
+<div class="timeline-container awards-timeline">
+  <div class="timeline-item">
+    <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
+    <div class="timeline-content">Academic merit scholarship, Wuhan Polytechnic University, <strong>Third Class (Top 12%).</strong></div>
   </div>
-</div>
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Second Prize</div>
-    <p class="desc">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, 2025. <strong>(National Level)</strong></p>
+  <div class="timeline-item">
+    <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
+    <div class="timeline-content">The 19th 'Challenge Cup' National College Student Extracurricular Academic and Technological Works Competition, <strong>Second Prize.</strong></div>
   </div>
-</div>
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Second Prize</div>
-    <p class="desc">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, 2024.</p>
+  <div class="timeline-item">
+    <div class="timeline-date">2025</div>
+    <div class="timeline-arrow">-&gt;</div>
+    <div class="timeline-content">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions, <strong>Second Prize.</strong></div>
   </div>
-</div>
 
-<div class='paper-box compact-info-card'>
-  <div class='paper-box-text'>
-    <div class="title">Bronze Award</div>
-    <p class="desc">Hubei Final of the China International College Students' Innovation Competition, 2024.</p>
+  <div class="timeline-item">
+    <div class="timeline-date">2024</div>
+    <div class="timeline-arrow">-&gt;</div>
+    <div class="timeline-content">The 13th Hubei Provincial 'Challenge Cup' College Students' Entrepreneurship Plan Competition, <strong>Second Prize.</strong></div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">2024</div>
+    <div class="timeline-arrow">-&gt;</div>
+    <div class="timeline-content">Hubei Final of the China International College Students' Innovation Competition, <strong>Bronze Award.</strong></div>
   </div>
 </div>
 

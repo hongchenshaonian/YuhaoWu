@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Yuhao Wu"
-description              : "Give me a place to stand, and I will move the world."
+description              : ""
 repository               : "your-username/your-username.github.io"
 url                      : "https://yuhaowu.com"  # e.g. https://your-username.github.io
 baseurl                  : ""  # "" for user site, "/repo-name" for project site
