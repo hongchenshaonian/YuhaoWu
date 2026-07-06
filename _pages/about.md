@@ -553,15 +553,16 @@ body.protected-image-open {
 .awards-table {
   width: 100%;
   margin: 0.1rem 0 1rem;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 0.18rem;
   table-layout: fixed;
   color: #24292e;
 }
 .awards-table col:nth-child(1) { width: 5.8rem; }
 .awards-table col:nth-child(3) { width: 12rem; }
 .awards-table td {
-  padding: 0.52rem 0.62rem;
-  border: 1px solid #d8dee4;
+  padding: 0.42rem 0.62rem;
+  border: 0;
   vertical-align: top;
   line-height: 1.45;
 }
@@ -620,7 +621,6 @@ body.protected-image-open {
   }
 
   .awards-table tr {
-    border: 1px solid #d8dee4;
     margin-bottom: 0.65rem;
   }
 
