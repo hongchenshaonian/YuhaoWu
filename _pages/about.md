@@ -12,7 +12,7 @@ redirect_from:
 
 <div class="intro-text">
 
-<p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group. Within the field of <strong>civil engineering</strong>, my work centers on engineering materials at the interface of <strong>materials engineering</strong> and <strong>chemical engineering</strong>.</p>
+<p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group.</p>
 
 <p>My previous research has centered on key topics in <strong>low-carbon cementitious composites, hydration chemistry, CO<sub>2</sub> mineralization, waste valorisation, microstructure–property relationships</strong>.</p>
 
@@ -476,7 +476,7 @@ body.protected-image-open {
 .education-card .exp-header .exp-desc,
 .education-card .exp-header .exp-desc em {
   color: #1f2937;
-  font-weight: 500;
+  font-weight: 700;
 }
 .education-card .exp-desc strong {
   font-weight: 650 !important;
@@ -592,7 +592,7 @@ body.protected-image-open {
   font-weight: 700;
   line-height: 1.35;
   white-space: nowrap;
-  text-align: right;
+  text-align: left;
 }
 
 /* Highlights */
