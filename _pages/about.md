@@ -481,6 +481,10 @@ body.protected-image-open {
 .education-card .exp-desc strong {
   font-weight: 650 !important;
 }
+.education-card .score-line,
+.education-card .score-line strong {
+  font-weight: 400 !important;
+}
 .exp-logo {
   width: 72px;
   height: 72px;
@@ -573,7 +577,7 @@ body.protected-image-open {
 }
 .award-row {
   display: grid;
-  grid-template-columns: 4.4rem minmax(0, 1fr) max-content;
+  grid-template-columns: 4.4rem minmax(0, 1fr) 12.5rem;
   column-gap: 1rem;
   align-items: baseline;
   padding: 0.28rem 0;
@@ -667,7 +671,7 @@ body.protected-image-open {
         <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering (B.Eng.) in Architecture</em></p>
         <span class="exp-time">September 2022 – Present</span>
       </div>
-      <p class="exp-desc"><strong>Weighted average score:</strong> 81.65</p>
+      <p class="exp-desc score-line">Weighted average score: 81.65</p>
     </div>
   </div>
 </div>
