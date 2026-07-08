@@ -12,13 +12,13 @@ redirect_from:
 
 <div class="intro-text">
 
-<p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group. Within the field of <strong>civil engineering</strong>, my work centers on engineering materials at the interface of <strong>materials engineering</strong> and <strong>chemical engineering</strong>.</p>
+<p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group.</p>
 
-<p>My previous research has centered on key topics in <strong>low-carbon cementitious composites, hydration chemistry, CO<sub>2</sub> mineralization, waste valorisation, microstructure–property relationships</strong>.</p>
+<p>My previous research has centered on key topics in <strong>waste valorization, sustainable cementitious materials, CO<sub>2</sub> mineralization, and concrete durability</strong>.</p>
 
 <p>In the future, I hope to pursue research across science and engineering to develop new approaches that address real-world challenges and contribute to a more sustainable future.</p>
 
-<p>Please feel free to contact me at <strong>richard.yuhao.wu@gmail.com</strong> or by phone at <strong>+86 130 1800 3983</strong>.</p>
+<p>Please feel free to contact me at <strong>richard.yuhao.wu@gmail.com</strong> or by phone at <strong>+86 13018003983</strong>.</p>
 
 </div>
 
@@ -476,10 +476,14 @@ body.protected-image-open {
 .education-card .exp-header .exp-desc,
 .education-card .exp-header .exp-desc em {
   color: #1f2937;
-  font-weight: 500;
+  font-weight: 700;
 }
 .education-card .exp-desc strong {
   font-weight: 650 !important;
+}
+.education-card .score-line,
+.education-card .score-line strong {
+  font-weight: 400 !important;
 }
 .exp-logo {
   width: 72px;
@@ -573,7 +577,7 @@ body.protected-image-open {
 }
 .award-row {
   display: grid;
-  grid-template-columns: 4.4rem minmax(0, 1fr) max-content;
+  grid-template-columns: 4.4rem minmax(0, 1fr) 12.5rem;
   column-gap: 1rem;
   align-items: baseline;
   padding: 0.28rem 0;
@@ -592,7 +596,7 @@ body.protected-image-open {
   font-weight: 700;
   line-height: 1.35;
   white-space: nowrap;
-  text-align: right;
+  text-align: left;
 }
 
 /* Highlights */
@@ -667,7 +671,7 @@ body.protected-image-open {
         <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering (B.Eng.) in Architecture</em></p>
         <span class="exp-time">September 2022 – Present</span>
       </div>
-      <p class="exp-desc"><strong>Weighted Average Score:</strong> 81.43</p>
+      <p class="exp-desc score-line">Weighted average score: 81.65</p>
     </div>
   </div>
 </div>
@@ -685,7 +689,7 @@ body.protected-image-open {
     <div class="title">Tailoring the performance of NaOH-activated phosphogypsum-GGBS-steel slag composites: Unraveling enhancement mechanisms through composition-property relationships<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, Z. Zheng, X. Wang, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang, X. Qin</div>
     <div class="venue"><em><strong>Sustainable Materials and Technologies</strong>, 48 (2026) e02016</em> <a class="article-link" href="https://doi.org/10.1016/j.susmat.2026.e02016" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 9.7)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 9.7)</strong></p>
   </div>
 </div>
 
@@ -698,7 +702,7 @@ body.protected-image-open {
     <div class="title">In-situ generation of nanoscale calcite and monohydrocalcite via low-L/S-ratio aqueous carbonation of alkali-activated steel slag under mild conditions for enhanced PG-GGBS cementitious materials<span class="featured-work"><span class="featured-work-icon">&#9733;</span><span>Featured Work</span></span></div>
     <div class="authors"><strong>Y. Wu</strong>, S. Zhu, Z. Liu, B. Hu, R. Luo, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong>, 537 (2026) 147169</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.147169" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 8.9)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 8.9)</strong></p>
   </div>
 </div>
 
@@ -711,7 +715,7 @@ body.protected-image-open {
     <div class="title">Water resistance degradation and sulfate leaching behavior in phosphogypsum-based composite concrete: Simulation, mechanisms and coupling effects</div>
     <div class="authors">X. Wang, X. Qin, S. Zhu, G. Peng, <strong>Y. Wu</strong>, Z. Liu, B. Hu, J. Huang</div>
     <div class="venue"><em><strong>Journal of Environmental Management</strong>, 405 (2026) 129753</em> <a class="article-link" href="https://doi.org/10.1016/j.jenvman.2026.129753" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 9.2)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 9.2)</strong></p>
   </div>
 </div>
 
@@ -724,7 +728,7 @@ body.protected-image-open {
     <div class="title">Gel transformation promoted by Al-Na modification enhances the water resistance of phosphogypsum-based all solid waste cementitious materials</div>
     <div class="authors">G. Peng, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu, X. Qin</div>
     <div class="venue"><em><strong>Construction and Building Materials</strong>, 535 (2026) 146819</em> <a class="article-link" href="https://doi.org/10.1016/j.conbuildmat.2026.146819" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 8.9)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 8.9)</strong></p>
   </div>
 </div>
 
@@ -737,7 +741,7 @@ body.protected-image-open {
     <div class="title">Recycling phosphogypsum through two-stage calcination modification: development of high-performance all-solid-waste cementitious materials</div>
     <div class="authors">G. Peng, X. Qin, S. Zhu, X. Wang, J. Zhang, <strong>Y. Wu</strong>, Z. Liu, B. Hu &amp; Jin Huang</div>
     <div class="venue"><em><strong>Journal of Material Cycles and Waste Management</strong>, 28 (2026) 445–464</em> <a class="article-link" href="https://doi.org/10.1007/s10163-025-02425-y" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(SCIE, JCR Q2, Impact Factor = 3.8)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q2, IF = 3.8)</strong></p>
   </div>
 </div>
 
@@ -763,7 +767,7 @@ body.protected-image-open {
     <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
     <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
     <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, Impact Factor = 7.8) (Revised)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 7.8) (Revised)</strong></p>
   </div>
 </div>
 
@@ -775,11 +779,11 @@ body.protected-image-open {
     <img class="patent-image" src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN120590137A.jpg' | relative_url }}" alt="Full-solid waste phosphogypsum cementitious material patent image">
   </div>
   <div class='paper-box-text'>
-    <span class="patent-inline-badge">Invention patent</span>
+    <span class="patent-inline-badge">Invention Patent</span>
     <div class="title">Full solid waste water-hardening cementitious material based on phosphogypsum and its preparation method and application</div>
     <div class="authors">X. Wang, X. Qin, Z. Zheng, <strong>Y. Wu</strong>, X. Li, G. Peng, Z. Liu, B. Hu, S. Zhu, J. Huang</div>
     <div class="venue"><em><strong>CN120590137A</strong>, 2025</em> <a class="article-link" href="https://patents.google.com/patent/CN120590137A/en?oq=CN120590137A" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
-    <p class="desc">China Invention patent. Status: Published.</p>
+    <p class="desc">China Invention Patent. Status: Published.</p>
   </div>
 </div>
 
@@ -788,41 +792,41 @@ body.protected-image-open {
     <img class="patent-image" src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" data-full-src="{{ '/personal_image/CN223190347U.jpg' | relative_url }}" alt="Venetian blind and adjusting mechanism patent image">
   </div>
   <div class='paper-box-text'>
-    <span class="patent-inline-badge">Utility model patent</span>
+    <span class="patent-inline-badge">Utility model Patent</span>
     <div class="title">Venetian blind and adjusting mechanism</div>
     <div class="authors">H. Chen, Z. Li, <strong>Y. Wu</strong>, J. Han, Z. Tang, Y. Wang, C. Li</div>
     <div class="venue"><em><strong>CN223190347U</strong>, 2024</em> <a class="article-link" href="https://patents.google.com/patent/CN223190347U/en?oq=CN223190347U" target="_blank" rel="noopener noreferrer">[Patent Link]</a></div>
-    <p class="desc">China Utility model patent. Status: Granted.</p>
+    <p class="desc">China Utility model Patent. Status: Granted.</p>
   </div>
 </div>
 
 <div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
-    <span class="patent-inline-badge">Invention patent</span>
+    <span class="patent-inline-badge">Invention Patent</span>
     <div class="title">Carbonated steel slag-phosphogypsum-GGBS cementitious material and preparation method thereof</div>
     <div class="authors"><strong>Y. Wu</strong>, X. Qin, Z. Liu, R. Luo, S. Zhu, J. Liu, H. Liu, B. Hu, H. Xia, Z. Chen, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094419</strong>, 2026</em></div>
-    <p class="desc">China Invention patent. Status: Filed.</p>
+    <p class="desc">China Invention Patent. Status: Filed.</p>
   </div>
 </div>
 
 <div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
-    <span class="patent-inline-badge">Invention patent</span>
-    <div class="title">Full-depth phosphogypsum-based multi-source solid waste composite roadbed and pavement structure</div>
+    <span class="patent-inline-badge">Invention Patent</span>
+    <div class="title">Full depth phosphogypsum based multi-source solid-waste composite roadbed and pavement structure</div>
     <div class="authors">X. Qin, R. Luo, Z. Liu, S. Zhu, Z. Zhang, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094387</strong>, 2026</em></div>
-    <p class="desc">China Invention patent. Status: Filed.</p>
+    <p class="desc">China Invention Patent. Status: Filed.</p>
   </div>
 </div>
 
 <div class='paper-box aligned-paper patent-text-card'>
   <div class='paper-box-text'>
-    <span class="patent-inline-badge">Invention patent</span>
+    <span class="patent-inline-badge">Invention Patent</span>
     <div class="title">CO<sub>2</sub> mineralization-enhanced phosphogypsum-GGBS-steel slag cementitious material and preparation method thereof</div>
     <div class="authors">X. Qin, Z. Liu, J. Zhang, S. Zhu, J. Liu, B. Hu, H. Liu, <strong>Y. Wu</strong>, F. Cao</div>
     <div class="venue"><em><strong>Application No. 2026108094423</strong>, 2026</em></div>
-    <p class="desc">China Invention patent. Status: Filed.</p>
+    <p class="desc">China Invention Patent. Status: Filed.</p>
   </div>
 </div>
 
@@ -831,7 +835,7 @@ body.protected-image-open {
 <div class="exp-card experience-card">
   <div class="exp-content">
     <div class="exp-header">
-      <h3 class="exp-role">Prof. Xiantao Qin's Group, Wuhan Polytechnic University</h3>
+      <h3 class="exp-role">Prof. Xiantao Qin&rsquo;s Group, Wuhan Polytechnic University</h3>
       <span class="exp-time">Wuhan, China</span>
     </div>
 
@@ -844,16 +848,16 @@ body.protected-image-open {
       <div class="research-task">
         <div class="research-task-marker">[1] -&gt;</div>
         <div class="research-task-title">Modifying solid waste precursors through thermal treatment:</div>
-        <p class="research-task-detail">Calcined phosphogypsum at 150-800°C in a muffle furnace to remove P/F impurities and transform gypsum phases.</p>
-        <p class="research-task-detail">Conducted measurements of PG whiteness, density, pH, and particle-size distribution under varied temperatures.</p>
+        <p class="research-task-detail">Calcined phosphogypsum at 150&ndash;800 &deg;C in a muffle furnace to remove P/F impurities and transform gypsum phases.</p>
+        <p class="research-task-detail">Conducted measurements of PG whiteness, density, pH, and particle size distribution under varied temperatures.</p>
       </div>
 
       <div class="research-task">
         <div class="research-task-marker">[2] -&gt;</div>
         <div class="research-task-title">Tailoring alkali-activated solid waste cementitious composites:</div>
         <p class="research-task-detail">Formulated solid-waste-based mix designs for high-performance alkali-activated cementitious composites.</p>
-        <p class="research-task-detail">Integrated XRD, TG-DTG, and FTIR analyses to characterize hydration-product evolution and phase assemblage.</p>
-        <p class="research-task-detail">Identified a steel-slag-assisted microcrack sealing mechanism governing strength and water resistance enhancement.</p>
+        <p class="research-task-detail">Integrated XRD, TG-DTG, and FTIR analyses to characterize hydration product evolution and phase assemblage.</p>
+        <p class="research-task-detail">Identified a steel slag-assisted microcrack-sealing mechanism governing strength and water resistance enhancement.</p>
         <p class="research-task-detail">Benchmarked binder sustainability against OPC and CSA cement using CO<sub>2</sub> emission, energy, and cost metrics.</p>
       </div>
 
@@ -863,13 +867,13 @@ body.protected-image-open {
         <p class="research-task-detail">Developed an ambient-condition aqueous carbonation method for efficient CO<sub>2</sub> mineralization of steel slag.</p>
         <p class="research-task-detail">Quantified phase assemblage, CO<sub>2</sub> uptake, and particle size using QXRD Rietveld, TG, and laser diffraction.</p>
         <p class="research-task-detail">Characterized carbonation product nucleation and growth processes using FTIR and SEM-EDS evidence.</p>
-        <p class="research-task-detail">Established how carbonated steel slag enhanced PG-GGBS binder strength and water resistance.</p>
+        <p class="research-task-detail">Established how carbonated steel slag enhanced the strength and water resistance of PG-GGBS binders.</p>
       </div>
 
       <div class="research-task">
         <div class="research-task-marker">[4] -&gt;</div>
         <div class="research-task-title">Enhancing water resistance of solid waste binders through chemical modification:</div>
-        <p class="research-task-detail">Tuned solid waste binder gel chemistry using NaAlO<sub>2</sub> as a dual Al-Na source for water resistance enhancement.</p>
+        <p class="research-task-detail">Tuned solid-waste binder gel chemistry using NaAlO<sub>2</sub> as a dual Al-Na source to enhance water resistance.</p>
         <p class="research-task-detail">Quantified gel type proportions and transformation pathways through <sup>29</sup>Si NMR spectral deconvolution analysis.</p>
         <p class="research-task-detail">Proposed and validated a gel transformation coefficient for evaluating water resistance in solid waste binders.</p>
       </div>
@@ -877,8 +881,8 @@ body.protected-image-open {
       <div class="research-task">
         <div class="research-task-marker">[5] -&gt;</div>
         <div class="research-task-title">Modeling long-term degradation of solid waste concrete under water exposure:</div>
-        <p class="research-task-detail">Designed an accelerated sulfate leaching protocol to simulate water resistance degradation under wet-dry cycling.</p>
-        <p class="research-task-detail">Built a COMSOL transport model to project sulfate migration and leaching-depth evolution over 360 cycles.</p>
+        <p class="research-task-detail">Designed an accelerated sulfate leaching protocol to simulate water resistance degradation under wet&ndash;dry cycling.</p>
+        <p class="research-task-detail">Built a COMSOL transport model to project sulfate migration and leaching depth evolution over 360 cycles.</p>
         <p class="research-task-detail">Validated the model using 90 accelerated sulfate leaching cycles and correlated leaching depth with strength loss.</p>
       </div>
     </div>
@@ -910,15 +914,15 @@ body.protected-image-open {
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Technological Innovation Program</div>
-    <p class="desc">Key Technologies for Preparing Green Cementitious Materials from Phosphogypsum in Synergy with Multi-Source Solid Wastes and Industrial Demonstration of Multi-Scenario Applications, <strong>Grant No. 2025BCB081</strong>. PI: Prof. Xiantao Qin.</p>
+    <div class="title">Hubei provincial technological innovation program</div>
+    <p class="desc">Key technologies for preparing green cementitious materials from phosphogypsum in synergy with multi-source solid wastes and industrial demonstration of multi-scenario applications, <strong>Grant No. 2025BCB081</strong>, PI: Prof. Xiantao Qin.</p>
   </div>
 </div>
 
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
-    <div class="title">Hubei Provincial Department of Education Science and Technology Plan Project</div>
-    <p class="desc">Multi-Objective Optimization and Long-Term Performance Evolution Simulation of High-Belite Low-Carbon Phosphogypsum-Based Multi-Source Solid Waste Cementitious Materials. PI: Prof. Xiantao Qin.</p>
+    <div class="title">Hubei provincial department of education science and technology plan project</div>
+    <p class="desc">Multi-objective optimization and long-term performance evolution simulation of high-belite low-carbon phosphogypsum based multi-source solid waste cementitious materials. PI: Prof. Xiantao Qin.</p>
   </div>
 </div>
 
@@ -927,31 +931,31 @@ body.protected-image-open {
 <div class="awards-list">
   <div class="award-row">
     <div class="award-year">2025</div>
-    <div class="award-title">Academic merit scholarship, Wuhan Polytechnic University.</div>
+    <div class="award-title">Academic merit scholarship, Wuhan polytechnic university.</div>
     <div class="award-result">Third Class (Top 12%)</div>
   </div>
 
   <div class="award-row">
     <div class="award-year">2025</div>
-    <div class="award-title">2025 China Youth Sci-Tech Innovation Open Challenge, the 19th "Challenge Cup" National College Student Extracurricular Academic and Technological Works Competition.</div>
+    <div class="award-title">2025 China youth Sci-Tech innovation open challenge, the 19th &ldquo;Challenge Cup&rdquo; national college student extracurricular academic and technological works competition</div>
     <div class="award-result">Second Prize</div>
   </div>
 
   <div class="award-row">
     <div class="award-year">2025</div>
-    <div class="award-title">The 11th International BIM Graduation Design Innovation Competition for Higher Education Institutions.</div>
+    <div class="award-title">The 11th international BIM graduation design innovation competition for higher education institutions</div>
     <div class="award-result">Second Prize</div>
   </div>
 
   <div class="award-row">
     <div class="award-year">2024</div>
-    <div class="award-title">The 13th Hubei "Challenge Cup" College Student Entrepreneurship Plan Competition.</div>
+    <div class="award-title">The 13th Hubei &ldquo;Challenge Cup&rdquo; college student entrepreneurship plan competition</div>
     <div class="award-result">Second Prize</div>
   </div>
 
   <div class="award-row">
     <div class="award-year">2024</div>
-    <div class="award-title">The 7th Hubei "My Dream - Chu Tian Creator" Competition, China International College Students' Innovation Competition.</div>
+    <div class="award-title">The 7th Hubei &ldquo;My Dream&ndash;Chutian Makers&rdquo; competition, China international college students&rsquo; innovation competition</div>
     <div class="award-result">Bronze Award</div>
   </div>
 </div>
