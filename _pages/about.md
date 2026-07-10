@@ -671,7 +671,7 @@ body.protected-image-open {
         <p class="exp-desc" style="margin: 0;"><em>Bachelor of Engineering (B.Eng.) in Architecture</em></p>
         <span class="exp-time">September 2022 – Present</span>
       </div>
-      <p class="exp-desc score-line">Weighted average score: 81.65</p>
+      <p class="exp-desc score-line">Weighted average score: 81.03</p>
     </div>
   </div>
 </div>
