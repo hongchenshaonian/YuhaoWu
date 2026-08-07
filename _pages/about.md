@@ -763,7 +763,7 @@ body.protected-image-open {
     <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
     <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
     <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, IF = 7.8) (Revised)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 7.8) (In Review)</strong></p>
   </div>
 </div>
 
