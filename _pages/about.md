@@ -750,7 +750,7 @@ body.protected-image-open {
     <div class="title">Performance optimization and environmental benefits of nanosilica-modified phosphogypsum-based composite concrete</div>
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
     <div class="venue"><em><strong>Science Technology and Engineering</strong>, 26 (2026) 8483&ndash;8492</em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(Engineering Index)</strong></p>
+    <p class="desc"><strong>(EI Compendex)</strong></p>
   </div>
 </div>
 
