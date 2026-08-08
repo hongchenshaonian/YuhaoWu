@@ -749,8 +749,8 @@ body.protected-image-open {
   <div class='paper-box-text'>
     <div class="title">Performance optimization and environmental benefits of nanosilica-modified phosphogypsum-based composite concrete</div>
     <div class="authors">X. Wang, X. Qin, J. Zhang, G. Peng, S. Chen, <strong>Y. Wu</strong>, B. Hu, Z. Liu</div>
-    <div class="venue"><em><strong>Science Technology and Engineering</strong></em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
-    <p class="desc"><strong>(Engineering Index) (Accepted)</strong></p>
+    <div class="venue"><em><strong>Science Technology and Engineering</strong>, 26 (2026) 8483&ndash;8492</em> <a class="article-link" href="http://www.stae.com.cn/jsygc/article/abstract/2507214" target="_blank" rel="noopener noreferrer">[Article Link]</a></div>
+    <p class="desc"><strong>(EI Compendex)</strong></p>
   </div>
 </div>
 
@@ -763,7 +763,7 @@ body.protected-image-open {
     <div class="title">CO<sub>2</sub> Mineralization pathways in phosphogypsum-based cementitious materials: Carbon sequestration and mechanical enhancement</div>
     <div class="authors">J. Zhang, S. Zhu, G. Peng, X. Wang, <strong>Y. Wu</strong>, X. Qin</div>
     <div class="venue"><em><strong>ACS Applied Materials & Interfaces</strong></em></div>
-    <p class="desc"><strong>(SCIE, JCR Q1, IF = 7.8) (Revised)</strong></p>
+    <p class="desc"><strong>(SCIE, JCR Q1, IF = 7.8) (In Review)</strong></p>
   </div>
 </div>
 
