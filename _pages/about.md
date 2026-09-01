@@ -14,7 +14,7 @@ redirect_from:
 
 <p>I am an <strong>undergraduate student</strong> and <strong>research assistant</strong> at <strong>Wuhan Polytechnic University</strong> under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=49362047300" target="_blank" rel="noopener noreferrer" style="color: #0366d6; font-weight: 700;">Prof. Xiantao Qin</a>. Since February 2024, I have been conducting independent research in Prof. Qin’s group.</p>
 
-<p>Please feel free to contact me at <strong>richard.yuhao.wu@gmail.com</strong> or by phone at <strong>+86 13018003983</strong>.</p>
+<p>Please feel free to contact me at <strong>richard.yuhao.wu@gmail.com</strong>.</p>
 
 </div>
 
@@ -928,7 +928,7 @@ body.protected-image-open {
   <div class="award-row">
     <div class="award-year">2025</div>
     <div class="award-title">Academic merit scholarship, Wuhan polytechnic university.</div>
-    <div class="award-result">Third Class (Top 12%)</div>
+    <div class="award-result">Third Class</div>
   </div>
 
   <div class="award-row">
