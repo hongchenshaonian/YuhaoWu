@@ -918,7 +918,7 @@ body.protected-image-open {
 <div class='paper-box compact-info-card'>
   <div class='paper-box-text'>
     <div class="title">Hubei provincial department of education science and technology plan project</div>
-    <p class="desc">Multi-objective optimization and long-term performance evolution simulation of high-belite low-carbon phosphogypsum based multi-source solid waste cementitious materials. PI: Prof. Xiantao Qin.</p>
+    <p class="desc">Multi-objective optimization and long-term performance evolution simulation of high-belite low-carbon phosphogypsum based multi-source solid waste cementitious materials, <strong>Grant No. D20251706</strong>, PI: Prof. Xiantao Qin.</p>
   </div>
 </div>
 
